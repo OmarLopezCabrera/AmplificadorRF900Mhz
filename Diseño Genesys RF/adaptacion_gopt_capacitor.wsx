@@ -1,0 +1,1715 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GENESYSV1.00>
+
+<Item XName="adaptacion_gopt_capacitor" UserName="adaptacion_gopt_capacitor" Type="WorkspaceData" >
+<Item XName="Page" Type="PageMgr" />
+<IsOpen ><T>Bool</T><D>1</D></IsOpen>
+<Item XName="Variables" Type="SerItem" />
+<Item XName="Designs" UserName="Designs" Type="Folder" >
+<Item XName="Page" Type="PageMgr" />
+<IsOpen ><T>Bool</T><D>1</D></IsOpen>
+<Item XName="Sch1" UserName="Sch1" Type="Design" >
+<Item XName="Page" Type="PageMgr" >
+<Item XName="Display0" Type="DesignDisp" >
+<Item XName="TabInfo" Type="SerItem" >
+<Item XName="Schematic" Type="TabInfo" >
+<PageNo ><T>Int</T><D>0</D></PageNo></Item>
+<Item XName="Parameters" Type="TabInfo" >
+<PageNo ><T>Int</T><D>0</D></PageNo></Item></Item>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;P2ee}okp034;nOZB{P0gs24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;8B24;I224</D></DVport>
+<CurTab >Schematic</CurTab>
+<Window ><T>Array_I64</T><D>1;4;;;uD;q9</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>1</D></Show>
+<ZOrder ><T>Int</T><D>0</D></ZOrder></Item></Item>
+<Item XName="PartList" Type="PartList" >
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="Port_1" Type="Part" >
+<Model >*INP</Model>
+<Symbol >INPUT</Symbol>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="ZO" Type="PartParam" >
+<Description >Impedance</Description>
+<Unit ><T>Int</T><D>2000</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Default ><T>Bool</T><D>1</D></Default>
+<Data />
+<DataEntry /></Item>
+<Item XName="PORT" Type="PartParam" >
+<Description >Port Number</Description>
+<Validate ><T>Int</T><D>3</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data ><T>Int</T><D>1</D></Data></Item></Item>
+<Description >Input: Standard (*INP)</Description>
+<ParentPartName >INP_INPUT</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>0</D></MathLang>
+<ShortSymbol />
+<Footprint />
+<Category >Basic</Category>
+<Rotate ><T>Int</T><D>180</D></Rotate>
+<Netlist >Term_0,1</Netlist></Item>
+<Item XName="Port_2" Type="Part" >
+<Model >*OUT</Model>
+<Symbol >OUTPUT</Symbol>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="ZO" Type="PartParam" >
+<Description >Impedance</Description>
+<Unit ><T>Int</T><D>2000</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Default ><T>Bool</T><D>1</D></Default>
+<Data />
+<DataEntry /></Item>
+<Item XName="PORT" Type="PartParam" >
+<Description >Port Number</Description>
+<Validate ><T>Int</T><D>3</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data ><T>Int</T><D>2</D></Data></Item></Item>
+<Description >Output Port</Description>
+<ParentPartName >OUT_OUTPUT</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>0</D></MathLang>
+<ShortSymbol />
+<Footprint />
+<Category >Basic</Category>
+<Netlist >Term_0,2</Netlist></Item>
+<Item XName="TL1" Type="Part" >
+<Model >MLI</Model>
+<Symbol >TLE</Symbol>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="W" Type="PartParam" >
+<Description >Width</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.0037800000000000008</D></Data>
+<Tunable ><T>Bool</T><D>1</D></Tunable></Item>
+<Item XName="L" Type="PartParam" >
+<Description >Length</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.01</D></Data>
+<DataEntry >10</DataEntry></Item>
+<Item XName="SUBST" Type="PartParam" >
+<Description >Substrate Name</Description>
+<Validate ><T>Int</T><D>4</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data />
+<DataEntry /></Item></Item>
+<Description >Microstrip Line</Description>
+<ParentPartName >MLI_MLI_SLI</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>0</D></MathLang>
+<ShortSymbol >SHORT_TLE</ShortSymbol>
+<Footprint />
+<Category >Microstrip</Category>
+<Netlist >Term_0,1|Term_1,11</Netlist>
+<Item XName="ModelsParamSet" Type="ModelsParamSet" >
+<ReplaceMethod ><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry" >
+<ModelName >MLI</ModelName>
+<Indentifier />
+<SymbolName >TLE</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="W" Type="PartParam" >
+<Description >Width</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.003</D></Data>
+<DataEntry >3</DataEntry>
+<Tunable ><T>Bool</T><D>1</D></Tunable></Item>
+<Item XName="L" Type="PartParam" >
+<Description >Length</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.01</D></Data>
+<DataEntry >10</DataEntry></Item>
+<Item XName="SUBST" Type="PartParam" >
+<Description >Substrate Name</Description>
+<Validate ><T>Int</T><D>4</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data />
+<DataEntry /></Item></Item></Item></Item>
+<ModelID /></Item>
+<Item XName="TE1" Type="Part" >
+<Model >MTE</Model>
+<Symbol >TRL_TEE3</Symbol>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="W1" Type="PartParam" >
+<Description >Thru Width 1&lt;Optional, uses adjacent line width&gt;</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data ><T>Double</T><D>0.00378</D></Data>
+<DataEntry >3.78</DataEntry></Item>
+<Item XName="W2" Type="PartParam" >
+<Description >Thru Width 2&lt;Optional, uses adjacent line width&gt;</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data ><T>Double</T><D>0.00378</D></Data>
+<DataEntry >3.78</DataEntry></Item>
+<Item XName="WS" Type="PartParam" >
+<Description >Stub Width &lt;Optional, uses adjacent line width&gt;</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data ><T>Double</T><D>0.00378</D></Data>
+<DataEntry >3.78</DataEntry></Item>
+<Item XName="SUBST" Type="PartParam" >
+<Description >Substrate Name</Description>
+<Validate ><T>Int</T><D>4</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data >Substrate1</Data>
+<DataEntry >&apos;Substrate1</DataEntry></Item>
+<Item XName="OPTION" Type="PartParam" >
+<Description >Asymmetric (1=Yes, 0=No)</Description>
+<Validate ><T>Int</T><D>3</D></Validate>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data />
+<DataEntry /></Item></Item>
+<Description >Microstrip Radial Tee</Description>
+<ParentPartName >MTE_RAD_TEE</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>0</D></MathLang>
+<ShortSymbol />
+<Footprint />
+<Category >Microstrip</Category>
+<Netlist >Term_0,10|Term_1,5|Term_2,8</Netlist>
+<Item XName="ModelsParamSet" Type="ModelsParamSet" >
+<ReplaceMethod ><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry" >
+<ModelName >MTE</ModelName>
+<Indentifier />
+<SymbolName >TRL_TEE3</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="W1" Type="PartParam" >
+<Description >Thru Width 1&lt;Optional, uses adjacent line width&gt;</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data ><T>Double</T><D>0.00378</D></Data>
+<DataEntry >3.78</DataEntry></Item>
+<Item XName="W2" Type="PartParam" >
+<Description >Thru Width 2&lt;Optional, uses adjacent line width&gt;</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data ><T>Double</T><D>0.00378</D></Data>
+<DataEntry >3.78</DataEntry></Item>
+<Item XName="WS" Type="PartParam" >
+<Description >Stub Width &lt;Optional, uses adjacent line width&gt;</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data ><T>Double</T><D>0.00378</D></Data>
+<DataEntry >3.78</DataEntry></Item>
+<Item XName="SUBST" Type="PartParam" >
+<Description >Substrate Name</Description>
+<Validate ><T>Int</T><D>4</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data >Substrate1</Data>
+<DataEntry >&apos;Substrate1</DataEntry></Item>
+<Item XName="OPTION" Type="PartParam" >
+<Description >Asymmetric (1=Yes, 0=No)</Description>
+<Validate ><T>Int</T><D>3</D></Validate>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data />
+<DataEntry /></Item></Item></Item></Item>
+<ModelID /></Item>
+<Item XName="TL2" Type="Part" >
+<Model >MLI</Model>
+<Symbol >TLE</Symbol>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="W" Type="PartParam" >
+<Description >Width</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.0037425742574257424</D></Data>
+<Tunable ><T>Bool</T><D>1</D></Tunable></Item>
+<Item XName="L" Type="PartParam" >
+<Description >Length</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.012088025989004474</D></Data>
+<Tunable ><T>Bool</T><D>1</D></Tunable></Item>
+<Item XName="SUBST" Type="PartParam" >
+<Description >Substrate Name</Description>
+<Validate ><T>Int</T><D>4</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data >Substrate1</Data>
+<DataEntry >&apos;Substrate1</DataEntry></Item></Item>
+<Description >Microstrip Line</Description>
+<ParentPartName >MLI_MLI_SLI</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>0</D></MathLang>
+<ShortSymbol >SHORT_TLE</ShortSymbol>
+<Footprint />
+<Category >Microstrip</Category>
+<Netlist >Term_0,5|Term_1,2</Netlist>
+<Item XName="ModelsParamSet" Type="ModelsParamSet" >
+<ReplaceMethod ><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry" >
+<ModelName >MLI</ModelName>
+<Indentifier />
+<SymbolName >TLE</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="W" Type="PartParam" >
+<Description >Width</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.00378</D></Data>
+<Tunable ><T>Bool</T><D>1</D></Tunable>
+<DataEntry >3.78</DataEntry></Item>
+<Item XName="L" Type="PartParam" >
+<Description >Length</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.01296</D></Data>
+<DataEntry >12.96</DataEntry>
+<Tunable ><T>Bool</T><D>1</D></Tunable></Item>
+<Item XName="SUBST" Type="PartParam" >
+<Description >Substrate Name</Description>
+<Validate ><T>Int</T><D>4</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data >Substrate1</Data>
+<DataEntry >&apos;Substrate1</DataEntry></Item></Item></Item></Item>
+<ModelID /></Item>
+<Item XName="TL3" Type="Part" >
+<Model >MLI</Model>
+<Symbol >TLE</Symbol>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="W" Type="PartParam" >
+<Description >Width</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.00378</D></Data>
+<Tunable ><T>Bool</T><D>1</D></Tunable>
+<DataEntry >3.78</DataEntry></Item>
+<Item XName="L" Type="PartParam" >
+<Description >Length</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.039357378167853202</D></Data>
+<Tunable ><T>Bool</T><D>1</D></Tunable></Item>
+<Item XName="SUBST" Type="PartParam" >
+<Description >Substrate Name</Description>
+<Validate ><T>Int</T><D>4</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data >Substrate1</Data>
+<DataEntry >&apos;Substrate1</DataEntry></Item></Item>
+<Description >Microstrip Line</Description>
+<ParentPartName >MLI_MLI_SLI</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>0</D></MathLang>
+<ShortSymbol >SHORT_TLE</ShortSymbol>
+<Footprint />
+<Category >Microstrip</Category>
+<Netlist >Term_0,8|Term_1,6</Netlist>
+<Item XName="ModelsParamSet" Type="ModelsParamSet" >
+<ReplaceMethod ><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry" >
+<ModelName >MLI</ModelName>
+<Indentifier />
+<SymbolName >TLE</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="W" Type="PartParam" >
+<Description >Width</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.00378</D></Data>
+<Tunable ><T>Bool</T><D>1</D></Tunable>
+<DataEntry >3.78</DataEntry></Item>
+<Item XName="L" Type="PartParam" >
+<Description >Length</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>2</D></Validate>
+<Data ><T>Double</T><D>0.041365000000000006</D></Data>
+<DataEntry >41.365</DataEntry>
+<Tunable ><T>Bool</T><D>1</D></Tunable></Item>
+<Item XName="SUBST" Type="PartParam" >
+<Description >Substrate Name</Description>
+<Validate ><T>Int</T><D>4</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data >Substrate1</Data>
+<DataEntry >&apos;Substrate1</DataEntry></Item></Item></Item></Item>
+<ModelID /></Item>
+<Item XName="G1" Type="Part" >
+<Model >*GND</Model>
+<Symbol >GROUND</Symbol>
+<Item XName="ParamSet" Type="ParamSet" />
+<Description >True Ground</Description>
+<ParentPartName >GND_GROUND</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>0</D></MathLang>
+<ShortSymbol >SIGNAL_GROUND</ShortSymbol>
+<Footprint />
+<Category >Basic</Category>
+<Rotate >90</Rotate>
+<HideDes ><T>Bool</T><D>1</D></HideDes>
+<Netlist >Term_0,7</Netlist></Item>
+<Item XName="VH1" Type="Part" >
+<Model >MVH</Model>
+<Symbol >TRL_VIA</Symbol>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="R" Type="PartParam" >
+<Description >Radius</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>1</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data ><T>Double</T><D>0.0005</D></Data>
+<DataEntry >0.5</DataEntry></Item>
+<Item XName="H" Type="PartParam" >
+<Description >Substrate Height</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data />
+<DataEntry /></Item>
+<Item XName="T" Type="PartParam" >
+<Description >Lining Thickness</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data />
+<DataEntry /></Item>
+<Item XName="SUBST" Type="PartParam" >
+<Description >Substrate Name</Description>
+<Validate ><T>Int</T><D>4</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data >Substrate1</Data>
+<DataEntry >&apos;Substrate1</DataEntry></Item></Item>
+<Description >Microstrip Viahole</Description>
+<ParentPartName >MVH_TRL_VIA_SMALL</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>0</D></MathLang>
+<ShortSymbol />
+<Footprint />
+<Category >Microstrip</Category>
+<Netlist >Term_0,9|Term_1,7</Netlist>
+<Item XName="ModelsParamSet" Type="ModelsParamSet" >
+<ReplaceMethod ><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry" >
+<ModelName >MVH</ModelName>
+<Indentifier />
+<SymbolName >TRL_VIA</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="R" Type="PartParam" >
+<Description >Radius</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>1</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data ><T>Double</T><D>0.0005</D></Data>
+<DataEntry >0.5</DataEntry></Item>
+<Item XName="H" Type="PartParam" >
+<Description >Substrate Height</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data />
+<DataEntry /></Item>
+<Item XName="T" Type="PartParam" >
+<Description >Lining Thickness</Description>
+<Unit ><T>Int</T><D>38769</D></Unit>
+<Validate ><T>Int</T><D>5</D></Validate>
+<Default ><T>Bool</T><D>1</D></Default>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data />
+<DataEntry /></Item>
+<Item XName="SUBST" Type="PartParam" >
+<Description >Substrate Name</Description>
+<Validate ><T>Int</T><D>4</D></Validate>
+<Show ><T>Bool</T><D>0</D></Show>
+<Data >Substrate1</Data>
+<DataEntry >&apos;Substrate1</DataEntry></Item></Item></Item></Item>
+<ModelID /></Item>
+<Item XName="C1" Type="Part" >
+<Model >CAP</Model>
+<Symbol >CAPACITOR</Symbol>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="C" Type="PartParam" >
+<Description >Capacitance</Description>
+<Unit ><T>Int</T><D>37769</D></Unit>
+<Validate ><T>Int</T><D>1</D></Validate>
+<Data ><T>Double</T><D>4.7e-011</D></Data>
+<DataEntry >47</DataEntry></Item></Item>
+<Description >This is an ideal capacitor model.</Description>
+<ParentPartName >CAP_CAPACITOR</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>0</D></MathLang>
+<ShortSymbol >SHORT_CAPACITOR</ShortSymbol>
+<Footprint />
+<Category >Lumped;Capacitors;Ideal</Category>
+<Netlist >Term_0,11|Term_1,10</Netlist>
+<Item XName="ModelsParamSet" Type="ModelsParamSet" >
+<ReplaceMethod ><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry" >
+<ModelName >CAPQ</ModelName>
+<Indentifier /></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry" >
+<ModelName >CAP</ModelName>
+<Indentifier />
+<SymbolName >CAPACITOR</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="C" Type="PartParam" >
+<Description >Capacitance</Description>
+<Unit ><T>Int</T><D>37769</D></Unit>
+<Validate ><T>Int</T><D>1</D></Validate>
+<Data ><T>Double</T><D>4.7e-011</D></Data>
+<DataEntry >47</DataEntry></Item></Item></Item></Item>
+<ModelID />
+<SimOverride ><T>Int</T><D>5</D></SimOverride>
+<OverrideDataset >Linear1_Data</OverrideDataset>
+<OverrideFilename >C:\Users\omar\Desktop\Lab_Analogica_2\tp entrega\R15S470_SER.s2p</OverrideFilename>
+<OverridePorts ><T>Int</T><D>2</D></OverridePorts></Item>
+<Item XName="C2" Type="Part" >
+<Model >CAP</Model>
+<Symbol >CAPACITOR</Symbol>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="C" Type="PartParam" >
+<Description >Capacitance</Description>
+<Unit ><T>Int</T><D>37769</D></Unit>
+<Validate ><T>Int</T><D>1</D></Validate>
+<Data ><T>Double</T><D>4.7e-011</D></Data>
+<DataEntry >47</DataEntry></Item></Item>
+<Description >This is an ideal capacitor model.</Description>
+<ParentPartName >CAP_CAPACITOR</ParentPartName>
+<SectionNum ><T>Int</T><D>0</D></SectionNum>
+<MathLang ><T>Bool</T><D>0</D></MathLang>
+<ShortSymbol >SHORT_CAPACITOR</ShortSymbol>
+<Footprint />
+<Category >Lumped;Capacitors;Ideal</Category>
+<Netlist >Term_0,6|Term_1,9</Netlist>
+<Item XName="ModelsParamSet" Type="ModelsParamSet" >
+<ReplaceMethod ><T>Int</T><D>1</D></ReplaceMethod>
+<Item XName="ModelSet_0" Type="ModelListEntry" >
+<ModelName >CAPQ</ModelName>
+<Indentifier /></Item>
+<Item XName="ModelSet_1" Type="ModelListEntry" >
+<ModelName >CAP</ModelName>
+<Indentifier />
+<SymbolName >CAPACITOR</SymbolName>
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="C" Type="PartParam" >
+<Description >Capacitance</Description>
+<Unit ><T>Int</T><D>37769</D></Unit>
+<Validate ><T>Int</T><D>1</D></Validate>
+<Data ><T>Double</T><D>4.7e-011</D></Data>
+<DataEntry >47</DataEntry></Item></Item></Item></Item>
+<ModelID />
+<SimOverride ><T>Int</T><D>5</D></SimOverride>
+<OverrideDataset >Linear1_Data</OverrideDataset>
+<OverrideFilename >C:\Users\omar\Desktop\Lab_Analogica_2\tp entrega\R15S470_SER.s2p</OverrideFilename>
+<OverridePorts ><T>Int</T><D>2</D></OverridePorts></Item></Item>
+<Item XName="Schematic" Type="CSchematic" >
+<Item XName="PartLength" Type="Param" >
+<DataEntry >1</DataEntry>
+<Unit ><T>Int</T><D>6003</D></Unit>
+<Data ><T>Double</T><D>0.0254</D></Data></Item>
+<Item XName="SnapGrid" Type="Param" >
+<Data ><T>Double</T><D>166.666667</D></Data>
+<Unit ><T>Int</T><D>0</D></Unit></Item>
+<Item XName="Page" Type="PageMgr" >
+<Item XName="PageBox" Type="PageBox" >
+<Color ><T>Int</T><D>128</D></Color>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Width ><T>Double</T><D>10999</D></Width>
+<Height ><T>Double</T><D>7999</D></Height>
+<Alpha ><T>Int</T><D>32</D></Alpha>
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>111.11111111111111</D></Size>
+<Name >Arial</Name>
+<Color ><T>Int</T><D>0</D></Color>
+<Weight ><T>Int</T><D>400</D></Weight>
+<Italic ><T>Int</T><D>0</D></Italic>
+<Angle ><T>Int</T><D>0</D></Angle></Item>
+<Item XName="Display0" Type="SchematicDisp" >
+<PVPort ><T>Array_Dbl64</T><D>1;4;Wlv2pyU{c14;DEpeCOHfI14;6hLh9mc{034;}wutwoqdr24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;MA24;w024</D></DVport>
+<Show ><T>Int</T><D>0</D></Show></Item>
+<Item XName="Part5" Type="SchPart" >
+<Designator >TE1</Designator>
+<PosX ><T>Double</T><D>2833.9999877187229</D></PosX>
+<PosY ><T>Double</T><D>2000.3335168593699</D></PosY>
+<Symbol >TRL_TEE3</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>333</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>333</D></PosX>
+<PosY ><T>Double</T><D>716.499755859375</D></PosY>
+<Item XName="__pTE1" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >TE1</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item>
+<Item XName="Part2" Type="SchPart" >
+<Designator >TL1</Designator>
+<PosX ><T>Double</T><D>833.33319843745358</D></PosX>
+<PosY ><T>Double</T><D>2208.333422695287</D></PosY>
+<Symbol >TLE</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>125</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>499.99993896484375</D></PosX>
+<PosY ><T>Double</T><D>290.5</D></PosY>
+<Item XName="__pTL1" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >TL1</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pW" Type="SchParameter" >
+<FontColor ><T>Int</T><D>8758528</D></FontColor>
+<Text >W=3.78mm</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>137.64666666666668</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pL" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >L=10mm</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>275.29333333333335</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item>
+<Item XName="Part0" Type="SchPart" >
+<Designator >Port_1</Designator>
+<PosX ><T>Double</T><D>666.33321267184328</D></PosX>
+<PosY ><T>Double</T><D>2250.3334307890459</D></PosY>
+<Symbol >INPUT</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>83</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Rotate ><T>Double</T><D>180</D></Rotate>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>77.99969482421875</D></PosX>
+<PosY ><T>Double</T><D>206.5</D></PosY>
+<Item XName="__pPort_1" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >Port_1</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>-137.64666666666668</D></PosY>
+<Justification ><T>Int</T><D>9</D></Justification></Item>
+<Item XName="_pZO" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >ZO=50&#x03A9;</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>1.9373391779708982e-014</D></PosY>
+<Justification ><T>Int</T><D>9</D></Justification></Item>
+<Rotate ><T>Double</T><D>-180</D></Rotate></Item></Item>
+<Item XName="Connect7" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;4;W}}Lh24;hgEY24;WKLfi24;hgEY24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect9" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;4;egq424;WggEY24;gg2A24;WggEY24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Part1" Type="SchPart" >
+<Designator >Port_2</Designator>
+<PosX ><T>Double</T><D>4666.6660692186761</D></PosX>
+<PosY ><T>Double</T><D>2250.3333883437499</D></PosY>
+<Symbol >OUTPUT</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>83</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>78</D></PosX>
+<PosY ><T>Double</T><D>206.5</D></PosY>
+<Item XName="__pPort_2" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >Port_2</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pZO" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11141120</D></FontColor>
+<Text >ZO=50&#x03A9;</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>137.64666666666668</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item>
+<Item XName="Part3" Type="SchPart" >
+<Designator >TL2</Designator>
+<PosX ><T>Double</T><D>3666.6662848749629</D></PosX>
+<PosY ><T>Double</T><D>2208.3334476015548</D></PosY>
+<Symbol >TLE</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>125</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>499.999755859375</D></PosX>
+<PosY ><T>Double</T><D>290.5</D></PosY>
+<Item XName="__pTL2" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >TL2</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pW" Type="SchParameter" >
+<FontColor ><T>Int</T><D>8758528</D></FontColor>
+<Text >W=3.743mm</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>137.64666666666668</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pL" Type="SchParameter" >
+<FontColor ><T>Int</T><D>8758528</D></FontColor>
+<Text >L=12.088mm</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>275.29333333333335</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item>
+<Item XName="Connect0" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;4;WLLle24;Rd24;WLLle24;WgAra24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Connect3" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;4;WLLle24;W}}Fl24;WLLle24;hgHm24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Part4" Type="SchPart" >
+<Designator >TL3</Designator>
+<PosX ><T>Double</T><D>3166.6671965781015</D></PosX>
+<PosY ><T>Double</T><D>2875.00034871871</D></PosY>
+<Symbol >TLE</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>125</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Rotate ><T>Double</T><D>90</D></Rotate>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>499.99972534179687</D></PosX>
+<PosY ><T>Double</T><D>290.4996337890625</D></PosY>
+<Item XName="__pTL3" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >TL3</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>-137.64666666666668</D></PosY>
+<Justification ><T>Int</T><D>6</D></Justification></Item>
+<Item XName="_pW" Type="SchParameter" >
+<FontColor ><T>Int</T><D>8758528</D></FontColor>
+<Text >W=3.78mm</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>3.3306690738754696e-016</D></PosY>
+<Justification ><T>Int</T><D>6</D></Justification></Item>
+<Item XName="_pL" Type="SchParameter" >
+<FontColor ><T>Int</T><D>8758528</D></FontColor>
+<Text >L=39.357mm</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>137.64666666666668</D></PosY>
+<Justification ><T>Int</T><D>6</D></Justification></Item>
+<Rotate ><T>Double</T><D>-90</D></Rotate></Item></Item>
+<Item XName="Part8" Type="SchPart" >
+<Designator >G1</Designator>
+<PosX ><T>Double</T><D>4833.3339492812293</D></PosX>
+<PosY ><T>Double</T><D>4222.333780187515</D></PosY>
+<Symbol >GROUND</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>111</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Rotate ><T>Double</T><D>90</D></Rotate>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>117.85874938964844</D></PosX>
+<PosY ><T>Double</T><D>262.499267578125</D></PosY></Item></Item>
+<Item XName="Connect2" Type="SchConnector" >
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderColor ><T>Int</T><D>0</D></BorderColor>
+<BorderStyle ><T>Int</T><D>0</D></BorderStyle>
+<BorderWeight ><T>Int</T><D>1</D></BorderWeight>
+<NetLabel Attrib="13" />
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Coords ><T>Array_Dbl64</T><D>1;4;WLLuo24;WLLxm24;WLLuo24;WggHm24</D></Coords>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<eLeft ><T>Int</T><D>1</D></eLeft>
+<eRight ><T>Int</T><D>1</D></eRight></Item>
+<Item XName="Part6" Type="SchPart" >
+<Designator >VH1</Designator>
+<PosX ><T>Double</T><D>4166.6667187187077</D></PosX>
+<PosY ><T>Double</T><D>4000.6669658125365</D></PosY>
+<Symbol >TRL_VIA</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>166</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>333</D></PosX>
+<PosY ><T>Double</T><D>373.5</D></PosY>
+<Item XName="__pVH1" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >VH1</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item>
+<Item XName="Part7" Type="SchPart" >
+<Designator >C1</Designator>
+<PosX ><T>Double</T><D>1834.0001541562174</D></PosX>
+<PosY ><T>Double</T><D>2208.3334679784666</D></PosY>
+<Symbol >CAPACITOR</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>125</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>499.9998779296875</D></PosX>
+<PosY ><T>Double</T><D>289.5</D></PosY>
+<Item XName="__pC1" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >C1</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="Override" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>8388736</D></FontColor>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<Text >Datafile: R15S470_SER.s2p</Text>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>137.64666666666668</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pC" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11184810</D></FontColor>
+<Text >C=47pF</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>275.29333333333335</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item>
+<Item XName="Part9" Type="SchPart" >
+<Designator >C2</Designator>
+<PosX ><T>Double</T><D>3166.6667743592425</D></PosX>
+<PosY ><T>Double</T><D>4041.6672286034645</D></PosY>
+<Symbol >CAPACITOR</Symbol>
+<CenterX ><T>Double</T><D>0</D></CenterX>
+<CenterY ><T>Double</T><D>125</D></CenterY>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="DrawParams" Type="DrawGroup" >
+<ZOrder ><T>Int</T><D>1</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<PosX ><T>Double</T><D>499.999755859375</D></PosX>
+<PosY ><T>Double</T><D>289.499755859375</D></PosY>
+<Item XName="__pC2" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>0</D></FontColor>
+<Text >C2</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="Override" Type="SchParameter" >
+<Visible ><T>Bool</T><D>1</D></Visible>
+<FontColor ><T>Int</T><D>8388736</D></FontColor>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<Text >Datafile: R15S470_SER.s2p</Text>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>137.64666666666668</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item>
+<Item XName="_pC" Type="SchParameter" >
+<FontColor ><T>Int</T><D>11184810</D></FontColor>
+<Text >C=47pF</Text>
+<Filled ><T>Bool</T><D>0</D></Filled>
+<BorderStyle ><T>Int</T><D>5</D></BorderStyle>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>275.29333333333335</D></PosY>
+<Justification ><T>Int</T><D>1</D></Justification></Item></Item></Item></Item>
+<Item XName="Height" Type="Param" >
+<DataEntry >8</DataEntry>
+<Unit ><T>Int</T><D>6003</D></Unit>
+<Data ><T>Double</T><D>0.2032</D></Data></Item>
+<Item XName="Width" Type="Param" >
+<DataEntry >11</DataEntry>
+<Unit ><T>Int</T><D>6003</D></Unit>
+<Data ><T>Double</T><D>0.2794</D></Data></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>111.11111111111111</D></Size>
+<Name >Arial</Name>
+<Color ><T>Int</T><D>0</D></Color>
+<Weight ><T>Int</T><D>400</D></Weight>
+<Italic ><T>Int</T><D>0</D></Italic>
+<Angle ><T>Int</T><D>0</D></Angle></Item>
+<ShowPage ><T>Int</T><D>1</D></ShowPage>
+<Units ><T>Int</T><D>6003</D></Units>
+<SymScale ><T>Double</T><D>1</D></SymScale>
+<SymRotate ><T>Double</T><D>0</D></SymRotate>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Intent ><T>Int</T><D>1</D></Intent>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="Parameters" Type="Parameters" >
+<Item XName="ParamSet" Type="ParamSet" >
+<Item XName="Param0" Type="PartParam" >
+<DataEntry />
+<Validate ><T>Int</T><D>0</D></Validate>
+<Data /></Item></Item>
+<Item XName="Page" Type="PageMgr" >
+<Item XName="Display0" Type="ParmsDisp" >
+<PVPort ><T>Array_Dbl64</T><D>1;4;Wr0C;dPcPcPcvx0C;1000000aj14;dPcPcPcBp14</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport></Item></Item>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="Equations" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" >
+<Item XName="Param0" Type="Variable" >
+<Data /></Item></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Selected ><T>Bool</T><D>0</D></Selected></Item></Item>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="Linear1" UserName="Linear1" Type="Linear Analysis" >
+<Item XName="Temperature" UserName="RoomTemp" Help="8228" Type="Param" >
+<DataEntry >27.0</DataEntry>
+<Unit ><T>Int</T><D>12001</D></Unit>
+<Data ><T>Double</T><D>27</D></Data></Item>
+<Item XName="DesignName" Type="Param" >
+<Data >Sch1</Data>
+<DataEntry >&apos;Sch1</DataEntry></Item>
+<Item XName="DCAnalysis" Type="Param" >
+<Data />
+<DataEntry >&apos;</DataEntry></Item>
+<Item XName="DataName" Type="Param" >
+<Data />
+<DataEntry >&apos;</DataEntry></Item>
+<NeedRun ><T>Bool</T><D>1</D></NeedRun>
+<Item XName="CustomSinks" Type="ItemT" />
+<CalcNoise ><T>Int</T><D>1</D></CalcNoise>
+<Item XName="Start" Type="Param" >
+<Data ><T>Double</T><D>0</D></Data>
+<Unit ><T>Int</T><D>1003</D></Unit>
+<DataEntry >0</DataEntry></Item>
+<Item XName="Stop" Type="Param" >
+<Data ><T>Double</T><D>900000000</D></Data>
+<Unit ><T>Int</T><D>1003</D></Unit>
+<DataEntry >900</DataEntry></Item>
+<Item XName="NumPoints" Type="Param" >
+<Data ><T>Double</T><D>101</D></Data>
+<DataEntry >101</DataEntry></Item>
+<Item XName="Delta" Type="Param" >
+<Data ><T>Double</T><D>1000000</D></Data>
+<Unit ><T>Int</T><D>1003</D></Unit>
+<DataEntry >1</DataEntry></Item>
+<Item XName="List" Type="Param" >
+<DataEntry />
+<Unit ><T>Int</T><D>1003</D></Unit>
+<Data /></Item>
+<Item XName="SweepType" Type="Param" >
+<Data ><T>Int</T><D>0</D></Data></Item>
+<Item XName="Gmin" Type="Param" >
+<Data ><T>Double</T><D>1e-010</D></Data>
+<Unit ><T>Int</T><D>3001</D></Unit>
+<DataEntry >100e-12</DataEntry></Item>
+<Item XName="PrefReductionSize" Type="Param" >
+<Data ><T>Double</T><D>18</D></Data>
+<DataEntry >18</DataEntry></Item>
+<AutoRecalc ><T>Bool</T><D>1</D></AutoRecalc>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="Linear1_Data" UserName="Linear1_Data" Type="DataSet" >
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" >
+<Item XName="ZIN1" Type="Variable" />
+<Item XName="F" Type="Variable" >
+<Unit ><T>Int</T><D>1003</D></Unit>
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Data ><T>Array_Dbl64</T><D>1;101;;WeAX54;WeAn54;mylv54;WeA164;eIT564;myl964;uc2E64;WeAH64;azJJ64;eITL64;idcN64;mylP64;qHvS64;uc2U64;{z5W64;WeAX64;2JFY64;azJZ64;6eOa64;eITb64;AzXc64;idcd64;EIhe64;mylf64;Idqg64;qHvh64;Myzi64;uc2k64;QH7l64;{z5m64;FJem64;WeAn64;nzin64;2JFo64;Jeno64;azJp64;rIsp64;6eOq64;Nzwq64;eITr64;vd}r64;AzXs64;SI4t64;idct64;zy8u64;EIhu64;VdDv64;mylv64;1IIw64;Idqw64;ZyMx64;qHvx64;5dSy64;Myzy64;dHWz64;uc2{64;9ya{64;QH7}64;hcf}64;{z5074;Wc8N074;FJe074;WtTv074;WeA174;W8pS174;nzi174;WP8{174;2JF274;WgTW274;Jen274;Wxo2374;azJ374;WC8b374;rIs374;WTT7474;6eO474;Wkof474;Nzw474;W}7C574;eIT574;WGTk574;vd}574;WXoG674;AzX674;Wo7p674;SI4774;W3TL774;idc774;WKot774;zy8874;Wb7Q874;EIh874;WsRy874;VdD974;W7oU974;myl974;WO71A74;1IIA74;WfRZA74;IdqA74</D></Data></Item>
+<Item XName="S" Type="Variable" >
+<Unit ><T>Int</T><D>13002</D></Unit>
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Data ><T>Array_Cplx64</T><D>3;4;2;101;Lf5UFizSm}3;;Ucuzf0kVE{B;;3cuzf0kVE{B;;g7gXlcbum}3;;Dfb}GbS9T}3;Ih4lgHHyZ}B;eL94lhLta}3;wp2aCQI1y{3;lL94lhLta}3;3q2aCQI1y{3;3dyj762HB}B;ucRYgXJjd}B;d3K{E2L}R}3;LEyqNDe9a}B;jFgtHhLna}3;mwuc7tiQv{3;oFgtHhLna}3;}wuc7tiQv{3;QkYnaQ8RD}B;F}YsOpigd}B;81WfJxnqR}3;9St1ZG3Na}B;OkTu5Wxga}3;WksPjNPrs{3;OkTu5Wxga}3;MksPjNPrs{3;sfrgybZdF}B;CG5IVPLdd}B;sSj4rDnfR}3;RVtw4AYaa}B;Red7hh6aa}3;OZzdD1THq{3;Sed7hh6aa}3;GZzdD1THq{3;AYA178evG}B;3nVu5CZd}B;xpPHWGIUR}3;RpJ6Xi4oa}B;bVzJ{3tRa}3;8z3nPMykn{3;gVzJ{3tRa}3;Ez3nPMykn{3;N{GY1Ub}H}B;N1{qxAGUd}B;DdyngwWwQ}3;fProBe{Fb}B;HzItjNUPa}3;}Y0v9H0pa{3;MzItjNUPa}3;MY0v9H0pa{3;N524sMmZK}B;OgLYQNyuc}B;5opvqfhQN}3;wx2EHZ7c}B;Jsu2}hlHa}3;gO4dxwHpB{B;Fsu2}hlHa}3;1O4dxwHpB{B;NC{Oj6isO}B;5zehjsBgb}B;VCXwzxzTJ}3;xpd0tjo7d}B;UZ36UujvZ}3;v2JV7WY4o{B;YZ36UujvZ}3;{2JV7WY4o{B;milDw625T}B;{oebhg1Pa}B;foj0rimeD}3;ASl6sKsHe}B;bhRzEWICZ}3;lN7fTlpf0}B;bhRzEWICZ}3;bN7fTlpf0}B;hBq}xd7hW}B;PlpBG2q4Z}B;a{zLj4ZC2}3;wuOKzeEbf}B;rEF4dZC2Y}3;dJw67D0T8}B;pEF4dZC2Y}3;oJw67D0T8}B;YVGL9vwvY}B;LAwuT6ZhX}B;WhD{5FR{3;CMNkgwSzg}B;ETlh2lGHW}3;6BZ9it03G}B;ETlh2lGHW}3;9BZ9it03G}B;a0hDk}{Kb}B;8VT95Ll8W}B;Xpdqr8OWe{B;f1Ua6EyRh}B;usYpYbOkT}3;VzYX2NmcH}B;tsYpYbOkT}3;bzYX2NmcH}B;l4tjHxunc}B;nBz9lOL}T}B;Qg9198hf}{B;tCMAFFmih}B;mJTOBb9pQ}3;OuoX8FDeI}B;iJTOBb9pQ}3;LuoX8FDeI}B;fGgJfzd7e}B;WJWToD1cS}B;N3yY31geA}B;iCjCY3Dlh}B;UC566xxYN}3;ZvGgzL8HJ}B;RC566xxYN}3;ZvGgzL8HJ}B;oSzm0NtUf}B;1wY09o8uO}B;uQpsivVJJ}B;7GQBh3nUh}B;cYBqkKj{J}3;Z1XwGMqPJ}B;1ZBqkKj{J}3;p1XwGMqPJ}B;yS3hKOcsg}B;DfV0ZbqmL}B;s{Sh{D5tP}B;RpL0wpQqg}B;RTFmKfj9G}3;HD3KJr2vI}B;kTFmKfj9G}3;aD3KJr2vI}B;kbBTOuvCi}B;RN0Y7WdAI}B;UB808qexV}B;pJ0wE5npf}B;N3C}S{HK9}3;ydD{zXflH}B;U4C}S{HK9}3;reD{zXflH}B;URwlY48Lj}B;LB6pyB3yC}B;NvVQsit7Y}B;d31E4vHpe}B;wWo7pDzJ4}3;fRfLZh7PG}B;kVo7pDzJ4}3;cSfLZh7PG}B;Ay74xEd4k}B;ZHkgKUmg6}B;auZFHndIa}B;SrCg8rCXd}B;{aRr}J70}{3;JstkWU9ID}B;RZRr}J70}{3;9rtkWU9ID}B;79725{bjk}B;QAD9G}Tm}{B;EZKLD5ISc}B;{aISdhzxb}B;IJC}Ml24s{3;8VGwZ8z8}B;}JC}Ml24s{3;C9VGwZ8z8}B;AGYcjkHEl}B;}OMNM5pAn{B;GFmngESUe}B;WpdC15V2a}B;xoBWEEhIi{3;TPtsvrHp3}B;oqBWEEhIi{3;bQtsvrHp3}B;gSfEDQlal}B;D1s5tFlRwzB;ivyjch3Og}B;ph7J4CQqX}B;ystcVc5UU{3;3f9wQFYkx{B;MvtcVc5UU{3;4g9wQFYkx{B;}7BYvj2ll}B;dcC0e9BIj{3;dbQ6cEUph}B;adjShYIkV}B;Ory0J08BA{3;IzTmZ7qwm{B;esy0J08BA{3;gyTmZ7qwm{B;4ispBMAll}B;b6aNjb{wy{3;tWSlEc00j}B;eZ}dfRmmS}B;rxqshhhaLz3;IPVWogP3O{B;OLrshhhaLz3;WWVWogP3O{B;3O{QRq9cl}B;RYlgvc7N5}3;slJxvJE1k}B;eIAXaqzUN}B;7hMJFu4xpzB;rDrtJ}SxL{3;4bMJFu4xpzB;IDrtJ}SxL{3;gdWlOXzIl}B;Cxx8d}RJC}3;j00Z6IJrk}B;5XI0kYnxI}B;UkUWRsZcrzB;3SUKMt{Nn{3;lWUWRsZcrzB;kOUKMt{Nn{3;fPuHUpErk}B;i1tNTfOcH}3;dYfKYygQl}B;kg}BEHiLC}B;7Uegd7eWyy3;9m{eJKGRz{3;10igd7eWyy3;jm{eJKGRz{3;7aq84muCk}B;X6tSnKT{K}3;pTtCT4Hkl}B;jTKAL8o03}B;4Kxhu8bg8{3;}bo6}eVT4}3;SJxhu8bg8{3;sbo6}eVT4}3;fbPrV3kSj}B;wk}GKM67O}3;obfnA5gkl}B;8x9T756gs{B;XmSrJsjqS{3;pjsgwhHA9}3;5nSrJsjqS{3;pjsgwhHA9}3;QFxrL08ei}B;nxPbb}xhQ}3;56HFE2ial}B;SjNYTpPVT{B;tipKzwDfd{3;3xO{i{FgD}3;thpKzwDfd{3;ZwO{i{FgD}3;}hGLJJTkh}B;Xomjz2H7T}3;4TDHBFYGl}B;s8RbrAAjU{3;804ey5xdn{3;Wu843}pyG}3;{}3ey5xdn{3;Vu843}pyG}3;LUY5UTLlg}B;}kjmCEoNV}3;ig98lAaok}B;1{JmJWsLs{3;Ua07S7KIu{3;ybtrI0VwI}3;4a07S7KIu{3;tbtrI0VwI}3;xnu7ikThf}B;CmPuL2DkW}3;CH8SVKBk}B;Ze}NTPXF2}3;fDqrfd1k}{3;yGTnuofiK}3;9Eqrfd1k}{3;1HTnuofiK}3;CFZOqadZe}B;XBXPCP9gX}3;Vlsju{CWj}B;a7TNUkIX8}3;7EzHlfAe3}3;McBalg4EM}3;OEzHlfAe3}3;3cBalg4EM}3;xjDRCVnRd}B;TwBi7qzTY}3;i9zXMJnmi}B;glilsjoGE}3;roFOH7ZW7}3;yVAahL6YN}3;HpFOH7ZW7}3;EWAahL6YN}3;uerBukiLc}B;RlVr7mABZ}3;3J9ICKYxh}B;t2G35gxrH}3;n8KcFcAcB}3;1Id6tHdgO}3;e8KcFcAcB}3;ZHd6tHdgO}3;dkreKSzCb}B;OiqwtTcoZ}3;QInn6bA1h}B;dEOiAbOOK}3;pARkhMsF}3;Q4cM3GFdP}3;mpARkhMsF}3;j4cM3GFdP}3;fTQDxEA3a}B;jzeu9YHKa}3;DWOP9TM2g}B;UZn1W5lM}3;rWwmssE7I}3;9OmY1pnNQ}3;3XwmssE7I}3;rNmY1pnNQ}3;{ginR8uuY}B;eor0yNHma}3;db0kOff}e}B;40g1KmDsO}3;Q9TE{zmKK}3;CSn8}xXwQ}3;E9TE{zmKK}3;RSn8}xXwQ}3;lzJYqR9lX}B;tYPx4Q46b}3;RkQ2i1ovd}B;WM6hqq}MQ}3;xSTzGP5PM}3;OI{x{g85S}3;}STzGP5PM}3;mI{x{g85S}3;2ErETZDgW}B;nLmRqukHb}3;lAx3IvGpc}B;y98eZ}FjS}3;DeTr33{SO}3;niIINXS6S}3;ieTr33{SO}3;UiIINXS6S}3;J8odudJDV}B;aCiKM{PPb}3;LlNxuuWib}B;Df9Vv3KvR}3;EqseSonRQ}3;WqfeCdu{Q}3;trseSonRQ}3;ipfeCdu{Q}3;gYyeyZP9T}B;WBhOEpMTb}3;aq7eu5wba}B;Na7sPTbxT}3;wwg06eyQR}3;Ril1O60lQ}3;Jyg06eyQR}3;5gl1O60lQ}3;LiadIC59S}B;xcyZkqsTb}3;wMLsg1oVZ}B;8x8s5QWqU}3;sogp3a}LU}3;Si4dGRJNQ}3;Xogp3a}LU}3;Xi4dGRJNQ}3;yGakdEgCP}B;IyJa4YBSb}3;IUjPy64SY}B;{QNbZgxcV}3;RD4LLSq6W}3;VDJFfOvvP}3;QD4LLSq6W}3;eCJFfOvvP}3;b8SmP{bKN}B;CY1YVFMb}3;uETeI0pNX}B;8uGVYgX9W}3;DKOxrRs0X}3;SpTkbZ3NP}3;XKOxrRs0X}3;7oTkbZ3NP}3;uAA98qxWL}B;{pvjP4DFb}3;A8wgJvgLW}B;nHg}eglSW}3;2rc2BGxuX}3;U4997P3kO}3;hqc2BGxuX}3;w4997P3kO}3;5TAeIRdnJ}B;9tQ{Nop5b}3;O4xMOhlfU}B;4v41zGNgW}3;eV40xnxkY}3;rN6M41P}N}3;FV40xnxkY}3;RO6M41P}N}3;{FYo18k6I}B;tMle0}Iwa}3;iZSiav7hR}B;X5yTtrdrW}3;}FW2mfoYZ}3;ot5LOdZBN}3;IGW2mfoYZ}3;At5LOdZBN}3;iEYoNRIWG}B;VcJ{NEvia}3;IIlri7llQ}B;LxHXTZmzW}3;aKRB0}SKa}3;N}CSxC1JM}3;aKRB0}SKa}3;j}CSxC1JM}3;3f6IaIfyD}B;cpNJ0FqTa}3;j4fWve}7P}B;orzJMJ{W}3;j8BEOybza}3;xC1XmbSL}3;59BEOybza}3;IwC1XmbSL}3;s5YBYEMHB}B;xWrNzIQEa}3;FbrU0DIZN}B;VRRLcAwyW}3;WL4mvJwab}3;wiP4kqEXK}3;iL4mvJwab}3;OiP4kqEXK}3;QAw4IlAj8}B;t{9Gu2vzZ}3;XKCRFZg1M}B;pQkfOQkvW}3;nq65a2PAc}3;VsL4sDEaJ}3;4r65a2PAc}3;1sL4sDEaJ}3;puvRR31G6}B;6opLbUOiZ}3;NyYwk9BZK}B;jKiIM4vqW}3;DvzoKb2kc}3;NnW9UmqaI}3;yuzoKb2kc}3;unW9UmqaI}3;u{xBEynv3}B;dXnYW30QZ}3;N}fJ7Nr7J}B;vdXc{gYkW}3;f0rHfqtFd}3;e8GhgHIZH}3;g0rHfqtFd}3;87GhgHIZH}3;IZcMXzKg1}B;pVJJbjs6Z}3;dW7NQvSnH}B;o3tR18riW}3;}BN3b2vpd}3;}Tk7jM4cG}3;oBN3b2vpd}3;5Vk7jM4cG}3;fuC8kwbp{{B;CnKCL8pqY}3;{8r0BykUG}B;ZYDU7XdmW}3;spTj6QKSe}3;9u97RiLQF}3;XpTj6QKSe}3;L}97RiLQF}3;GY{aA1aCw{B;pIIZ2NkZY}3;xDmtHlBQE}B;VQDmeyAoW}3;AjHlXtA1f}3;pJm96rpWD}3;4jHlXtA1f}3;XIm96rpWD}3;VCRE{nCpr{B;gAe4J5MHY}3;N5pkmHbvB}B;fsq}MwbnW}3;3BCd2fMbf}3;oBvEukAWB}3;oACd2fMbf}3;dBvEukAWB}3;FYb8iQjdn{B;iE9MBmqzX}3;kI2sEWAR9}B;U{SUNR}kW}3;92M}v4p7g}3;AkVrmR2P9}3;S2M}v4p7g}3;wgVrmR2P9}3;5k9WeULKh{B;O}NDMVKfX}3;pMcBbVN27}B;6NV7B{UgW}3;xeJ6OcReg}3;kHuFZx2C7}3;QfJ6OcReg}3;lCuFZx2C7}3;R5nKLs3rZ{B;n3ONa{{JX}3;p{DQJu0H5}B;uu6w5{hTW}3;jPUvpWa{g}3;YGBlX1B5}3;1QUvpWa{g}3;HVGBlX1B5}3;Qs1dORTVS{B;Bejm8Z4}W}3;Vy0{wjvd3}B;yDMc5LRFW}3;rc6NAtRIh}3;t694EN4A3}3;nc6NAtRIh}3;CA94EN4A3}3;5EiPXco9G{B;DImizCwfW}3;nz61wAR22}B;rVyJpog0W}3;5hT3n8Ebh}3;V9MPymN71}3;3hT3n8Ebh}3;iFMPymN71}3;eP4ZSWrzB;XKsQNxQKW}3;iJXWfHdW0}B;5IOJLspYV}3;OPBHipush}3;ySNTjZD6{{3;tPBHipush}3;gSNTjZD6{{3;XhNfxW5Opz3;WkvsILJzV}3;5281OYp4{{B;ImuqkOO3V}3;8HTTyQT7i}3;b}iN86uwv{3;7HTTyQT7i}3;}riN86uwv{3;xnjjEt82D{3;G68a8VIHV}3;{aS8ZM77x{B;3UWfFAVUU}3;rTTHmOALi}3;SxNt3ySWr{3;rTTHmOALi}3;SAOt3ySWr{3;aoJ6FHtSN{3;H9uGCRzZU}3;RDWrrX61u{B;Vw3p7u3mT}3;L6vK3t9Ui}3;{LX{5Tiim{3;V6vK3t9Ui}3;8HX{5Tiim{3;aoIS2KWSV{3;sgMqdlqqT}3;nLgS{aA4r{B;IblXxxh1T}3;AvhEnz}bi}3;}I1JhFLqd{3;yuhEnz}bi}3;CQ1JhFLqd{3;kcLN2vhUZ{3;AHdPSFz5T}3;kk9d452Go{B;ttDRjkQJR}3;wC24Gskii}3;CyTKTw7aR{3;rC24Gskii}3;CqTKTw7aR{3;kky8aoD1d{3;xt2en4PNR}3;8jQSYDu8l{B;UTvuPOJbS}3;OlqNgbOoi}3;i7jQtAfB3{3;4lqNgbOoi}3;njiQtAfB3{3;dPdaLkpLg{3;b9sgZCAfS}3;ARvqrRG2g{B;xVlJ9nOtQ}3;5g8x0D}si}3;tJhu8kGZ2{B;Ag8x0D}si}3;GYhu8kGZ2{B;mq03WwRj{3;Vwd2SOIxQ}3;nzxkw8Tla{B;MeRgH2aFQ}3;MP1AhPzi}3;ENVqHncOR{B;CMP1AhPzi}3;gOVqHncOR{B;8H7yZBOHm{3;XQD{lxeEQ}3;8LJyz5YBV{B;G6W6JBOfP}3;d8k6}eY3j}3;yheg}h6md{B;o8k6}eY3j}3;Jteg}h6md{B;DZ9BVZAln{3;3XHvQqhYP}3;mBgpitPL{B;D9TR12B3P}3;SUtPrpd8j}3;8YQ7UCOem{B;iUtPrpd8j}3;3ZQ7UCOem{B;fajiRJL6p{3;i9AsAZDtO}3;dvv}KRoH8{B;XLIebl}RO}3;{giZhJhCj}3;gk813{{Mr{B;ZgiZhJhCj}3;Mk813{{Mr{B;IPWBBm8Nq{3;M0FlkRFCO}3;8AuZsygzB;FzWgPCvsN}3;owYAaBlFj}3;E153MGl3w{B;{wYAaBlFj}3;W453MGl3w{B;I9R43YqXr{3;1pLa{goXN}3;uwPw4cO6rz3;1BSUKy0HN}3;O}QudnfIj}3;VBUZYFyt{{B;g}QudnfIj}3;gJUZYFyt{{B;8reBeuQds{3;k5bZl6gsM}3;IX7u3wnDD{3;InPzyh9hM}3;mETaclANj}3;sNSNzxu52}B;UETaclANj}3;LPSNzxu52}B;NFpn31jet{3;kUFInMu7M}3;sZyLMNSMN{3;CsMJEfi4M}3;3tMW{tFQj}3;d5X66eDl4}B;3tMW{tFQj}3;33X66eDl4}B;f0o6ZcKYu{3;ezZ1KVqPL}3;m}{hk0XV{3;WfaAXHnTL}3;nJFDt0ySj}3;Q6FNKrlN7}B;pJFDt0ySj}3;F6FNKrlN7}B;A4K6NCjKv{3;I4Iwu5XiK}3;NNt7qwlZZ{3;gJ}SfWUsK}3;uzH{k0IRj}3;468E2NK}9}B;xzH{k0IRj}3;k58E2NK}9}B;Nxe9DPH0w{3;7iW5OD00K}3;V4sKL5P5d{3;USZI0owEK}3;i6dmBjKSj}3;ITaVU6nbC}B;b6dmBjKSj}3;CVaVU6nbC}B;3dnY8nQbw{3;rD{x4PJKJ}3;NVDTrshgf{3;Ri28QV4hJ}3;Qtawj1cQj}3;guwYUXEsE}B;itawj1cQj}3;txwYUXEsE}B;{WpDb9y7x{3;YqtpnTphI}3;AaGvsp9lh{3;EnUHez59J}3;1oMlgUlPj}3;8WSnrouTG}B;CoMlgUlPj}3;DXSnrouTG}B;I98aVhmcx{3;29whdE{4I}3;Wua5Zhfj{3;6xUW}g5dI}3;Gewvx17Oj}3;GdwXRjSWH}B;Aewvx17Oj}3;ZdwXRjSWH}B;{K4cHuP0y{3;5WqiD}aUH}3;itfWZ{QQl{3;Kkupg55I}3;4hSVlYjLj}3;jwDQYsjYI}B;ZhSVlYjLj}3;kuDQYsjYI}B;dPBxza1Ly{3;keKO6ZfuG}3;V0w2I4nWm{3;I1Jmow7ZH}3;CqTXuZIj}3;RHpeiAjaJ}B;SCqTXuZIj}3;kFpeiAjaJ}B;52gZbZnay{3;wigKkbDJG}3;n566xh2En{3;uj3e3jz0H}3;kwFJg9KEj}3;rWrvmDRbK}B;pwFJg9KEj}3;UYrvmDRbK}B;k{hvZq8my{3;gK1hIa}RF}3;RT1t}f3hn{3;Y0sDCbzRG}3;jWTRqwc6j}3;DcS{p2JUL}B;8XTRqwc6j}3;CcS{p2JUL}B;fe}h28Cwy{3;SPXDfmmNE}3;ilcUN}s4o{3;bBzcBjeoF}3;bKGr9lO{i}3;EbD1t2eMM}B;yKGr9lO{i}3;NcD1t2eMM}B;XNjefCs0z{3;u9RfpUMJD}3;xfB6eiXSo{3;x1k6425iE}3;SCLcdHgri}3;1OE2CgQEN}B;eCLcdHgri}3;lOE2CgQEN}B;3JSCoCC4z{3;AGcWrmnFC}3;dn07Ye8lo{3;QAON55HcD}3;wax70CRii}3;mobRsMg5O}B;Lax70CRii}3;{qbRsMg5O}B;aomwV9J4z{3;atwtKb3DB}3;Q21XIWm}o{3;pp8d4lDXC}3;s1VKz6lYi}3;HEtJYeMyO}B;C2VKz6lYi}3;dEtJYeMyO}B;kMSyowF1z{3;aqYqhtCBA}3;8T0RSWASp{3;r7okDWNNB}3;Z5awp8FNi}3;yLxMprdxP}B;f5awp8FNi}3;OMxMprdxP}B;asj}3Iety{3;S3irwFe69}3;IjCBWOVyp{3;3MRSD7AAA}3;ZIsOjz1Ai}3;}BRH4zN1S}B;QIsOjz1Ai}3;jBRH4zN1S}B;GoodC7sdy{3;HLJ6FlT08}3;AK1lVgIOq{3;X{u{i1A{8}3;rpr}au8yh}3;S7FydtD6R}B;Epr}au8yh}3;SAFydtD6R}B;5gb2CqhKy{3;x5bhvZix6}3;Ve7rYnjkq{3;108q5Pp7}3;3kv4h}ajh}3;JSjT379AT}B;bjv4h}ajh}3;nSjT379AT}B;fuxGRAG{x{3;wihmNKu5}3;puKYQpv}q{3;38fW23vf6}3;ZYFUcMNUh}3;GH8PiE9DU}B;uXFUcMNUh}3;uG8PiE9DU}B;pCxt{cfax{3;IDRB4qKs4}3;3tAMTX}Br{3;8jDZuYhX5}3;rZZ{R{WEh}3;WsBQpDFV}B;7ZZ{R{WEh}3;dXsBQpDFV}B;{R9hXJ{7x{3;uo4hmXjr3}3</D></Data>
+<IndepValue >Designs\Linear1_Data\Eqns\VarBlock\F</IndepValue></Item>
+<Item XName="CS" Type="Variable" >
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Data ><T>Array_Cplx64</T><D>3;4;2;101;BPf4VCPTi{B;;5GiuDwImV{3;;1GiuDwImV{3;;QQpN1U8z{B;;cP6pZVKrW{B;jQv{QfaummB;8051mVmx1{B;CNYONC9IjzB;9051mVmx1{B;HNYONC9Ijz3;HUozlvC4W{B;OvUHRkiZ0n3;3aBh9tErW{B;1ysuF1vInmB;slhdrsmz1{B;IuooexcuizB;slhdrsmz1{B;Iuooexcuiz3;WQT3Kl3rV{B;YeviYFuakm3;ueDbL3nrW{B;i1}UiuArnmB;jedvU0g02{B;fOh12pGbizB;jedvU0g02{B;cOh12pGbiz3;i7yF6FmZV{B;649EMAmphm3;puOiPzfsW{B;cdO7jrelmm3;z3O{}H142{B;YfVKhEoLizB;x3O{}H142{B;VfVKhEoLiz3;ob3vGRZJV{B;cdO7jrel0nB;kba15}otW{B;9{WbR4osomB;lymARHi72{B;hskBuSI9izB;lymARHi72{B;mskBuSI9iz3;SN55fF64V{B;FTNRPorZLmB;pQFi0aPQQ{B;WVtjDe}G1n3;6JLmTikozzB;5RDgl}vpazB;JLmTikozzB;1RDgl}vpaz3;F{FFeozNN{B;}VxsBQH0}mB;fzCZeI8JB{B;I5xy{TNJDn3;E9VmvhxmnzB;LyEGHxiuIzB;79VmvhxmnzB;5yEGHxiuIz3;yBT1uYhq5{B;M00KHNQDBnB;4c3XAQqDwzB;cdO7jrel0n3;rm47UpZGbzB;9gbkAAa{{yB;im47UpZGbzB;TfbkAAa{{y3;RAXIWW1VnzB;cdO7jrel0nB;XKtrVy57uzB;wZOQ5p{b4n3;j638oQJYbzB;WtGaisvKvyB;X638oQJYbzB;2tGaisvKvy3;wCsWT{KMizB;ADkBVfKetmB;}fByWZvRB{B;cdO7jrelmmB;HkhUhwuIszB;UO}g9znPCzB;LkhUhwuIszB;cO}g9znPCz3;i3YZbhbD1{B;WnEP83Zxqm3;btnsiwKMW{B;7bo9LDlOYnB;C6I8MLRIA{B;qtkTyU7vWzB;K6I8MLRIA{B;5ukTyU7vWz3;w4}gYoFMK{B;ut5gT6DmTn3;asknK2JMU{B;WnEP83Zx4n3;3qpXA2Hg8{B;RXgan3SJUzB;{ppXA2Hg8{B;BXgan3SJUz3;CQzlnZJ8I{B;Px4hZGT79nB;S2ruIa8DP{B;J9KQWyoGrmB;PRNxVJRc4{B;r7Ehs0gDOzB;PRNxVJRc4{B;V7Ehs0gDOz3;kqcAX4GoC{B;liOt9z5AqmB;rBap6y}7L{B;cdO7jrelWm3;oxQHtTsJ1{B;N2E4qhKfJzB;oxQHtTsJ1{B;S2E4qhKfJz3;8F1XIW1z6{B;cdO7jrelWm3;cuaWGPtHI{B;cdO7jrelmm3;OwFbazzzzB;4P4B9QdqGzB;{NwFbazzzzB;4P4B9QdqGz3;JtD}75Lr2{B;cdO7jrelWmB;9AwuhPHvG{B;xMUFdeQaMnB;BlvtjuvmxzB;XiAYBoADGzB;4lvtjuvmxzB;hhAYBoADGz3;YmrMMesY0{B;FP9HRyOvOnB;jL3UqNKaF{B;a363SaGkenB;1g{2whCxvzB;I6bdobr9GzB;4g{2whCxvzB;V5bdobr9Gz3;krBZ9qbUzzB;8R10JOW}InB;ZI{lQO119{B;Px4hZGT7vmB;8fbDzeG{pzB;gaQ9urTp8zB;LfbDzeG{pzB;KbQ9urTp8z3;PWA5eslerzB;I5xy{TNJzm3;Z9Z4P4ux2{B;uTYVwpSAQnB;Vrwf70HkizB;eTd6GY{B1zB;Vrwf70HkizB;4Rd6GY{B1z3;twPXNpb{izB;M00KHNQDBnB;JBPGaPEowzB;crYhB85kzoB;Prk06lQKYzB;FffYw3FEpyB;Prk06lQKYzB;jPeYw3FEpy3;p3glddh7WzB;kTvDy6fdAoB;30cOqFUxmzB;XiCcqUhsHo3;YJEa8KEpHzB;dvXTSOEbIyB;ZJEa8KEpHzB;e}XTSOEbIy3;bDuvwJs63zB;xjycVDD}6mB;bBuvh8UzWzB;8AK0Xp6rbn3;PiKE7Ls1LyB;gpZrRVVMXy3;IhKE7Ls1LyB;krZrRVVMXyB;jiWt0Cfo3z3;ZiJmQybromB;QGfhQvtErzB;3FjOtkCAbn3;FBlQ3LYoOzB;DMPQhhUWsyB;WBlQ3LYoOzB;FNPQhhUWsy3;LEWLzD06EzB;WnEP83ZxKm3;S721O{eW4{B;SWvx5UhTMm3;3V8LRcxkzB;dEXCpOqGIzB;z2V8LRcxkzB;XEXCpOqGIz3;3mjlxpwDhzB;HKkBltQ}InB;rC6t84p1F{B;Tl{viCK6nB;VlSaDreOvzB;cLTczfYSWzB;VlSaDreOvzB;fLTczfYSWz3;MVFmMr65uzB;cASlCcM5Gn3;5xpukA62L{B;cdO7jrelml3;hH3kY6gw1{B;5Hwqj}fhezB;lH3kY6gw1{B;AHwqj}fhez3;iN2onUnZ1{B;WnEP83ZxKmB;Ve5ZCPwlQ{B;qsYZF0wEnmB;6KOVgjLL7{B;}08IPnQwmzB;4KOVgjLL7{B;718IPnQwmz3;8suUrNtK7{B;mihtGlZXn3;gldoptxFV{B;Lg7WmrkNfmB;RJ8SM9NaB{B;IhUMLD8yqzB;ZJ8SM9NaB{B;BhUMLD8yqz3;37pduMRwB{B;yrvho5VblnB;NXqy7Jm4V{B;1IojCMMm9n3;5piYPSYHB{B;38BUMaiorzB;5piYPSYHB{B;G8BUMaiorz3;mowWMk{kB{B;hWuGs6tFkn3;XfWP16juU{B;PUtlyxIeQnB;I6rkkNxyA{B;P3{o8cidszB;G6rkkNxyA{B;E3{o8cidsz3;fsa51FMbB{B;K4IUM4Pydn3;mQ11y9whU{B;Clz}1gIbQn3;pvwiZ7ocA{B;OS8o1PxQtzB;vvwiZ7ocA{B;gS8o1PxQtz3;of0zuJkTB{B;wb8sHVBRKn3;YHXsdJYUU{B;cdO7jrelWn3;kQBlq4QFA{B;7haViLECuzB;kQBlq4QFA{B;lhaViLECuz3;UtmL09KOB{B;WnEP83Zx4o3;UOr1kvoGU{B;cdO7jrelmm3;n2YVhF9t9{B;RLbOgHTxuzB;n2YVhF9t9{B;PLbOgHTxuz3;5dD1}DMLB{B;cdO7jrelWnB;F3LVNTUXV{B;pcH9Gbq0HnB;opCwdmovA{B;uHCT}gVswzB;opCwdmovA{B;uHCT}gVswz3;sAJwPAjxC{B;ZNpNNTZpQn3;IU8tD1SlW{B;WnEP83ZxqoB;703ztnCdC{B;Drn06AAPzzB;703ztnCdC{B;8bn06AAPzz3;OH8bxEUNF{B;anEkyevkBpB;kzaKd}PiX{B;;JdjmkPsGE{B;HOR{s25y}zB;JdjmkPsGE{B;tOR{s25y}z3;3jr9VEUwG{B;cdO7jrelWnB;Ce7FqcZdY{B;Bhc9T5gqvn3;lsWCGrVsF{B;yymanq6F1{B;lsWCGrVsF{B;Hzmanq6F1{3;}6E0Oox9I{B;CvgFa6bT3o3;Tdo0elnWZ{B;vA5rmrQzwn3;n0EhXz{hG{B;ndXMQUIV2{B;11EhXz{hG{B;4eXMQUIV2{3;IXnMaM0QJ{B;tsSqBcMxmmB;Ldbk8k6kZ{B;vopIh11Xzn3;4zHFmOaqG{B;Zh8aX9c63{B;4zHFmOaqG{B;kh8aX9c63{3;j7vpLHryJ{B;2lfHRSj6XnB;valcAC{kT{B;zGfADj1VInB;t79th8tq8{B;}JEYpsegzzB;c79th8tq8{B;}JEYpsegzz3;BZaWODFuD{B;txBo4EfnPn3;PcpUNCDjK{B;axQyoN2YfnB;imVgKtJp0{B;YKYYPn4QrzB;SmVgKtJp0{B;KKYYPn4Qrz3;uytv0fTS4{B;6fY9DrCtDn3;a}5FYV7i8{B;Omn3w822mnB;bwWgs006pzB;Z8nxnINygzB;gvWgs006pzB;S8nxnINygz3;cyWdq0R5tzB;HwsMJ{mGrn3;hVKaQJTXozB;WnEP83ZxanB;xdOzhOhGOzB;XuXf8LhaNzB;6cOzhOhGOzB;DuXf8LhaNz3;{7qRqx9fPzB;{JiDVcX{bn3;B7l7{fLgZz3;sOKIUesqpnB;idgraKZCMz3;7kMDaDpqy3;KfgraKZCMz3;JCkMDaDpqyB;EBsjVaGPYz3;4cdABxsGEn3;B20RTcXa{z3;;uPoHjRjmgz3;fdvLN}{DSz3;mPoHjRjmgz3;fdvLN}{DSzB;Ng}KQWXVqz3;cdO7jrelmmB;YbO95JCP6{3;cdO7jrelmm3;13FDCRG1oz3;a0LXEVvdbz3;y2FDCRG1oz3;Y0LXEVvdbzB;I4BR2LD2yz3;cdO7jrel0nB;rDsmoAfOC{3;19MQ73RYznB;r{wG0gXXrz3;lsvE{0cgiz3;90xG0gXXrz3;lsvE{0cgizB;rgZGnzzE1{3;97nT6dmq7o3;u35bGscgG{3;8ZmkN4D0o3;DXG2hec}tz3;d7uFPxNnz3;QWG2hec}tz3;rc7uFPxNnzB;Qoiea2Hx3{3;F1CwbMB8vnB;clL{R}lfI{3;dcyHV{7GLnB;z0dAWStXvz3;VepQ7mUypz3;U1dAWStXvz3;JepQ7mUypzB;6I8w0Kw76{3;NjU0QTTiqn3;gaDOLB1CK{3;G9o0AuRRrmB;bg3LcRZEwz3;hzCIaRp3sz3;Sg3LcRZEwz3;ozCIaRp3szB;E4oC9los7{3;R2u{KKBZInB;47TjidrrN{3;jiq8z}45un3;ZgrB2Kuc{z3;dJ1eeJ5Swz3;wfrB2Kuc{z3;aJ1eeJ5SwzB;s4kffyeSC{3;9J1nR9VusnB;pHjzbQ8AS{3;aa6EJfWB7o3;QaLd70e91{3;Pv7g6taT{z3;iZLd70e91{3;Lv7g6taT{zB;1rQTrDcMG{3;FtlLUMpnAoB;Y5isP3HAU{3;dmmIab7aqn3;udvSBWhh2{3;bGv6JJn51{3;hdvSBWhh2{3;bGv6JJn51{B;oy6BEJGMI{3;nSidrkxcrnB;4QFxZ8oSW{3;eceHi2i7nn3;}tNTIaOx3{3;jxWEmUgo2{3;gtNTIaOx3{3;fxWEmUgo2{B;wJj}kPJDK{3;ePLhU4XkUnB;ZX3NAtffX{3;oJAM6lpg9oB;UX}t0SRw4{3;lBm4jjhL4{3;9Y}t0SRw4{3;tBm4jjhL4{B;1SN3}2FyL{3;cOv1zSRZ3o3;y}SubT0LU{3;cdO7jrelGo3;xJBjZ2711{3;Fqyuw3d1{3;DJBjZ2711{3;uEqyuw3d1{B;neqtqmO}I{3;I5xy{TNJDoB;9FWWNp2uG{3;r2GBme3T7oB;geAaTRoMlz3;b2L}GqKmpz3;hAaTRoMlz3;b2L}GqKmpzB;BDBbZW345{3;{nzJY7UGBo3;F3neH4Ndmz3;CppaGTiPznB;YT2YtKLJnyB;88zdQaQWJz3;bJ2YtKLJnyB;O8zdQaQWJzB;kaJHFI79Zz3;{gnteu5}n3;HZpHyZ7O}zB;{ZY2aRSfxnB;T}kQA9cImzB;8WJ8SC2kYzB;t{kQA9cImzB;{VJ8SC2kYz3;c01taRBjrzB;RIWNczY1yn3;J0}yVPK8J{B;ri{3W5hoLoB;BUCFRgW0{zB;W3QYqU7wszB;TRCFRgW0{zB;D3QYqU7wsz3;Pzmlkats9{B;y6olgFFuKo3;b8aFJV4kT{B;8h9{BMmlwn3;avgP58g95{B;RlQQdeSt1{B;rvgP58g95{B;WlQQdeSt1{3;TWDpoIa7K{B;Ybz66j9}xnB;sMUEL6c8V{B;iYzE3XMW5o3;lzdgaDv4{B;vuptUEg23{B;PlzdgaDv4{B;vptUEg23{3;bXMrL0a3L{B;L04APhtX1oB;dkgSKIvSV{B;mMbAwzMVMnB;jPpomYbp3{B;w75cnBZb3{B;jPpomYbp3{B;o75cnBZb3{3;wLsO}EYEL{B;AOW9CLkFQnB;{hg6eICkV{B;8QXsYFTD9o3;64AzrXbe2{B;{s08mWC84{B;V4AzrXbe2{B;Bt08mWC84{3;RRTJn05PL{B;tLAyZ5hL1oB;a8gR4DP}V{B;uGUhwGzU1oB;t9k1Km8O1{B;QMHRj5Tg4{B;X9k1Km8O1{B;QMHRj5Tg4{3;yd39LbAZL{B;4C58MlPe1o3;nqyfZNj7W{B;qiexghWlZnB;ZyonGOB20{B;kQZ2tsBC5{B;VyonGOB20{B;kQZ2tsBC5{3;iNtiQniL{B;8LbfEkdGan3;mK3CE2bYT{B;2K1BCWzZLoB;7RCrLes8xzB;rt}EJb6l3{B;gQCrLes8xzB;rt}EJb6l3{3;FAvlz1QvJ{B;FThG6HK9Po3;qi{LgTPGL{B;ENAe8UXORoB;RZ97ezQgozB;4djaxGn1zzB;pX97ezQgozB;mcjaxGn1zz3;PbVUsAXeC{B;KQqmSCsUQo3;O0NZ137nA{B;2Xh4wctEyn3;Pew}zGyEczB;}khe4xB7pzB;Kfw}zGyEczB;tkhe4xB7pz3;4aZwTATp1{B;RrlN1XYe4oB;oZ6L1BdctzB;gE4KOd}t3o3;GJvOqkamHzB;yScLyEySZzB;VLvOqkamHzB;BRcLyEySZz3;BmTjaclAjzB;OiPoSAx02oB;fiVfcPHQJz3;rj0By66Y}nB;G1GUDBxpsy3;iZnEgVQpgyB;E9GUDBxpsy3;RZnEgVQpgy3;431BtyVLNz3;NEdv5OYh1o3;ly8fnHQw}z3;zgr2tNUHDn3;qPjtZPs8Qz3;F8WI9po9Uz3;qPjtZPs8Qz3;f7WI9po9UzB;LnrnaU2hvz3;BhXWa6T3Kn3;txGJd7wQ5{3;m{q5fNmWmB;8YPEF3AbUz3;WuXUFoUzbz3;8YPEF3AbUz3;buXUFoUzbzB;gBYT4pju0{3;pjmBuKRZgmB;1DVYV2QP8{3;Rs92s9W1tn3;OW6irKABUz3;Oktrozqlfz3;oU6irKABUz3;RktrozqlfzB;OG6IVS293{3;M00KHNQDxnB;UBrjqHi3B{3;g2cd4}CL{nB;dwfSusF0Tz3;ji2cz{73jz3;gxfSusF0Tz3;vi2cz{73jzB;1J7CVKwD5{3;CiIF{SDown3;c3qrVjASD{3;I5xy{TNJjnB;nzJAslmBSz3;rdZJ8h{ulz3;Y{JAslmBSz3;vdZJ8h{ulzB;uKcx6Qw77{3;cdO7jrelmn3;LExFXb9XF{3;}v7sv}o5Jo3;uxAMjGaqOz3;aHuKSCV9nz3;ztAMjGaqOz3;aHuKSCV9nzB;mctfRQbt8{3;LeyJgjMJKoB;8cbCbSwXF{3;69vgJP9d3o3;DnBPM6olLz3;3X5aeI4{mz3;tkBPM6olLz3;3X5aeI4{mzB;7ZwEktD69{3;VsbnLpOJ4oB;wEJK8UeM9{3;vRbn5x3ypn3;eokRNkVIz3;nmbLViMgfz3;EdokRNkVIz3;VmbLViMgfzB;oNdFRJ0g4{3;vx4E5kyfnB;mY5dejcf3{3;bcBNrrglJoB;8rOE8WgdGz3;tkhad9A8Yz3;CvOE8WgdGz3;tkhad9A8YzB;RKkCoXoT0{3;8ZlA1EyBMo3;iqrIN4unyz3;LH6fJaXW7oB;nDuUlFbvFz3;}ntTQphdMz3;DIuUlFbvFz3;3otTQphdMzB;feTOJHc1vz3;pfyKw4dS9o3;nD0mZfc5pz3;I5xy{TNJDnB;RiGPuBmKGz3;sdEYz7Rk4z3;riGPuBmKGz3;kdEYz7Rk4zB;2FU3kIaanz3;Px4hZGT7Pn3;AgoTLDlLaz3;qTQoHiLw5o3;eD4vH0hbHz3;H9V6s5Q2yB;nB4vH0hbHz3;nM9V6s5Q2y3;oH}Kwb46bz3;qTQoHiLw5oB;Fz72NQeOJyB;oGso6w2ZPo3;GiQ8padPFz3;ULcR9WDS8zB;RZQ8padPFz3;TLcR9WDS8z3;JsEG9fKq{y3;MXnOb}zZSoB;Ah{E1R58dzB;Ns9j1a9E0oB;5hKNFX0U9z3;6rKgQyj9OzB;hjKNFX0U9z3;{qKgQyj9Oz3;KRIY2GEEUzB;Ns9j1a9E0o3;N96FLwEZszB;cdO7jrel0nB;oY9iEjGJ5z3;O4XrViTmXzB;Na9iEjGJ5z3;w4XrViTmXz3;fIFyBOfymzB;1FnanVaupn3;c}wr6Ene0{B;WnEP83ZxKn3;w0NT7FRr2z3;8EtOyRH9dzB;f0NT7FRr2z3;JEtOyRH9dz3;GuTGG7GwzB;cdO7jrelmm3;W5nxPMnt5{B;fduHd8K9KoB;OJ5ebJc02z3;hjMLlqzEizB;RQ5ebJc02z3;kjMLlqzEiz3;UfUyuF2l1{B;qT2L0XmmMo3;ZLRC007y9{B;INEo5cjsRoB;Oef8iPY32z3;yf6mp}9xlzB;Lof8iPY32z3;Mg6mp}9xlz3;}X5Du7QQ5{B;g}acO}sbWo3;nWUu3Nxf5{B;OsNzwCzmFoB;WtHNGVauy3;BX{w{bprgzB;PetHNGVauy3;TX{w{bprgz3;w3BGc98{1{B;2ThpKvIuIo3;MbfrCCcT1{B;UBidM493RnB;{YA63978ay3;BWMtPuu{bzB;{YA63978ay3;RWMtPuu{bz3;dxeuwLV6zzB;XUx6cezjln3;ult}F2ojwzB;G6ocoJqHMoB;Y1HDTGICTyB;pR26MIgMXzB;KFGDTGICTyB;UR26MIgMXz3;BDJ1SuPJszB;McixAO4BLo3;mIZWv1BhozB;z{AioDUSnn3;EzoL{plPxyB;bkKL1skwPzB;Y{oL{plPxyB;zkKL1skwPz3;13JJJ8n5lzB;WNYf{hPfXnB;IukGu}rbbzB;Xhdb81H{mn3;bSfxsbQ49zB;h1rrlCUcHzB;pSfxsbQ49zB;12rrlCUcHz3;fYRuhMefXzB;1Itwi4sQdnB;h35eeLvOKzB;dd0gSg3cXn3;IrpcdtMKIzB;4qLcCXIK7zB;BrpcdtMKIzB;LrLcCXIK7z3;llbBKgFXFzB;oTYA6E5Npm3;FOBWxUbnqyB;vKXWWZiGUo3;czrGaievNzB;v6VqNjsL}yB;61sGaievNzB;{7VqNjsL}y3;R}vZASi}ayB;oYcnBjw8UoB;Tm0z3Qgd1z3;FAsbiaKPln3;3wWqUCZTzB;rr6OWqnUoyB;53wWqUCZTzB;Pu6OWqnUoy3;9fLgXnkU3z3;Rs92s9W1NnB;CNDe60piLz3;G00}Rn3QKoB;l0O0lwzcXzB;JBkxGkEeVyB;a}N0lwzcXzB;eIkxGkEeVy3;xQtC3GJNLz3;E5xdAu0WMo3;SAtfZBcnWz3;}nrXhT59ZoB;UB4H5tUSazB;jmT4NUMjWx3;Z94H5tUSazB;cNT4NUMjWxB;tlnRBVr8Wz3;LHNFMKa9ao3;UMhFSAjDcz3;AAsGu{zb8oB;YP71cvoDdzB;A2Oj1nJoSy3;tO71cvoDdzB;71Oj1nJoSyB;AnJL}H6Gbz3;G5So4Biv9o3</D></Data>
+<IndepValue >Designs\Linear1_Data\Eqns\VarBlock\F</IndepValue></Item>
+<Item XName="ZPORT" Type="Variable" >
+<Unit ><T>Int</T><D>2000</D></Unit>
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Data ><T>Array_Cplx64</T><D>2;4;101;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;</D></Data>
+<IndepValue >Designs\Linear1_Data\Eqns\VarBlock\F</IndepValue></Item>
+<Item XName="S11" Type="Variable" >
+<DataEntry >S[1,1]</DataEntry>
+<IsShortcut ><T>Bool</T><D>1</D></IsShortcut>
+<Unit ><T>Int</T><D>13002</D></Unit>
+<IndepValue >Designs\Linear1_Data\Eqns\VarBlock\F</IndepValue></Item>
+<Item XName="S22" Type="Variable" >
+<DataEntry >S[2,2]</DataEntry>
+<IsShortcut ><T>Bool</T><D>1</D></IsShortcut>
+<Unit ><T>Int</T><D>13002</D></Unit>
+<IndepValue >Designs\Linear1_Data\Eqns\VarBlock\F</IndepValue></Item>
+<Item XName="ZIN2" Type="Variable" >
+<DataEntry >zin(S[2,2],ZPORT[2])</DataEntry>
+<IsShortcut ><T>Bool</T><D>1</D></IsShortcut>
+<IndepValue >Designs\Linear1_Data\Eqns\VarBlock\F</IndepValue></Item>
+<Item XName="LogOutput" Type="Variable" >
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Data >Linear Analysis : Linear1&#x000D;&#x000A;30/09/2014..20:08&#x000D;&#x000A;Execution time: 0.012 sec&#x000D;&#x000A;</Data></Item></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size></Item>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<Item XName="Page" Type="PageMgr" >
+<Item XName="Display0" Type="DataSetDisp" >
+<SelVar />
+<Split ><T>Double</T><D>0.3</D></Split>
+<SubSplit ><T>Int</T><D>0</D></SubSplit>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;UqaDTulK034;Ymokq4U{j24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;MA24;Cu14</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;E1;H1;jE;G8</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>1</D></ZOrder></Item></Item>
+<FullPath >Designs\Linear1_Data</FullPath></Item>
+<Item XName="Linear1_S_Parameters" UserName="Linear1_S_Parameters" Type="Smith Chart" >
+<Item XName="Page" Type="PageMgr" >
+<Item XName="MkrGroup" Type="MkrGroup" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<ZOrder ><T>Int</T><D>7000</D></ZOrder></Item>
+<Item XName="AxisY" UserName="S[2,1], S[1,2], ZIN2" Type="GrAxis" >
+<AxisType ><T>Int</T><D>0</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>0</D></InUse>
+<AutoScale ><T>Bool</T><D>0</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>-1</D></Min>
+<Max ><T>Double</T><D>1</D></Max>
+<TextColor ><T>Int</T><D>255</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<TitleColor ><T>Int</T><D>255</D></TitleColor>
+<Visible ><T>Bool</T><D>1</D></Visible>
+<TitleOverride />
+<Unit ><T>Int</T><D>0</D></Unit></Item>
+<Item XName="AxisY2" UserName="S[1,1], S[2,2]" Type="GrAxis" >
+<AxisType ><T>Int</T><D>1</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>0</D></InUse>
+<AutoScale ><T>Bool</T><D>0</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>-1</D></Min>
+<Max ><T>Double</T><D>1</D></Max>
+<TextColor ><T>Int</T><D>16711680</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<TitleColor ><T>Int</T><D>16711680</D></TitleColor>
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="AxisX" Type="GrAxis" >
+<AxisType ><T>Int</T><D>2</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>0</D></InUse>
+<AutoScale ><T>Bool</T><D>0</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>-1</D></Min>
+<Max ><T>Double</T><D>1</D></Max>
+<TextColor ><T>Int</T><D>0</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<TitleColor ><T>Int</T><D>0</D></TitleColor>
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="Legend" Type="Legend" >
+<Color ><T>Int</T><D>1073741824</D></Color>
+<ZOrder ><T>Int</T><D>8000</D></ZOrder>
+<Item XName="Font" Type="Font" >
+<Name >Arial</Name>
+<Size ><T>Double</T><D>8</D></Size></Item>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>3843.5850715637202</D></PosY>
+<Width ><T>Double</T><D>8731.4878735235434</D></Width>
+<Height ><T>Double</T><D>156.4149284362793</D></Height></Item>
+<Item XName="Series0" Type="GraphSeries" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" />
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S[1,1]</Text></Item>
+<SeriesType ><T>Int</T><D>7</D></SeriesType>
+<PPVar />
+<Meas >S[1,1]</Meas>
+<Color ><T>Int</T><D>16711680</D></Color>
+<SymbolShape ><T>Int</T><D>2</D></SymbolShape>
+<OnRight ><T>Bool</T><D>1</D></OnRight></Item>
+<Item XName="Series1" Type="GraphSeries" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" />
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S[2,1]</Text></Item>
+<SeriesType ><T>Int</T><D>7</D></SeriesType>
+<PPVar />
+<Meas >S[2,1]</Meas>
+<Color ><T>Int</T><D>255</D></Color>
+<SymbolShape ><T>Int</T><D>1</D></SymbolShape></Item>
+<Item XName="Series2" Type="GraphSeries" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" />
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S[1,2]</Text></Item>
+<SeriesType ><T>Int</T><D>7</D></SeriesType>
+<PPVar />
+<Meas >S[1,2]</Meas>
+<Color ><T>Int</T><D>43520</D></Color>
+<SymbolShape ><T>Int</T><D>3</D></SymbolShape></Item>
+<Item XName="Series3" Type="GraphSeries" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" />
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S[2,2]</Text></Item>
+<SeriesType ><T>Int</T><D>7</D></SeriesType>
+<PPVar />
+<Meas >S[2,2]</Meas>
+<Color ><T>Int</T><D>33535</D></Color>
+<SymbolShape ><T>Int</T><D>4</D></SymbolShape>
+<OnRight ><T>Bool</T><D>1</D></OnRight></Item>
+<Item XName="Series4" Type="GraphSeries" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" />
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S22&#x000D;&#x000A;Inl_i2=ZIN2&#x000D;&#x000A;</Text></Item>
+<SeriesType ><T>Int</T><D>7</D></SeriesType>
+<PPVar />
+<Color ><T>Int</T><D>14418140</D></Color>
+<SymbolShape ><T>Int</T><D>9</D></SymbolShape>
+<Meas >ZIN2</Meas>
+<Context >Linear1_Data</Context>
+<MeasSource ><T>Int</T><D>1</D></MeasSource>
+<MeasGroup />
+<MeasFormat /></Item>
+<Item XName="Display0" Type="GraphDisp" >
+<PanX ><T>Double</T><D>0</D></PanX>
+<PanY ><T>Double</T><D>0</D></PanY>
+<Zoom ><T>Double</T><D>1</D></Zoom>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;QuxeovS3134;}}}}}}}Fl24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;MA24;Cu14</D></DVport>
+<GridType ><T>Int</T><D>0</D></GridType>
+<Window ><T>Array_I64</T><D>1;4;Q;S;vD;Q7</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>1</D></ZOrder></Item></Item>
+<ShowPoints ><T>Bool</T><D>1</D></ShowPoints>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>14</D></Size></Item>
+<UpperInDb ><T>Bool</T><D>1</D></UpperInDb>
+<UpperMax ><T>Double</T><D>0</D></UpperMax>
+<UpperDb ><T>Double</T><D>20</D></UpperDb>
+<LowerInDb ><T>Bool</T><D>1</D></LowerInDb>
+<LowerMax ><T>Double</T><D>0</D></LowerMax>
+<LowerDb ><T>Double</T><D>20</D></LowerDb>
+<Title >Linear1 S-Parameters</Title>
+<DefContext >Linear1_Data</DefContext>
+<LastAxisTab >Smith</LastAxisTab>
+<ShowOptTargets ><T>Bool</T><D>1</D></ShowOptTargets>
+<ShowYieldTargets ><T>Bool</T><D>0</D></ShowYieldTargets>
+<ShowColumns ><T>Bool</T><D>0</D></ShowColumns>
+<GoalLine ><T>Int</T><D>1</D></GoalLine>
+<GoalFill ><T>Int</T><D>2</D></GoalFill>
+<AaTraces ><T>Bool</T><D>1</D></AaTraces>
+<AaBackgnd ><T>Bool</T><D>0</D></AaBackgnd>
+<AllowAA ><T>Bool</T><D>0</D></AllowAA>
+<MarkerLine ><T>Int</T><D>1</D></MarkerLine>
+<SpecConn ><T>Int</T><D>0</D></SpecConn>
+<SpecLines ><T>Int</T><D>1</D></SpecLines>
+<UseUpper ><T>Bool</T><D>1</D></UseUpper>
+<UseLower ><T>Bool</T><D>1</D></UseLower>
+<Item XName="RefZ" Type="Param" >
+<Unit ><T>Int</T><D>34769</D></Unit>
+<DataEntry >50</DataEntry></Item>
+<ShowNormal ><T>Bool</T><D>1</D></ShowNormal>
+<UseImpedance ><T>Bool</T><D>1</D></UseImpedance>
+<UseAdmittance ><T>Bool</T><D>0</D></UseAdmittance>
+<Item XName="Height" Type="Param" >
+<Data ><T>Double</T><D>0.1016</D></Data></Item>
+<Item XName="Width" Type="Param" >
+<Data ><T>Double</T><D>0.221779791987498</D></Data></Item>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="Table1" UserName="Table1" Type="Table" >
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size></Item>
+<HideZeros ><T>Bool</T><D>1</D></HideZeros>
+<DefContext >Linear1_Data</DefContext>
+<Item XName="Series0" Type="TableSeries" >
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S[1,1]</Text></Item>
+<Meas >S[1,1]</Meas>
+<ComplexFmt ><T>Int</T><D>3</D></ComplexFmt></Item>
+<Item XName="Series1" Type="TableSeries" >
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S[1,2]</Text></Item>
+<Meas >S[1,2]</Meas>
+<ComplexFmt ><T>Int</T><D>3</D></ComplexFmt></Item>
+<Item XName="Series2" Type="TableSeries" >
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S[2,1]</Text></Item>
+<Meas >S[2,1]</Meas>
+<ComplexFmt ><T>Int</T><D>3</D></ComplexFmt></Item>
+<Item XName="Series3" Type="TableSeries" >
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S[2,2]</Text></Item>
+<Meas >S[2,2]</Meas>
+<ComplexFmt ><T>Int</T><D>3</D></ComplexFmt></Item>
+<Item XName="Page" Type="PageMgr" >
+<Item XName="Display0" Type="TableDisp" >
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;UqaDTulK034;Ymokq4U{j24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;MA24;Cu14</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;q;s;JE;r7</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>1</D></ZOrder></Item></Item>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<FullPath >Designs\Table1</FullPath></Item>
+<Item XName="Graph1" UserName="Graph1" Type="Smith Chart" >
+<Item XName="Page" Type="PageMgr" >
+<Item XName="MkrGroup" Type="MkrGroup" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<ZOrder ><T>Int</T><D>7000</D></ZOrder></Item>
+<Item XName="AxisY" UserName="ZIN2" Type="GrAxis" >
+<AxisType ><T>Int</T><D>0</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>0</D></InUse>
+<AutoScale ><T>Bool</T><D>0</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>-1</D></Min>
+<Max ><T>Double</T><D>1</D></Max>
+<TextColor ><T>Int</T><D>16711680</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<TitleColor ><T>Int</T><D>16711680</D></TitleColor>
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="AxisY2" Type="GrAxis" >
+<AxisType ><T>Int</T><D>1</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>0</D></InUse>
+<AutoScale ><T>Bool</T><D>0</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>-1</D></Min>
+<Max ><T>Double</T><D>1</D></Max>
+<TextColor ><T>Int</T><D>0</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="AxisX" Type="GrAxis" >
+<AxisType ><T>Int</T><D>2</D></AxisType>
+<MajorTick ><T>Int</T><D>1</D></MajorTick>
+<MinorTick ><T>Int</T><D>2</D></MinorTick>
+<ShowMajorGrid ><T>Bool</T><D>1</D></ShowMajorGrid>
+<ShowMinorGrid ><T>Bool</T><D>1</D></ShowMinorGrid>
+<InUse ><T>Bool</T><D>0</D></InUse>
+<AutoScale ><T>Bool</T><D>0</D></AutoScale>
+<LogScale ><T>Bool</T><D>0</D></LogScale>
+<NumMajorDiv ><T>Int</T><D>10</D></NumMajorDiv>
+<NumMinorDiv ><T>Int</T><D>2</D></NumMinorDiv>
+<Min ><T>Double</T><D>-1</D></Min>
+<Max ><T>Double</T><D>1</D></Max>
+<TextColor ><T>Int</T><D>0</D></TextColor>
+<MajorColor ><T>Int</T><D>0</D></MajorColor>
+<MinorColor ><T>Int</T><D>12632256</D></MinorColor>
+<MinPT ><T>Int</T><D>0</D></MinPT>
+<MaxPT ><T>Int</T><D>0</D></MaxPT>
+<Item XName="Font" Type="Font" >
+<Size ><T>Int</T><D>9</D></Size></Item>
+<ZOrder ><T>Int</T><D>10000</D></ZOrder>
+<TitleColor ><T>Int</T><D>0</D></TitleColor>
+<Visible ><T>Bool</T><D>1</D></Visible></Item>
+<Item XName="Display0" Type="GraphDisp" >
+<PanX ><T>Double</T><D>0</D></PanX>
+<PanY ><T>Double</T><D>0</D></PanY>
+<Zoom ><T>Double</T><D>1</D></Zoom>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;uYlbs9{5334;5XN4UHC6q24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;qE24;G024</D></DVport>
+<GridType ><T>Int</T><D>0</D></GridType>
+<Window ><T>Array_I64</T><D>1;4;Dz}}}};21;xC;r9</D></Window>
+<ShowCmd ><T>Int</T><D>2</D></ShowCmd>
+<Show ><T>Bool</T><D>1</D></Show>
+<ZOrder ><T>Int</T><D>1</D></ZOrder></Item>
+<Item XName="Legend" Type="Legend" >
+<Color ><T>Int</T><D>1073741824</D></Color>
+<ZOrder ><T>Int</T><D>8000</D></ZOrder>
+<Item XName="Font" Type="Font" >
+<Name >Arial</Name>
+<Size ><T>Double</T><D>8</D></Size></Item>
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>4988.352131931174</D></PosY>
+<Width ><T>Double</T><D>9775.7692440714309</D></Width>
+<Height ><T>Double</T><D>156.4149284362793</D></Height></Item>
+<Item XName="Series0" Type="GraphSeries" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S11&#x000D;&#x000A;Inl_i2=ZIN1&#x000D;&#x000A;</Text></Item>
+<SeriesType ><T>Int</T><D>7</D></SeriesType>
+<PPVar />
+<Color ><T>Int</T><D>255</D></Color>
+<SymbolShape ><T>Int</T><D>2</D></SymbolShape>
+<Meas >ZIN1</Meas>
+<Context >Linear1_Data</Context>
+<OnRight ><T>Bool</T><D>0</D></OnRight>
+<UserHide ><T>Bool</T><D>1</D></UserHide>
+<DataFormat ><T>Int</T><D>0</D></DataFormat>
+<MeasSource ><T>Int</T><D>1</D></MeasSource>
+<MeasGroup />
+<MeasFormat />
+<PlotType />
+<ZOrder ><T>Int</T><D>9000</D></ZOrder></Item>
+<Item XName="Series1" Type="GraphSeries" >
+<PosX ><T>Double</T><D>0</D></PosX>
+<PosY ><T>Double</T><D>0</D></PosY>
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >Inl_i=S22&#x000D;&#x000A;Inl_i2=ZIN2&#x000D;&#x000A;</Text></Item>
+<SeriesType ><T>Int</T><D>7</D></SeriesType>
+<PPVar />
+<Color ><T>Int</T><D>16711680</D></Color>
+<SymbolShape ><T>Int</T><D>1</D></SymbolShape>
+<Meas >ZIN2</Meas>
+<Context >Linear1_Data</Context>
+<MeasSource ><T>Int</T><D>1</D></MeasSource>
+<MeasGroup />
+<MeasFormat />
+<PlotType />
+<ZOrder ><T>Int</T><D>8999</D></ZOrder></Item></Item>
+<ShowPoints ><T>Bool</T><D>1</D></ShowPoints>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>14</D></Size></Item>
+<UpperInDb ><T>Bool</T><D>1</D></UpperInDb>
+<UpperMax ><T>Double</T><D>0</D></UpperMax>
+<UpperDb ><T>Double</T><D>20</D></UpperDb>
+<LowerInDb ><T>Bool</T><D>1</D></LowerInDb>
+<LowerMax ><T>Double</T><D>0</D></LowerMax>
+<LowerDb ><T>Double</T><D>20</D></LowerDb>
+<Title />
+<LastAxisTab >Smith</LastAxisTab>
+<ShowOptTargets ><T>Bool</T><D>1</D></ShowOptTargets>
+<ShowYieldTargets ><T>Bool</T><D>0</D></ShowYieldTargets>
+<ShowColumns ><T>Bool</T><D>1</D></ShowColumns>
+<GoalLine ><T>Int</T><D>1</D></GoalLine>
+<GoalFill ><T>Int</T><D>2</D></GoalFill>
+<AaTraces ><T>Bool</T><D>1</D></AaTraces>
+<AaBackgnd ><T>Bool</T><D>0</D></AaBackgnd>
+<AllowAA ><T>Bool</T><D>0</D></AllowAA>
+<MarkerLine ><T>Int</T><D>1</D></MarkerLine>
+<SpecConn ><T>Int</T><D>0</D></SpecConn>
+<SpecLines ><T>Int</T><D>1</D></SpecLines>
+<UseUpper ><T>Bool</T><D>1</D></UseUpper>
+<UseLower ><T>Bool</T><D>0</D></UseLower>
+<Item XName="RefZ" Type="Param" >
+<Unit ><T>Int</T><D>34769</D></Unit>
+<DataEntry >50</DataEntry></Item>
+<ShowNormal ><T>Bool</T><D>1</D></ShowNormal>
+<UseImpedance ><T>Bool</T><D>1</D></UseImpedance>
+<UseAdmittance ><T>Bool</T><D>0</D></UseAdmittance>
+<Item XName="Height" Type="Param" >
+<Data ><T>Double</T><D>0.13067708333333333</D></Data></Item>
+<Item XName="Width" Type="Param" >
+<Data ><T>Double</T><D>0.24830453879941436</D></Data></Item>
+<ShowCirclesAtEveryVertex ><T>Bool</T><D>0</D></ShowCirclesAtEveryVertex>
+<Selected ><T>Bool</T><D>1</D></Selected></Item>
+<Item XName="Substrate1" UserName="Substrate1" Type="Substrate" >
+<Text />
+<Item XName="Page" Type="PageMgr" />
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Item XName="Ur" UserName="Substrate relative permeability" Help="2112" Type="Param" >
+<Data ><T>Double</T><D>1</D></Data>
+<DataEntry >1</DataEntry></Item>
+<Item XName="Er" UserName="Er" Help="6354" Type="Param" >
+<DataEntry >3</DataEntry>
+<Data ><T>Double</T><D>3</D></Data></Item>
+<Item XName="Tand" UserName="TanD" Help="6356" Type="Param" >
+<DataEntry >0.0014</DataEntry>
+<Data ><T>Double</T><D>0.0014</D></Data></Item>
+<Item XName="Rho" UserName="Rho" Help="6355" Type="Param" >
+<DataEntry >1</DataEntry>
+<Data ><T>Double</T><D>1</D></Data></Item>
+<Item XName="Thick" UserName="Thick" Help="6357" Type="Param" >
+<Unit ><T>Int</T><D>6002</D></Unit>
+<DataEntry >1.4</DataEntry>
+<Data ><T>Double</T><D>3.556e-005</D></Data></Item>
+<Item XName="Sr" UserName="Sr" Help="6359" Type="Param" >
+<Unit ><T>Int</T><D>6002</D></Unit>
+<DataEntry >0.013</DataEntry>
+<Data ><T>Double</T><D>3.302e-007</D></Data></Item>
+<Item XName="Height" UserName="Height" Help="6358" Type="Param" >
+<Unit ><T>Int</T><D>6002</D></Unit>
+<DataEntry >60</DataEntry>
+<Data ><T>Double</T><D>0.001524</D></Data></Item>
+<LibName >Eagleware</LibName>
+<Description >Copied from Taconic RF-30 1 oz 60 mil on 30/09/2014..14:50.</Description>
+<Selected ><T>Bool</T><D>0</D></Selected></Item></Item>
+<Item XName="Notes" UserName="Notes" Type="Notes" >
+<Text />
+<Item XName="Page" Type="PageMgr" >
+<Item XName="Display0" Type="NotesDisp" >
+<PVPort ><T>Array_Dbl64</T><D>1;4;P1C;P1C;CH24;CH24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;G24;G24</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;22;64;nE;a9</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Int</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>0</D></ZOrder></Item></Item>
+<Selected ><T>Bool</T><D>0</D></Selected></Item>
+<Item XName="Equation" UserName="Equation" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" />
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text />
+<Item XName="Page" Type="PageMgr" >
+<Item XName="Display0" Type="EquationDisp" >
+<Split ><T>Double</T><D>0.3</D></Split>
+<Split2 ><T>Double</T><D>0.3</D></Split2>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;oa9JcCzq034;7COmW1lSm24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;iA24;4w14</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;a4;O1;YF;f6</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>1</D></ZOrder></Item></Item>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<UnitUse ><T>Int</T><D>2</D></UnitUse></Item>
+<Time >2014:275:13:02</Time>
+<Item XName="TuneList" Type="TuneList" >
+<Item XName="Tune0" Type="TuneParam" >
+<Param >Designs\Sch1\PartList\TL1\ParamSet\W</Param></Item>
+<Item XName="Tune1" Type="TuneParam" >
+<Param >Designs\Sch1\PartList\TL2\ParamSet\W</Param></Item>
+<Item XName="Tune2" Type="TuneParam" >
+<Param >Designs\Sch1\PartList\TL3\ParamSet\W</Param></Item>
+<Item XName="Tune3" Type="TuneParam" >
+<Param >Designs\Sch1\PartList\TL2\ParamSet\L</Param></Item>
+<Item XName="Tune4" Type="TuneParam" >
+<Param >Designs\Sch1\PartList\TL3\ParamSet\L</Param></Item></Item>
+<ClientWnd ><T>Array_I64</T><D>1;4;;;LG;a9</D></ClientWnd>
+<Ver ><T>Double</T><D>2009.04</D></Ver>
+<Item XName="R15S470_SER.s2p" UserName="R15S470_SER.s2p" Type="DataSet" >
+<Item XName="Eqns" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" >
+<Item XName="F" Type="Variable" >
+<Unit ><T>Int</T><D>1000</D></Unit>
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Data ><T>Array_Dbl64</T><D>1;400;Gur764;GurN64;CQuX64;Gurd64;KMpj64;CQun64;E9tq64;Gurt64;Idqw64;KMpz64;h2P074;CQu174;jnN374;E9t474;lWM674;Gur774;nFL974;IdqA74;p{JC74;KMpD74;rjIF74;h2PG74;WSk8H74;CQuH74;Wy5eI74;jnNJ74;WTT7K74;E9tK74;W{qcL74;lWMM74;WVC6N74;GurN74;W0abO74;nFLP74;WXx4Q74;IdqQ74;W2JaS74;p{JR74;WZg3T74;KMpT74;W42ZU74;rjIV74;moC1W74;h2PW74;GZumW74;WSk8X74;mJaWX74;CQuX74;G4GGY74;Wy5eY74;mqx}Y74;jnNZ74;GbdlZ74;WTT7a74;mLJVa74;E9ta74;G6}Eb74;W{qcb74;msg{b74;lWMc74;GdMkc74;WVC6d74;mN2Ud74;Gurd74;G8kDe74;W0abe74;muPze74;nFLf74;Gf5jf74;WXx4g74;mPnRg74;Idqg74;GATCh74;W2Jah74;mw8yh74;p{Ji74;Ghqhi74;WZg3j74;mSWSj74;KMpj74;GCCBk74;W42Zk74;mytwk74;rjIl74;GjZgl74;moC1m74;uk7Dm74;h2Pm74;8dzam74;GZumm74;OVpym74;WSk8n74;eNfKn74;mJaWn74;uFVin74;CQun74;88L4o74;G4GGo74;O0BRo74;Wy5eo74;eu0qo74;mqx}o74;umsBp74;jnNp74;8fiZp74;Gbdlp74;OXYxp74;WTT7q74;ePOJq74;mLJVq74;uHEhq74;E9tq74;8A43r74;G6}Er74;O2wQr74;W{qcr74;ewlor74;msg{r74;uobAs74;lWMs74;8hSYs74;GdMks74;OZHws74;WVC6t74;eS7It74;mN2Ut74;uJzft74;Gurt74;8Cp1u74;G8kDu74;O4fPu74;W0abu74;eyUnu74;muPzu74;uqK9v74;nFLv74;8jAXv74;Gf5jv74;Ob0vv74;WXx4w74;eTsGw74;mPnRw74;uLiew74;Idqw74;8EY0x74;GATCx74;O6OOx74;W2Jax74;e{Dmx74;mw8yx74;us38y74;p{Jy74;8lvVy74;Ghqhy74;Odlty74;WZg3z74;eVbFz74;mSWSz74;uNSdz74;KMpz74;8GH}z74;GCCB{74;O87N{74;W42Z{74;e0zk{74;mytw{74;uuo6}74;rjI}74;8neU}74;GjZg}74;OfUs}74;moC1084;qGA7084;uk7D084;yC5J084;h2P084;490V084;8dza084;C5xg084;GZum084;K1ss084;OVpy084;Rzm2184;WSk8184;avhE184;eNfK184;ircQ184;mJaW184;qnXc184;uFVi184;yjRo184;CQu184;4gN{184;88L4284;CcIA284;G4GG284;KYDM284;O0BR284;RU8Y284;Wy5e284;aQ3k284;eu0q284;iM{v284;mqx}284;qIv5384;umsB384;yEqH384;jnN384;4BlT384;8fiZ384;C7gf384;Gbdl384;K3br384;OXYx384;R}V1484;WTT7484;axQD484;ePOJ484;itLP484;mLJV484;qpGb484;uHEh484;ylBn484;E9t484;4i6z484;8A43584;Ce19584;G6}E584;KayK584;O2wQ584;RWtW584;W{qc584;aRoi584;ewlo584;iOju584;msg{584;qKe4684;uobA684;yGZG684;lWM684;4DUR684;8hSY684;C9Pe684;GdMk684;K5Kq684;OZHw684;R1F0784;WVC6784;az9C784;eS7I784;iv4O784;mN2U784;qr}Z784;uJzf784;ynwl784;Gur784;4krx784;8Cp1884;Cgm7884;G8kD884;KchJ884;O4fP884;RYcV884;W0ab884;aUXh884;eyUn884;iQRt884;muPz884;qMN3984;uqK9984;yIIF984;nFL984;4FDS984;8jAX984;CB8d984;Gf5j984;K73p984;Ob0v984;R3{{984;WXx4A84;a}uAA84;eTsGA84;ixpMA84;mPnRA84;qtkYA84;uLieA84;ypfkA84;IdqA84;4mawA84;8EY0B84;CiV6B84;GATCB84;KeQIB84;O6OOB84;RaLUB84;W2JaB84;aWGgB84;e{DmB84;iRBsB84;mw8yB84;qO62C84;us38C84;yK1EC84;p{JC84;4HyPC84;8lvVC84;CDtbC84;GhqhC84;K9onC84;OdltC84;R5jzC84;WZg3D84;a1e9D84;eVbFD84;izYLD84;mSWSD84;qvTXD84;uNSdD84;yrOjD84;KMpD84;4oJvD84;8GH}D84;CkE5E84;GCCBE84;Kg9HE84;O87NE84;Rc4TE84;W42ZE84;aY}eE84;e0zkE84;iUwqE84;mytwE84;qQr0F84;uuo6F84;yMmCF84;rjIF84;4JhOF84;8neUF84;CFcaF84;GjZgF84;KBXmF84;OfUsF84;R7RyF84;moC1G84;oXB4G84;qGA7G84;s}8AG84;uk7DG84;wT6GG84;yC5JG84;{x3MG84;h2PG84;2Q1RG84;490VG84;6u{XG84;8dzaG84;AMydG84;C5xgG84;EqvjG84;GZumG84;IItpG84;K1ssG84;MmqvG84;OVpyG84;QEo}G84;Rzm2H84;Uil5H84;WSk8H84;YAjBH84;avhEH84;cegHH84;eNfKH84;g6eNH84;ircQH84;kabTH84;mJaWH84;o2ZZH84;qnXcH84;sWWfH84;uFViH84;w{TlH84;yjRoH84;{RSrH84;CQuH84;2xOxH84;4gN{H84;6PM1I84;88L4I84;AtJ7I84;CcIAI84;ELHDI84;G4GGI84;IpEJI84;KYDMI84;MHCPI84;O0BRI84;Ql9VI84;RU8YI84;UD7bI84;Wy5eI84</D></Data></Item>
+<Item XName="ZPORT" Type="Variable" >
+<Unit ><T>Int</T><D>2000</D></Unit>
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Data ><T>Array_Cplx64</T><D>2;4;400;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;;914;</D></Data>
+<IndepValue >R15S470_SER.s2p\Eqns\VarBlock\F</IndepValue></Item>
+<Item XName="S" Type="Variable" >
+<Unit ><T>Int</T><D>13002</D></Unit>
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Data ><T>Array_Cplx64</T><D>3;4;2;400;ykn422tiJ}3;zFwOEI}pT}B;BpJlpVZc}3;fWMAPpXpT}3;BpJlpVZc}3;fWMAPpXpT}3;ykn422tiJ}3;zFwOEI}pT}B;SO8GfcR1w{3;6tx1NUVAJ}B;ROx8}gt5j}3;dFQStw1VJ}3;ROx8}gt5j}3;dFQStw1VJ}3;SO8GfcR1w{3;6tx1NUVAJ}B;PiSpD9XGd{3;vo5Jvc}3B}B;PQGu0D0fk}3;c61Lg54SA}3;PQGu0D0fk}3;c61Lg54SA}3;PiSpD9XGd{3;vo5Jvc}3B}B;XxXx6E{{O{3;Q7t{xmYl4}B;LnW8WT}Al}3;2XgdAI3e3}3;LnW8WT}Al}3;2XgdAI3e3}3;XxXx6E{{O{3;Q7t{xmYl4}B;XRNHCqxpB{3;Oae2XUm0}B;L0dpbzFal}3;rO7eti5R{{3;L0dpbzFal}3;rO7eti5R{{3;XRNHCqxpB{3;Oae2XUm0}B;54RHWP3l1{3;VtToRQuky{B;D4lu5mdkl}3;hat3oLwHu{3;D4lu5mdkl}3;hat3oLwHu{3;54RHWP3l1{3;VtToRQuky{B;B50GHd3Ktz3;GAvCz9Dcv{B;hph0dlNvl}3;R7xkgM1xo{3;hph0dlNvl}3;R7xkgM1xo{3;B50GHd3Ktz3;GAvCz9Dcv{B;Oyz11Zyz}z3;1{mXmMmss{B;bgNORdmul}3;Oms9TOthj{3;bgNORdmul}3;Oms9TOthj{3;Oyz11Zyz}z3;1{mXmMmss{B;wYQDeaxL3{3;tZiMPAj0p{B;w}t5uAmyl}3;SMhRChydd{3;w}t5uAmyl}3;SMhRChydd{3;wYQDeaxL3{3;tZiMPAj0p{B;xD00Ydvg6{3;CFVMdSAqm{B;um6Kzvtwl}3;cuIQ{}yjZ{3;um6Kzvtwl}3;cuIQ{}yjZ{3;xD00Ydvg6{3;CFVMdSAqm{B;iYJYxCoS1z3;WshOTRxUk{B;nSQa7G44m}3;}nxnRgklU{3;nSQa7G44m}3;}nxnRgklU{3;iYJYxCoS1z3;WshOTRxUk{B;WG1CGQlhhzB;z2nCyj5Em{B;whNIcyF2m}3;guAcBzutQ{3;whNIcyF2m}3;guAcBzutQ{3;WG1CGQlhhzB;z2nCyj5Em{B;MFDVMF8vlz3;H11thORWl{B;lA4FKXWyl}3;GF9AXmehJ{3;lA4FKXWyl}3;GF9AXmehJ{3;MFDVMF8vlz3;H11thORWl{B;mQaFrpTpuz3;SLSXiJv6h{B;rcFvVxVyl}3;Zg3YX7gtC{3;rcFvVxVyl}3;Zg3YX7gtC{3;mQaFrpTpuz3;SLSXiJv6h{B;wrJYO4iuoy3;5Bm{QPVhd{B;6Oy8sVF}l}3;Rbbgix0Rpy3;6Oy8sVF}l}3;Rbbgix0Rpy3;wrJYO4iuoy3;5Bm{QPVhd{B;YNy8RbSVmzB;jT}A49K7e{B;GEQcC0y1m}3;bpLqVkZGmzB;GEQcC0y1m}3;bpLqVkZGmzB;YNy8RbSVmzB;jT}A49K7e{B;px2ooAR44z3;araKZ7}ye{B;AWCgXjt0m}3;sVPj9UiFozB;AWCgXjt0m}3;sVPj9UiFozB;px2ooAR44z3;araKZ7}ye{B;UoTRX1zbdz3;kmhSgKo2c{B;qeDC6Cm0m}3;Zv12Kx4qG{B;qeDC6Cm0m}3;Zv12Kx4qG{B;UoTRX1zbdz3;kmhSgKo2c{B;VLVp2izcXz3;mrqr1bOvZ{B;6lJHvPdyl}3;J1uSOrI0J{B;6lJHvPdyl}3;J1uSOrI0J{B;VLVp2izcXz3;mrqr1bOvZ{B;sgZz3wbFry3;kKPJO2b3Z{B;BW24N}F2m}3;gthCjza3N{B;BW24N}F2m}3;gthCjza3N{B;sgZz3wbFry3;kKPJO2b3Z{B;1IOdpjwofz3;zw{SJsULY{B;J6jXFV}}l}3;ZK8fb}QqT{B;J6jXFV}}l}3;ZK8fb}QqT{B;1IOdpjwofz3;zw{SJsULY{B;SZIFshy4cz3;4znkNY{ZV{B;8OVvW}N}l}3;xdjTvY{FY{B;8OVvW}N}l}3;xdjTvY{FY{B;SZIFshy4cz3;4znkNY{ZV{B;1Z86}yNCRzB;7h{RcZyEV{B;9v22Oul{l}3;Vwtgzvula{B;9v22Oul{l}3;Vwtgzvula{B;1Z86}yNCRzB;7h{RcZyEV{B;i9lukght7zB;56T}qReOW{B;Q1zlhb}yl}3;6nqw8Uzhb{B;Q1zlhb}yl}3;6nqw8Uzhb{B;i9lukght7zB;56T}qReOW{B;yKDdIznviz3;6eRQOKtGW{B;2}}FmAewl}3;Xme4qTGTe{B;2}}FmAewl}3;Xme4qTGTe{B;yKDdIznviz3;6eRQOKtGW{B;wRs2ZOZoqz3;h87L1qcWS{B;TbMatT}ul}3;CEVT399Hh{B;TbMatT}ul}3;CEVT399Hh{B;wRs2ZOZoqz3;h87L1qcWS{B;nulw8tbdBz3;bWxliOyqO{B;8mJ6WWO{l}3;36Qbopz8j{B;8mJ6WWO{l}3;36Qbopz8j{B;nulw8tbdBz3;bWxliOyqO{B;aRljA0F51yB;O7Bfn8CVP{B;DjuDZSepl}3;kt0LLUwTn{B;DjuDZSepl}3;kt0LLUwTn{B;aRljA0F51yB;O7Bfn8CVP{B;e7WZ{W6JMz3;9KUTtDkpP{B;Df6uw60wl}3;WiOGZZbpm{B;Df6uw60wl}3;WiOGZZbpm{B;e7WZ{W6JMz3;9KUTtDkpP{B;EWc6}4icfz3;3rqwxQxVN{B;eZPwiFivl}3;SEBkDGtum{B;eZPwiFivl}3;SEBkDGtum{B;EWc6}4icfz3;3rqwxQxVN{B;IS3x6ITlEz3;SqcQ5ofQK{B;b0Cj4Oyxl}3;jd24IN3jo{B;b0Cj4Oyxl}3;jd24IN3jo{B;IS3x6ITlEz3;SqcQ5ofQK{B;}VB5jvKAQz3;2HB91QmAK{B;y2k87Uytl}3;ekRxKSy2q{B;y2k87Uytl}3;ekRxKSy2q{B;}VB5jvKAQz3;2HB91QmAK{B;ul6xZLVXmz3;PCDe8A}{H{B;CS2enfCtl}3;Cqs7YMxwq{B;CS2enfCtl}3;Cqs7YMxwq{B;ul6xZLVXmz3;PCDe8A}{H{B;NSb7RN7cmz3;Kp13Fx7jC{B;DysfufOsl}3;EGacSQRUs{B;DysfufOsl}3;EGacSQRUs{B;NSb7RN7cmz3;Kp13Fx7jC{B;FU2mPp4{Jz3;Oc0dICZS4{B;nA0qYRrl}3;i4mKaZV4t{B;nA0qYRrl}3;i4mKaZV4t{B;FU2mPp4{Jz3;Oc0dICZS4{B;9Bp}CYQ3hy3;Yrjoi{Qu3{B;LAyVVsFql}3;jhCeQ3dDu{B;LAyVVsFql}3;jhCeQ3dDu{B;9Bp}CYQ3hy3;Yrjoi{Qu3{B;QPmY1itzZz3;2O3L0UvQ0{B;j2YJRYSml}3;GNRd51Qiv{B;j2YJRYSml}3;GNRd51Qiv{B;QPmY1itzZz3;2O3L0UvQ0{B;wzc4ZUpCTz3;I0ZNr17buzB;qLO4uDKnl}3;Bwwc04Uzw{B;qLO4uDKnl}3;Bwwc04Uzw{B;wzc4ZUpCTz3;I0ZNr17buzB;LkMATmStQz3;TnkKHHfMhzB;pnB0}NRtl}3;K6FTdrQxx{B;pnB0}NRtl}3;K6FTdrQxx{B;LkMATmStQz3;TnkKHHfMhzB;D3NtKQ74ez3;KacwAJ3zTzB;DudG8K0ll}3;Kj6HntZRz{B;DudG8K0ll}3;Kj6HntZRz{B;D3NtKQ74ez3;KacwAJ3zTzB;La7sccJKtz3;AnMwrYXVXz3;VZ3CP1qil}3;syyZ0NRB}{B;VZ3CP1qil}3;syyZ0NRB}{B;La7sccJKtz3;AnMwrYXVXz3;U6vmX8BVsz3;ikDSTSeSyz3;WwDABmtTl}3;{GxuDCW80}B;WwDABmtTl}3;{GxuDCW80}B;U6vmX8BVsz3;ikDSTSeSyz3;qPtlDMpB2{3;7yd7juAIB{3;qRLFj}FWl}3;PZaX64yN1}B;qRLFj}FWl}3;PZaX64yN1}B;qPtlDMpB2{3;7yd7juAIB{3;o3v}EixVH{3;rixBRhodP{3;T{vcNMi3l}3;fzaepY403}B;T{vcNMi3l}3;fzaepY403}B;o3v}EixVH{3;rixBRhodP{3;Y8X8v{qOe{3;kKocypxLc{3;YYa8Q6iDk}3;TOCc5lHa5}B;YYa8Q6iDk}3;TOCc5lHa5}B;Y8X8v{qOe{3;kKocypxLc{3;InH3h}xGv{3;jKx3BLqjX{B;Ufby41Wai}3;caNsJ28{s{B;Ufby41Wai}3;caNsJ28{s{B;InH3h}xGv{3;jKx3BLqjX{B;o2krG5qkS{3;qiu9N58Rg{B;wXFAjpJuk}3;Qlw4tVPXr{B;wXFAjpJuk}3;Qlw4tVPXr{B;o2krG5qkS{3;qiu9N58Rg{B;Bb6N6SOj9{3;6w1xdeJfW{B;Cz0k580Ll}3;FbF16H5Uw{B;Cz0k580Ll}3;FbF16H5Uw{B;Bb6N6SOj9{3;6w1xdeJfW{B;8bPvaQn0{3;lyqPciBNN{B;1qXPCSpVl}3;SBb9y3{uz{B;1qXPCSpVl}3;SBb9y3{uz{B;8bPvaQn0{3;lyqPciBNN{B;Y4XnPv9buz3;32cifaz2G{B;7DHcifFdl}3;Ibvrvb3t{{B;7DHcifFdl}3;Ibvrvb3t{{B;Y4XnPv9buz3;32cifaz2G{B;B5mys2CPqz3;HFV8Br{m6{B;X8HrpcJWl}3;LJMRFPtK}{B;X8HrpcJWl}3;LJMRFPtK}{B;B5mys2CPqz3;HFV8Br{m6{B;h{uXadEPqz3;Cn4{FUk3uzB;KrSygFCYl}3;mqtRwO{H1}B;KrSygFCYl}3;mqtRwO{H1}B;h{uXadEPqz3;Cn4{FUk3uzB;}CnNwxURmz3;gNC1hJdEfzB;KrWOwkSWl}3;7CHWpj}j1}B;KrWOwkSWl}3;7CHWpj}j1}B;}CnNwxURmz3;gNC1hJdEfzB;xGk9{S5Pcz3;aKtH3cjnpyB;LNBD7fqZl}3;ajnMymlt2}B;LNBD7fqZl}3;ajnMymlt2}B;xGk9{S5Pcz3;aKtH3cjnpyB;vonhyoaXZz3;rbd6J2U8Lz3;px}SjztUl}3;Fd8IYjGF3}B;px}SjztUl}3;Fd8IYjGF3}B;vonhyoaXZz3;rbd6J2U8Lz3;fhVuajOFnz3;MJHw2bMFZz3;TmZqqo7Ml}3;Id6ebEmg3}B;TmZqqo7Ml}3;Id6ebEmg3}B;fhVuajOFnz3;MJHw2bMFZz3;LzG1fIA{rz3;fqso{SL2oz3;CvvY1a0Zl}3;vwKx0FRQ4}B;CvvY1a0Zl}3;vwKx0FRQ4}B;LzG1fIA{rz3;fqso{SL2oz3;ZuTsxU0woz3;GgBJ6l2D0{3;Gmzbx80Tl}3;8a7iXMRe4}B;Gmzbx80Tl}3;8a7iXMRe4}B;ZuTsxU0woz3;GgBJ6l2D0{3;eIpWGILxcz3;18bXwEpl3{3;ZT{ujUmKl}3;VazKJpZf5}B;ZT{ujUmKl}3;VazKJpZf5}B;eIpWGILxcz3;18bXwEpl3{3;9NIo6g6Zoz3;ds2zt1Ma1{3;DE{6CdlQl}3;iQx}W52P5}B;DE{6CdlQl}3;iQx}W52P5}B;9NIo6g6Zoz3;ds2zt1Ma1{3;9D8OYgZesz3;wx8C6nIA6{3;gVNnGhtDl}3;69Z1i5UU6}B;gVNnGhtDl}3;69Z1i5UU6}B;9D8OYgZesz3;wx8C6nIA6{3;C}YgMCJTrz3;6vqpBCP9A{3;nlgMmPiHl}3;HgRGQOE18}B;nlgMmPiHl}3;HgRGQOE18}B;C}YgMCJTrz3;6vqpBCP9A{3;7Ei7vqo8sz3;wKk8rEktA{3;Kp3jr289l}3;iikFGvxS7}B;Kp3jr289l}3;iikFGvxS7}B;7Ei7vqo8sz3;wKk8rEktA{3;psWWlvd24{3;mg1V54G0B{3;hYEKnmd1l}3;VR}eTOxG8}B;hYEKnmd1l}3;VR}eTOxG8}B;psWWlvd24{3;mg1V54G0B{3;kiIz00Lx6{3;zyXlmcH2J{3;cOV8mx3}k}3;Eg8kECHi8}B;cOV8mx3}k}3;Eg8kECHi8}B;kiIz00Lx6{3;zyXlmcH2J{3;oNJbMuum3{3;xyhtrS{0N{3;eNgzsYq{k}3;zaAyYSlO9}B;eNgzsYq{k}3;zaAyYSlO9}B;oNJbMuum3{3;xyhtrS{0N{3;}GQaVNTp6{3;71bG9OEqO{3;8}46oH3yk}3;zo88ERoWA}B;8}46oH3yk}3;zo88ERoWA}B;}GQaVNTp6{3;71bG9OEqO{3;LS{xlHPBF{3;WcQnjcvmR{3;CecWVWlpk}3;o1xEmEpvA}B;CecWVWlpk}3;o1xEmEpvA}B;LS{xlHPBF{3;WcQnjcvmR{3;iXQf}CIWH{3;k58}fWP9Y{3;qxgPD9Ggk}3;AeLdNn}KB}B;qxgPD9Ggk}3;AeLdNn}KB}B;iXQf}CIWH{3;k58}fWP9Y{3;VEzFcewyH{3;ya7G}14}Z{3;mWJLx0Gdk}3;aH}vYMCoC}B;mWJLx0Gdk}3;aH}vYMCoC}B;VEzFcewyH{3;ya7G}14}Z{3;zrAFA974R{3;{Bgkt7sNc{3;Gy8J7e3Fk}3;h5QL{O1FE}B;Gy8J7e3Fk}3;h5QL{O1FE}B;zrAFA974R{3;{Bgkt7sNc{3;WAozZvypa{3;dYbCbNBJi{3;hznL4RF6k}3;NzsRuI1pF}B;hznL4RF6k}3;NzsRuI1pF}B;WAozZvypa{3;dYbCbNBJi{3;oJwe4Smvi{3;oZu66E7Mn{3;sekpJIWKj}3;pBNFpl0NG}B;sekpJIWKj}3;pBNFpl0NG}B;oJwe4Smvi{3;oZu66E7Mn{3;kYmq0sXTt{3;2y2inkYzn{3;45sCuYtAi}3;zJud1910H}B;45sCuYtAi}3;zJud1910H}B;kYmq0sXTt{3;2y2inkYzn{3;B{TB8Xyw3}3;IllfMc2AW{3;21Oe}iBAg}3;m2pplE}PD}B;21Oe}iBAg}3;m2pplE}PD}B;B{TB8Xyw3}3;IllfMc2AW{3;88yxO0Y83}3;C7fK8{WRn{B;jgdxQdBPg}3;6erlYDym0}B;jgdxQdBPg}3;6erlYDym0}B;88yxO0Y83}3;C7fK8{WRn{B;oL0vIfhno{3;g0qfOEFpu{B;ghXMRAegi}3;abzlTKzAx{B;ghXMRAegi}3;abzlTKzAx{B;oL0vIfhno{3;g0qfOEFpu{B;kK{pW9}rU{3;6YWZ0indq{B;e0XvzeGzj}3;u1BdqKGQ0}B;e0XvzeGzj}3;u1BdqKGQ0}B;kK{pW9}rU{3;6YWZ0indq{B;uyxbIR1HC{3;Qk92xUJem{B;WTZJqWBVk}3;Q8vLCOG33}B;WTZJqWBVk}3;Q8vLCOG33}B;uyxbIR1HC{3;Qk92xUJem{B;TfTn7wH{xz3;sROJVYXNg{B;PBGtR}Zik}3;Nor20dR55}B;PBGtR}Zik}3;Nor20dR55}B;TfTn7wH{xz3;sROJVYXNg{B;DTWUgI08Fz3;FkBsiGwBb{B;jRRmzdpk}3;zUtOKXD17}B;jRRmzdpk}3;zUtOKXD17}B;DTWUgI08Fz3;FkBsiGwBb{B;weoJky4izB;5FA7bFUHX{B;4OlLtP}pk}3;FzS5es307}B;4OlLtP}pk}3;FzS5es307}B;weoJky4izB;5FA7bFUHX{B;kQK{cM2ywzB;HTRDSNZ8W{B;a{}jT2mqk}3;u7oQDhI88}B;a{}jT2mqk}3;u7oQDhI88}B;kQK{cM2ywzB;HTRDSNZ8W{B;Zbg0HA82pzB;7rFAR1qxT{B;6NAupbFuk}3;fBDFWi3I9}B;6NAupbFuk}3;fBDFWi3I9}B;Zbg0HA82pzB;7rFAR1qxT{B;XDftfO00qzB;ylnUZ5uKP{B;KEkBUK8tk}3;jZ{BaoqY9}B;KEkBUK8tk}3;jZ{BaoqY9}B;XDftfO00qzB;ylnUZ5uKP{B;ev2A7VYA0{B;Dao7iJasK{B;XeLeivNok}3;CVcR3VXEB}B;XeLeivNok}3;CVcR3VXEB}B;ev2A7VYA0{B;Dao7iJasK{B;FvEgOLbd4{B;EnWQXvEpL{B;podVixhfk}3;eb{R0Sq2B}B;podVixhfk}3;eb{R0Sq2B}B;FvEgOLbd4{B;EnWQXvEpL{B;qAF{FUCd0{B;r6YmzoL1N{B;Zhe9Iv7lk}3;c2Fsk3HzB}B;Zhe9Iv7lk}3;c2Fsk3HzB}B;qAF{FUCd0{B;r6YmzoL1N{B;LnJt8K5j0{B;SqgdLdr3K{B;o4KAVL4ik}3;xLUBWtZfC}B;o4KAVL4ik}3;xLUBWtZfC}B;LnJt8K5j0{B;SqgdLdr3K{B;yrV4eBkz3{B;B52pyTcCJ{B;}7cjEyFjk}3;sUpvNgpTD}B;}7cjEyFjk}3;sUpvNgpTD}B;yrV4eBkz3{B;B52pyTcCJ{B;GfLsIBkx5{B;2deCEF31L{B;ziLesfBdk}3;AM3bbEY0E}B;ziLesfBdk}3;AM3bbEY0E}B;GfLsIBkx5{B;2deCEF31L{B;mXvPZ6me1{B;{n3DUZL7M{B;ESzTnc}Wk}3;Gbm201YME}B;ESzTnc}Wk}3;Gbm201YME}B;mXvPZ6me1{B;{n3DUZL7M{B;seeg2}9a1{B;9xdrSDYsI{B;O3FlPAGak}3;guuRf8nqE}B;O3FlPAGak}3;guuRf8nqE}B;seeg2}9a1{B;9xdrSDYsI{B;DJsJu6M7{B;hIgt49H0J{B;nLwo2Mxbk}3;xgayBpYlF}B;nLwo2Mxbk}3;xgayBpYlF}B;DJsJu6M7{B;hIgt49H0J{B;pM{iYA6x7{B;g1Z0jZzEL{B;aeVU4KyXk}3;OF06gaUsF}B;aeVU4KyXk}3;OF06gaUsF}B;pM{iYA6x7{B;g1Z0jZzEL{B;ay7ZsPNz2{B;}i0Wz3GoM{B;x}X{dEmVk}3;uG}X5WEFG}B;x}X{dEmVk}3;uG}X5WEFG}B;ay7ZsPNz2{B;}i0Wz3GoM{B;ZGo2kZZz0{B;HO0QWLx2J{B;oET137JUk}3;mqG80fnJG}B;oET137JUk}3;mqG80fnJG}B;ZGo2kZZz0{B;HO0QWLx2J{B;TsbfbJFv4{B;R}ZgpJ1YH{B;JAYNSndMk}3;Ls1pBZslG}B;JAYNSndMk}3;Ls1pBZslG}B;TsbfbJFv4{B;R}ZgpJ1YH{B;WbpDqKBO7{B;49y4vPmdH{B;5D1WsX3hk}3;M8CMFhPCH}B;5D1WsX3hk}3;M8CMFhPCH}B;WbpDqKBO7{B;49y4vPmdH{B;qenrBeMh6{B;XyOyJDmqH{B;sq4FoBRGk}3;H9UAkLIOH}B;sq4FoBRGk}3;H9UAkLIOH}B;qenrBeMh6{B;XyOyJDmqH{B;ZdNpR2Me3{B;wf5yeKxjE{B;VW1FIjl9k}3;wywor36VH}B;VW1FIjl9k}3;wywor36VH}B;ZdNpR2Me3{B;wf5yeKxjE{B;po}ltk7b6{B;KaP0lrvnB{B;8}h0TUB9k}3;Q8zbEMetH}B;8}h0TUB9k}3;Q8zbEMetH}B;po}ltk7b6{B;KaP0lrvnB{B;fIYSEuHt3{B;cR}JcPOEE{B;AZx}w5O4k}3;}DOT5NFGI}B;AZx}w5O4k}3;}DOT5NFGI}B;fIYSEuHt3{B;cR}JcPOEE{B;ZhUt1IAiyzB;l2H}mkZXC{B;F{}cMOy1k}3;YL}VYWtII}B;F{}cMOy1k}3;YL}VYWtII}B;ZhUt1IAiyzB;l2H}mkZXC{B;8jBcQxmEazB;WiH6kuzZ6{B;ZG1kU1yuj}3;VQ7sZD{fI}B;ZG1kU1yuj}3;VQ7sZD{fI}B;8jBcQxmEazB;WiH6kuzZ6{B;GOm9VSP9Yz3;Sy7p6MJ55{B;6qmx6zpbj}3;Oa3pPpcYI}B;6qmx6zpbj}3;Oa3pPpcYI}B;GOm9VSP9Yz3;Sy7p6MJ55{B;cX}YUa4h6{3;hRubGo9jI{B;dHKogzhBj}3;pkLFRNObI}B;dHKogzhBj}3;pkLFRNObI}B;cX}YUa4h6{3;hRubGo9jI{B;mIlWrSy1H{3;GGCZI9ucX{B;xtiTsOW1j}3;O9SfdFdSI}B;xtiTsOW1j}3;O9SfdFdSI}B;mIlWrSy1H{3;GGCZI9ucX{B;IIeQSoGb1{3;CPzoDTVMe{B;8c2YT1iIj}3;mFwFPyDhH}B;8c2YT1iIj}3;mFwFPyDhH}B;IIeQSoGb1{3;CPzoDTVMe{B;ef80pvtbGz3;Pq4f5Hpwe{B;f9o{sepgj}3;eRg7UweqH}B;f9o{sepgj}3;eRg7UweqH}B;ef80pvtbGz3;Pq4f5Hpwe{B;s}yabFXpmzB;o2FOp4iQd{B;4wGO9Zpjj}3;1zlyfvE1I}B;4wGO9Zpjj}3;1zlyfvE1I}B;s}yabFXpmzB;o2FOp4iQd{B;fAEd6gvl0{B;O8bP50fdb{B;xS3Zq}tfj}3;BBVNZDYcI}B;xS3Zq}tfj}3;BBVNZDYcI}B;fAEd6gvl0{B;O8bP50fdb{B;oU1g0MM07{B;}YbzdPmFb{B;dUtKvbajj}3;8R0lN60HJ}B;dUtKvbajj}3;8R0lN60HJ}B;oU1g0MM07{B;}YbzdPmFb{B;q03zYYf96{B;LB49uGfab{B;rjzxNV8hj}3;G{uTVsVIJ}B;rjzxNV8hj}3;G{uTVsVIJ}B;q03zYYf96{B;LB49uGfab{B;K2zJmSrn4{B;pdpurGCpb{B;D}TXogmbj}3;X04O2rsQJ}B;D}TXogmbj}3;X04O2rsQJ}B;K2zJmSrn4{B;pdpurGCpb{B;Msx6Z7BJ0{B;mT8SHsLVb{B;U}Z3oSOdj}3;tjKvz2UyJ}B;U}Z3oSOdj}3;tjKvz2UyJ}B;Msx6Z7BJ0{B;mT8SHsLVb{B;iUGwnCz0mzB;XXOidlra{B;hv1T94CSj}3;WHU995lEK}B;hv1T94CSj}3;WHU995lEK}B;iUGwnCz0mzB;XXOidlra{B;Mf4PEfNWHy3;Ve5lPiWfX{B;nfRV4jFUj}3;ylZ6bp9SK}B;nfRV4jFUj}3;ylZ6bp9SK}B;Mf4PEfNWHy3;Ve5lPiWfX{B;2XEpWJhenzB;XX5kWy2lR{B;tk6BsTGYj}3;LGr1Ap}pK}B;tk6BsTGYj}3;LGr1Ap}pK}B;2XEpWJhenzB;XX5kWy2lR{B;aYEDHTlgG{B;uwFGDJmsV{B;khc5}v}Lj}3;n4iA8I1rK}B;khc5}v}Lj}3;n4iA8I1rK}B;aYEDHTlgG{B;uwFGDJmsV{B;uGWPJWZED{B;ObGAPZidW{B;56IvRql4j}3;vc1TkTdBL}B;56IvRql4j}3;vc1TkTdBL}B;uGWPJWZED{B;ObGAPZidW{B;B74Md62L6{B;BG5459IoU{B;}hHC}}Dj}3;rpofpXNiL}B;}hHC}}Dj}3;rpofpXNiL}B;B74Md62L6{B;BG5459IoU{B;2IUdB02J5{B;fLwG6kArS{B;9Fijapq5j}3;yxcpPIsrL}B;9Fijapq5j}3;yxcpPIsrL}B;2IUdB02J5{B;fLwG6kArS{B;sW{Lnw985{B;zZjHycwfS{B;329heR0ui}3;2LYhjOqL}B;329heR0ui}3;2LYhjOqL}B;sW{Lnw985{B;zZjHycwfS{B;MX{40Ux80{B;K5XT6aN2Q{B;qtf5jxxti}3;8bS43V8RM}B;qtf5jxxti}3;8bS43V8RM}B;MX{40Ux80{B;K5XT6aN2Q{B;v79VObYjvzB;6DQi4KtoN{B;Bmce6Rtoi}3;VoEuCKmZM}B;Bmce6Rtoi}3;VoEuCKmZM}B;v79VObYjvzB;6DQi4KtoN{B;wH5LhpcDxzB;bQBJmZmZM{B;cQvzQ1Kni}3;9OTJzLEjM}B;cQvzQ1Kni}3;9OTJzLEjM}B;wH5LhpcDxzB;bQBJmZmZM{B;MneMJImZozB;Veof}WvxN{B;PVkLhjeWi}3;Vb4saisAN}B;PVkLhjeWi}3;Vb4saisAN}B;MneMJImZozB;Veof}WvxN{B;A4iBJc0KUz3;LdcuI8sGM{B;SQES4TtRi}3;uO62FtGQN}B;SQES4TtRi}3;uO62FtGQN}B;A4iBJc0KUz3;LdcuI8sGM{B;XlD60vQlxz3;QuGp0K7TJ{B;Yqq}8Sq8i}3;lWKujUdhN}B;Yqq}8Sq8i}3;lWKujUdhN}B;XlD60vQlxz3;QuGp0K7TJ{B;lUqAMcsf8{3;7ePAVI3ZF{B;maRXobl6i}3;eNmtQ5F{N}B;maRXobl6i}3;eNmtQ5F{N}B;lUqAMcsf8{3;7ePAVI3ZF{B;HAylH0ftH{3;WXcSEngI8{B;CcySASmxh}3;vMV{fglCO}B;CcySASmxh}3;vMV{fglCO}B;HAylH0ftH{3;WXcSEngI8{B;sDUc6srzQ{3;iWYZtyxG6{B;R2xUoixah}3;RMJ5KWFiO}B;R2xUoixah}3;RMJ5KWFiO}B;sDUc6srzQ{3;iWYZtyxG6{B;lAmAdZxAa{3;8rTFM{2S2{B;YRtNC}ZJh}3;i{b{ww5iO}B;YRtNC}ZJh}3;i{b{ww5iO}B;lAmAdZxAa{3;8rTFM{2S2{B;pNro70zti{3;P96AmPU3uzB;JaoVBmBng}3;wqpAF2VxO}B;JaoVBmBng}3;wqpAF2VxO}B;pNro70zti{3;P96AmPU3uzB;5ghoFjFTp{3;YohjGc9r}zB;aGGxodJ5g}3;B1vPNnP5P}B;aGGxodJ5g}3;B1vPNnP5P}B;5ghoFjFTp{3;YohjGc9r}zB;uR9RoUGLw{3;yofv1mHQN{B;vQKK1rpRf}3;cxJgobN9O}B;vQKK1rpRf}3;cxJgobN9O}B;uR9RoUGLw{3;yofv1mHQN{B;q92uMjZX}{3;Ulnyu}vNf{B;AaOI}odwe}3;b2zYCFu4M}B;AaOI}odwe}3;b2zYCFu4M}B;q92uMjZX}{3;Ulnyu}vNf{B;LORB0jM0z{3;vg2iiIOTr{B;qX}OI5K3f}3;jleeA2f9K}B;qX}OI5K3f}3;jleeA2f9K}B;LORB0jM0z{3;vg2iiIOTr{B;hUerc1H9s{3;}pa0ePYlw{B;kB8CQuh}f}3;YQnVvNXoI}B;kB8CQuh}f}3;YQnVvNXoI}B;hUerc1H9s{3;}pa0ePYlw{B;BMO3AtLCm{3;dNzuTsrjx{B;pp1itLpkg}3;942DZum0J}B;pp1itLpkg}3;942DZum0J}B;BMO3AtLCm{3;dNzuTsrjx{B;sjNSuyOCh{3;BOKpSCHSv{B;Cp7INi79h}3;C0xV36vgJ}B;Cp7INi79h}3;C0xV36vgJ}B;sjNSuyOCh{3;BOKpSCHSv{B;Aj}qsqGAc{3;Kmhmkns7s{B;fmIi9LeIh}3;ASzfQW7AK}B;fmIi9LeIh}3;ASzfQW7AK}B;Aj}qsqGAc{3;Kmhmkns7s{B;qVrLhaNna{3;ydvxHjZEq{B;FMLVty}Qh}3;zH9cTB17L}B;FMLVty}Qh}3;zH9cTB17L}B;qVrLhaNna{3;ydvxHjZEq{B;ZlnJmb53b{3;t5crGGgxn{B;splXettUh}3;1LlrdYn0L}B;splXettUh}3;1LlrdYn0L}B;ZlnJmb53b{3;t5crGGgxn{B;yssJqHjya{3;A5JkK0N9m{B;s4Q6bnVMh}3;W3PyitV5M}B;s4Q6bnVMh}3;W3PyitV5M}B;yssJqHjya{3;A5JkK0N9m{B;6B06sp0va{3;uOMa3xalj{B;wZPnTzxMh}3;aLGZIF88M}B;wZPnTzxMh}3;aLGZIF88M}B;6B06sp0va{3;uOMa3xalj{B;CHIDTtikc{3;GRHXgdBUh{B;HS{xyqp9h}3;XeCpaVtUM}B;HS{xyqp9h}3;XeCpaVtUM}B;CHIDTtikc{3;GRHXgdBUh{B;DNXgbZ{4e{3;JrAcLftgf{B;Rg0XUgFFh}3;n5Q1a89hM}B;Rg0XUgFFh}3;n5Q1a89hM}B;DNXgbZ{4e{3;JrAcLftgf{B;PD2dqXE0f{3;8acGUe5Of{B;{kHQpJu5h}3;dnXvU2}sM}B;{kHQpJu5h}3;dnXvU2}sM}B;PD2dqXE0f{3;8acGUe5Of{B;uNHKhZJh{3;79WL{dhEe{B;XGoE1yp2h}3;t{rOtGfiM}B;XGoE1yp2h}3;t{rOtGfiM}B;uNHKhZJh{3;79WL{dhEe{B;I0MaoJSTi{3;by0UVxed{B;{olK08ysg}3;iMclUov1N}B;{olK08ysg}3;iMclUov1N}B;I0MaoJSTi{3;by0UVxed{B;wF8Sp3wuj{3;fbW28lSuc{B;k8{8iy}jg}3;SJRNBRF9N}B;k8{8iy}jg}3;SJRNBRF9N}B;wF8Sp3wuj{3;fbW28lSuc{B;BN002eQ3m{3;2NTID3qKd{B;CYLC{I}jg}3;GTAABxG5N}B;CYLC{I}jg}3;GTAABxG5N}B;BN002eQ3m{3;2NTID3qKd{B;oO85nsMSn{3;BpIHl}zgc{B;l1orEaFcg}3;7xTkHClFN}B;l1orEaFcg}3;7xTkHClFN}B;oO85nsMSn{3;BpIHl}zgc{B;Gh31H6axn{3;jypupJw4c{B;43W2i8qRg}3;e1tVPLuSN}B;43W2i8qRg}3;e1tVPLuSN}B;Gh31H6axn{3;jypupJw4c{B;S37ku824o{3;PZZAU76rb{B;3rvE4tFNg}3;qsH507wPN}B;3rvE4tFNg}3;qsH507wPN}B;S37ku824o{3;PZZAU76rb{B;BPG}CCtwo{3;MPjhfLZpc{B;rvSrrB7Eg}3;ow5lsKvUM}B;rvSrrB7Eg}3;ow5lsKvUM}B;BPG}CCtwo{3;MPjhfLZpc{B;d}y3r5n5q{3;4v81wbI}b{B;WwJ4Ef}Jg}3;QPq2Di{KN}B;WwJ4Ef}Jg}3;QPq2Di{KN}B;d}y3r5n5q{3;4v81wbI}b{B;Cd0sMkB3q{3;jMQnCOyWc{B;NYRhtGqGg}3;GT0sRZdGN}B;NYRhtGqGg}3;GT0sRZdGN}B;Cd0sMkB3q{3;jMQnCOyWc{B;t03l60uZr{3;v1VOmrryd{B;K2uFn4GOg}3;s0Nb8asCN}B;K2uFn4GOg}3;s0Nb8asCN}B;t03l60uZr{3;v1VOmrryd{B;C8eMpIXns{3;qxmO9KdZb{B;BjLHv7Fg}3;3UbtfBf6N}B;BjLHv7Fg}3;3UbtfBf6N}B;C8eMpIXns{3;qxmO9KdZb{B;wemBrJ8qs{3;fz}Tsdk3a{B;hIj4R{Z6g}3;FxfgpPtEN}B;hIj4R{Z6g}3;FxfgpPtEN}B;wemBrJ8qs{3;fz}Tsdk3a{B;zqn0LTkSs{3;lpg3p92kZ{B;9fE0XGaBg}3;3LjSIxMHN}B;9fE0XGaBg}3;3LjSIxMHN}B;zqn0LTkSs{3;lpg3p92kZ{B;y8JfL4ct{3;B14X6e4}a{B;{pD0P8G4g}3;3JV}d2P{M}B;{pD0P8G4g}3;3JV}d2P{M}B;y8JfL4ct{3;B14X6e4}a{B;xQ4CGl1iu{3;5lsBfs6{Y{B;f}1urTZ5g}3;JkYODLuHN}B;f}1urTZ5g}3;JkYODLuHN}B;xQ4CGl1iu{3;5lsBfs6{Y{B;IF{5AsTZu{3;ziLETpQ2W{B;WzXo5azf}3;l3NJ0TsWN}B;WzXo5azf}3;l3NJ0TsWN}B;IF{5AsTZu{3;ziLETpQ2W{B;M9eA{7iau{3;VscN3HMHV{B;B{}roN4xf}3;X}yRm8dFN}B;B{}roN4xf}3;X}yRm8dFN}B;M9eA{7iau{3;VscN3HMHV{B;VbOnvMBXv{3;YhfnrsTPW{B;B5yaAyZxf}3;TAKBEdcBN}B;B5yaAyZxf}3;TAKBEdcBN}B;VbOnvMBXv{3;YhfnrsTPW{B;FRO0f{21x{3;H9JNhCDbW{B;mCUIrU8lf}3;82omryeVM}B;mCUIrU8lf}3;82omryeVM}B;FRO0f{21x{3;H9JNhCDbW{B;rL7lDDb7x{3;EAq7L4wvZ{B;h3g5eMKif}3;7hltwhGOM}B;h3g5eMKif}3;7hltwhGOM}B;rL7lDDb7x{3;EAq7L4wvZ{B;E0t1XN6rw{3;3CgKiIw0e{B;rxwVrUNuf}3;6t1F8A8}L}B;rxwVrUNuf}3;6t1F8A8}L}B;E0t1XN6rw{3;3CgKiIw0e{B;olNdPfXlu{3;6pNtaEJYg{B;cF6WM}V8g}3;CIH6zbfjL}B;cF6WM}V8g}3;CIH6zbfjL}B;olNdPfXlu{3;6pNtaEJYg{B;PLpFkVyzs{3;XAPHNVqzf{B;{miFJ7}Sg}3;v85xjEf6M}B;{miFJ7}Sg}3;v85xjEf6M}B;PLpFkVyzs{3;XAPHNVqzf{B;H5A2R1n5r{3;B6fB4ahld{B;O9VyIiGcg}3;HqIAp670M}B;O9VyIiGcg}3;HqIAp670M}B;H5A2R1n5r{3;B6fB4ahld{B;aAXtHbU9q{3;QukVjFa7c{B;O9VyIiGcg}3;HqIAp670M}B;O9VyIiGcg}3;HqIAp670M}B;aAXtHbU9q{3;QukVjFa7c{B;un3uMxD0p{3;vvUb9irDa{B;YwLQBlZng}3;bPIO2nFYM}B;YwLQBlZng}3;bPIO2nFYM}B;un3uMxD0p{3;vvUb9irDa{B;ANDBEe{eo{3;Yk{8n7SuY{B;ROiRPT7ug}3;78LYZCvvM}B;ROiRPT7ug}3;78LYZCvvM}B;ANDBEe{eo{3;Yk{8n7SuY{B;1Tz9cr}Zo{3;Pe3upAJtW{B;UcZYG9uzg}3;jThvM9sEN}B;UcZYG9uzg}3;jThvM9sEN}B;1Tz9cr}Zo{3;Pe3upAJtW{B;hBfURvKro{3;jIcYJ4JdU{B;8ZFFyw}wg}3;QFoFwZ}iN}B;8ZFFyw}wg}3;QFoFwZ}iN}B;hBfURvKro{3;jIcYJ4JdU{B;QRm784vwo{3;vYbfl9auN{B;Gws1oxl0h}3;flZM6cmcN}B;Gws1oxl0h}3;flZM6cmcN}B;QRm784vwo{3;vYbfl9auN{B;6qfR1QMuo{3;bjGSLBbdI{B;xq3GrTp2h}3;DDFeEUl7O}B;xq3GrTp2h}3;DDFeEUl7O}B;6qfR1QMuo{3;bjGSLBbdI{B;QyldCbyQo{3;OrWp}N{n9{B;MLhNe4i1h}3;4WInNB6wN}B;MLhNe4i1h}3;4WInNB6wN}B;QyldCbyQo{3;OrWp}N{n9{B;4uFOQaGRo{3;3amVjkxv3{B;GQcziS}zg}3;9pKaealTO}B;GQcziS}zg}3;9pKaealTO}B;4uFOQaGRo{3;3amVjkxv3{B;XDwV8gV6o{3;Ir4Z3M8mZzB;y0RYUql}g}3;}ioNKWn6P}B;y0RYUql}g}3;}ioNKWn6P}B;XDwV8gV6o{3;Ir4Z3M8mZzB;JXNAqvCEm{3;G3rw8y}t4z3;Seyr}JS0h}3;g8jow8H}O}B;Seyr}JS0h}3;g8jow8H}O}B;JXNAqvCEm{3;G3rw8y}t4z3;RuNSP5wRm{3;AiMwLKrBhzB;ixW97Xu2h}3;7vuH0MG4P}B;ixW97Xu2h}3;7vuH0MG4P}B;RuNSP5wRm{3;AiMwLKrBhzB;76q99fMGp{3;6cMYt8j}MzB;fYmEd540h}3;NP}WxGAhP}B;fYmEd540h}3;NP}WxGAhP}B;76q99fMGp{3;6cMYt8j}MzB;vTd{pBBqq{3;wHxAZgu{A{3;mkJzMj7xg}3;AlUwe6W4Q}B;mkJzMj7xg}3;AlUwe6W4Q}B;vTd{pBBqq{3;wHxAZgu{A{3;FieGG{xFp{3;UWBTMooJO{3;2kR2FChvg}3;olsaqT1zP}B;2kR2FChvg}3;olsaqT1zP}B;FieGG{xFp{3;UWBTMooJO{3;99WKZvBTo{3;8KmJTfkKQ{3;Ue2bhdpng}3;tgEk4K8SQ}B;Ue2bhdpng}3;tgEk4K8SQ}B;99WKZvBTo{3;8KmJTfkKQ{3;L6n7W6ISo{3;FXc8WH9V{3;UbaK2aZhg}3;CtsF2sW1S}B;UbaK2aZhg}3;CtsF2sW1S}B;L6n7W6ISo{3;FXc8WH9V{3;gLn2tapZn{3;}MQrmzgPX{3;K9gClA8jg}3;1{1BRU0sQ}B;K9gClA8jg}3;1{1BRU0sQ}B;gLn2tapZn{3;}MQrmzgPX{3;j04Kjaw9n{3;y6aAUB6dV{3;xWsvSq}Og}3;7788YGG4S}B;xWsvSq}Og}3;7788YGG4S}B;j04Kjaw9n{3;y6aAUB6dV{3;UGmFQC33q{3;mE9Ljct1S{3;{gQ1YZ}Lg}3;VhvVHJFyS}B;{gQ1YZ}Lg}3;VhvVHJFyS}B;UGmFQC33q{3;mE9Ljct1S{3;2tNonZ84s{3;FzEAt4H3X{3;jKptlRGIg}3;j}L4poFPS}B;jKptlRGIg}3;j}L4poFPS}B;2tNonZ84s{3;FzEAt4H3X{3;UEqZ9Mlrt{3;voE1ZAUiX{3;TP4cstdwf}3;BDTF23m2R}B;TP4cstdwf}3;BDTF23m2R}B;UEqZ9Mlrt{3;voE1ZAUiX{3;}t3iG2aNw{3;WvEFEe1oW{3;HRUSuGkf}3;zAgOfi{AR}B;HRUSuGkf}3;zAgOfi{AR}B;}t3iG2aNw{3;WvEFEe1oW{3;bMQpOP2dy{3;sw{i{W1oT{3;db}pvINKf}3;ClR7fAmrS}B;db}pvINKf}3;ClR7fAmrS}B;bMQpOP2dy{3;sw{i{W1oT{3;DshWDFTL{{3;kEL6AS}bG{3;UY0dbmVwe}3;FaPrtAHwQ}B;UY0dbmVwe}3;FaPrtAHwQ}B;DshWDFTL{{3;kEL6AS}bG{3;xX7PZcaA}{3;VER7DynfvzB;ISa5U6Wze}3;dz40GAE{P}B;ISa5U6Wze}3;dz40GAE{P}B;xX7PZcaA}{3;VER7DynfvzB;MZur8i{mz{3;s9BsJEGdQ{B;}4pnDfV4f}3;8wN20HtvO}B;}4pnDfV4f}3;8wN20HtvO}B;MZur8i{mz{3;s9BsJEGdQ{B;poGbUgGBu{3;1IumdtdZX{B;EKEKXMRef}3;J7CqSo}1O}B;EKEKXMRef}3;J7CqSo}1O}B;poGbUgGBu{3;1IumdtdZX{B;RcO}{T1}o{3;IBTFZ{dXZ{B;L9h479Z3g}3;tB9LcsW0O}B;L9h479Z3g}3;tB9LcsW0O}B;RcO}{T1}o{3;IBTFZ{dXZ{B;GPahoAe}m{3;Ci{TQehdZ{B;Fqa7jiZag}3;A56bjW9eO}B;Fqa7jiZag}3;A56bjW9eO}B;GPahoAe}m{3;Ci{TQehdZ{B;xAFYFAR4l{3;fQU7USRpS{B;zuUaoH8ig}3;sMq95glYP}B;zuUaoH8ig}3;sMq95glYP}B;xAFYFAR4l{3;fQU7USRpS{B;XdUMHK4}f{3;F{rDiZllH{B;S0PBsDJwg}3;j11DZ06Q}B;S0PBsDJwg}3;j11DZ06Q}B;XdUMHK4}f{3;F{rDiZllH{B;nHZwNNdtd{3;9k04p8p7J{B;pGn7jo8ng}3;t}WKY9VUQ}B;pGn7jo8ng}3;t}WKY9VUQ}B;nHZwNNdtd{3;9k04p8p7J{B;DXAqVALof{3;PTUQm38v8{B;6ac19Hmwg}3;NLz3Qi7uQ}B;6ac19Hmwg}3;NLz3Qi7uQ}B;DXAqVALof{3;PTUQm38v8{B;6}guW}dqe{3;MHs{UtohczB;U2KLLiW0h}3;v7LjjqUaS}B;U2KLLiW0h}3;v7LjjqUaS}B;6}guW}dqe{3;MHs{UtohczB;mWMaKknJb{3;jAKTxaN7FzB;5yGT2mtyg}3;87KYasUyS}B;5yGT2mtyg}3;87KYasUyS}B;mWMaKknJb{3;jAKTxaN7FzB;c9CjOg{Pd{3;5cMF5i1nnzB;kQWYxitjg}3;mNJtRY0DR}B;kQWYxitjg}3;mNJtRY0DR}B;c9CjOg{Pd{3;5cMF5i1nnzB;cUalkce0b{3;em3rm55X0{3;6ie88Ymjg}3;qg23kQ}eR}B;6ie88Ymjg}3;qg23kQ}eR}B;cUalkce0b{3;em3rm55X0{3;VtZVUERXW{3;4EyXEAwA4{3;fKI22MRgg}3;12hrqgkhR}B;fKI22MRgg}3;12hrqgkhR}B;VtZVUERXW{3;4EyXEAwA4{3;1gyL5Q{fT{3;WR3VRvqScz3;ECgC26Ojg}3;DA{RtsvwR}B;ECgC26Ojg}3;DA{RtsvwR}B;1gyL5Q{fT{3;WR3VRvqScz3;1wWw5EDJX{3;Z6WPHRkZqz3;haQGKmJag}3;KMBYr3YIT}B;haQGKmJag}3;KMBYr3YIT}B;1wWw5EDJX{3;Z6WPHRkZqz3;yRB{cIlWS{3;hbf4I1na6{3;q2WhNutTg}3;g6hH1okQT}B;q2WhNutTg}3;g6hH1okQT}B;yRB{cIlWS{3;hbf4I1na6{3;t1T9jtQTJ{3;Ap5EHwtQrz3;mttwt7tfg}3;wLzb5TfwT}B;mttwt7tfg}3;wLzb5TfwT}B;t1T9jtQTJ{3;Ap5EHwtQrz3;AD2fUm2yL{3;47WDePTIYzB;BLovN0OOg}3;Nuo1LVfDU}B;BLovN0OOg}3;Nuo1LVfDU}B;AD2fUm2yL{3;47WDePTIYzB;XT2on1OgP{3;q1OEOFSHRz3;iqCuQVWHg}3;qKDKxBOOU}B;iqCuQVWHg}3;qKDKxBOOU}B;XT2on1OgP{3;q1OEOFSHRz3;lJEnrh9SI{3;u2oRH6oGYz3;20}g5kx7g}3;SGqABaVVU}B;20}g5kx7g}3;SGqABaVVU}B;lJEnrh9SI{3;u2oRH6oGYz3;yoRx8riC7{3;uwJMeeWCCz3;Wsr0j1W}f}3;RuxAaaE3V}B;Wsr0j1W}f}3;RuxAaaE3V}B;yoRx8riC7{3;uwJMeeWCCz3;pIIJQHiF5{3;IbEwqmCJwzB;q}u}TEtAg}3;amTeFAWtU}B;q}u}TEtAg}3;amTeFAWtU}B;pIIJQHiF5{3;IbEwqmCJwzB;V9y}4bDiD{3;FTw}QG6U7{B;HMYgNCyvf}3;sOC3Jek6V}B;HMYgNCyvf}3;sOC3Jek6V}B;V9y}4bDiD{3;FTw}QG6U7{B;GlZMUgAMH{3;PmrA4ep14{B;xTTL6nVof}3;wJAjkkWTV}B;xTTL6nVof}3;wJAjkkWTV}B;GlZMUgAMH{3;PmrA4ep14{B;jwS2BmfNG{3;LzfnjT{twzB;WEodn1Ckf}3;4jK1LTNjV}B;WEodn1Ckf}3;4jK1LTNjV}B;jwS2BmfNG{3;LzfnjT{twzB;L8o{tiSF8{3;TI{9rnazmzB;Zjpkg3CYf}3;qITVkyZ1W}B;Zjpkg3CYf}3;qITVkyZ1W}B;L8o{tiSF8{3;TI{9rnazmzB;UF58{TLr4{3;zAgstOMj0{B;Lfo6jOSYf}3;o5lgdry1W}B;Lfo6jOSYf}3;o5lgdry1W}B;UF58{TLr4{3;zAgstOMj0{B;qNmKkhmt6{3;jnAQaVye3{B;nFl79DN7f}3;swQugB03W}B;nFl79DN7f}3;swQugB03W}B;qNmKkhmt6{3;jnAQaVye3{B;jJs9vuNC8{3;fKQRth151{B;p6YfR4Df}3;6rWkp0e9W}B;p6YfR4Df}3;6rWkp0e9W}B;jJs9vuNC8{3;fKQRth151{B;6umdbkhM4{3;ZXt8Cagf5{B;UF91mIODf}3;5cfaCjdLW}B;UF91mIODf}3;5cfaCjdLW}B;6umdbkhM4{3;ZXt8Cagf5{B;8zY7D9HSE{3;Tg4u8sEiC{B;HoMIrj7se}3;JyhS4}8HW}B;HoMIrj7se}3;JyhS4}8HW}B;8zY7D9HSE{3;Tg4u8sEiC{B;ZDMjzYRNK{3;9lwPpvfY8{B;jCy1CEmse}3;r9pKHIpCW}B;jCy1CEmse}3;r9pKHIpCW}B;ZDMjzYRNK{3;9lwPpvfY8{B;ZJy037xyC{3;3dVxYy7R8{B;e0OkXK0Ze}3;EfKWYt0W}B;e0OkXK0Ze}3;EfKWYt0W}B;ZJy037xyC{3;3dVxYy7R8{B;iF2btSURTz3;GT9h8Jk{L{B;AWz6S8CYe}3;gbFXi80nV}B;AWz6S8CYe}3;gbFXi80nV}B;iF2btSURTz3;GT9h8Jk{L{B;OK246lrAszB;bqfyPuEDX{B;BSMQvdBhe}3;}6WyQ4HuV}B;BSMQvdBhe}3;}6WyQ4HuV}B;OK246lrAszB;bqfyPuEDX{B;rEtqQVx36{B;SiH7}hKRX{B;c96amjJme}3;waHZBzu{V}B;c96amjJme}3;waHZBzu{V}B;rEtqQVx36{B;SiH7}hKRX{B;i31ny1K0K{B;tzaGPkKbX{B;Cz6F3Hdne}3;6F1FFkaFW}B;Cz6F3Hdne}3;6F1FFkaFW}B;i31ny1K0K{B;tzaGPkKbX{B;wi3q6gx7P{B;AEuHoFlLX{B;KRjedy8se}3;kBLreRlAW}B;KRjedy8se}3;kBLreRlAW}B;wi3q6gx7P{B;AEuHoFlLX{B;CQIJ42CxT{B;XT6QZi2fV{B;POCJnbNue}3;6cLQa8CMW}B;POCJnbNue}3;6cLQa8CMW}B;CQIJ42CxT{B;XT6QZi2fV{B;VQVOoLTuW{B;kkUfHlVHT{B;DYZWnG4ke}3;4MhZRxdWW}B;DYZWnG4ke}3;4MhZRxdWW}B;VQVOoLTuW{B;kkUfHlVHT{B;1FWkqgv6a{B;r5Q73G30W{B;iA6zU0}Ne}3;KYnbAL0aW}B;iA6zU0}Ne}3;KYnbAL0aW}B;1FWkqgv6a{B;r5Q73G30W{B;GuHsUclYa{B;GC0jKuipT{B;UgJBM34Se}3;pYFB8FieW}B;UgJBM34Se}3;pYFB8FieW}B;GuHsUclYa{B;GC0jKuipT{B;UO7nJLegc{B;st3gmD6}Q{B;lH4Q5Y3Qe}3;NbQkdH8nW}B;lH4Q5Y3Qe}3;NbQkdH8nW}B;UO7nJLegc{B;st3gmD6}Q{B;Q{L93w47e{B;zpLCJb6FT{B;H0NDSKJIe}3;fUxcKDRjW}B;H0NDSKJIe}3;fUxcKDRjW}B;Q{L93w47e{B;zpLCJb6FT{B;hcR1SCUId{B;bnP5veV{S{B;A7d7Bt3Be}3;W4wy589xW}B;A7d7Bt3Be}3;W4wy589xW}B;hcR1SCUId{B;bnP5veV{S{B;oZ5cp}MCe{B;6AXow3XfO{B;TFnwqitAe}3;vP2oNZhfW}B;TFnwqitAe}3;vP2oNZhfW}B;oZ5cp}MCe{B;6AXow3XfO{B;whQER4ZSg{B;7YZiUSJaN{B;OhjDanZyd}3;7aBJU}yW}B;OhjDanZyd}3;7aBJU}yW}B;whQER4ZSg{B;7YZiUSJaN{B;BHiaypW6h{B;9uDkMSeuR{B;HLz3Fz6td}3;QuXsHRiwW}B;HLz3Fz6td}3;QuXsHRiwW}B;BHiaypW6h{B;9uDkMSeuR{B;DkFjpzaCe{B;HcyvkVb4U{B;A1qBiJGnd}3;SNvU28F2X}B;A1qBiJGnd}3;SNvU28F2X}B;DkFjpzaCe{B;HcyvkVb4U{B;6HSUIRCJb{B;w5yTqsfIR{B;vCQSP97bd}3;g{ZjfZ84X}B;vCQSP97bd}3;g{ZjfZ84X}B;6HSUIRCJb{B;w5yTqsfIR{B;NEvRSdldY{B;clegUktKL{B;A2Z3mphed}3;xEm91{JBX}B;A2Z3mphed}3;xEm91{JBX}B;NEvRSdldY{B;clegUktKL{B;ZnbAF1E0Z{B;ENYGAaBfA{B;6WzG7dxbd}3;HsE1ozNGX}B;6WzG7dxbd}3;HsE1ozNGX}B;ZnbAF1E0Z{B;ENYGAaBfA{B;ehqmAaNQZ{B;AX8xXfsv7{B;TgFDol}Xd}3;iXSXML}EX}B;TgFDol}Xd}3;iXSXML}EX}B;ehqmAaNQZ{B;AX8xXfsv7{B;83xOMgV6Y{B;RLcN1aSiE{B;NbUW{SdMd}3;XeO2ZZKIX}B;NbUW{SdMd}3;XeO2ZZKIX}B;83xOMgV6Y{B;RLcN1aSiE{B;zvxkncr9R{B;ZPN{D6}K7{B;{TOzQ}VDd}3;iT2S8fmLX}B;{TOzQ}VDd}3;iT2S8fmLX}B;zvxkncr9R{B;ZPN{D6}K7{B;YpWR9qN{N{B;y0UpaLBmuzB;Ui5PdJiBd}3;MCz2bJ0OX}B;Ui5PdJiBd}3;MCz2bJ0OX}B;YpWR9qN{N{B;y0UpaLBmuzB;gUpoqd}MJ{B;qDFdrhfR4{B;4WKQcbZ{c}3;RSW3dlVRX}B;4WKQcbZ{c}3;RSW3dlVRX}B;gUpoqd}MJ{B;qDFdrhfR4{B;B}dC6ujUszB;LDmCKkF91{B;c5{44vOmc}3;2gBhVilYX}B;c5{44vOmc}3;2gBhVilYX}B;B}dC6ujUszB;LDmCKkF91{B;v8OrovSN2{3;DHeKa9Rb{y3;dgTojLWbc}3;l}eOjPmZX}B;dgTojLWbc}3;l}eOjPmZX}B;v8OrovSN2{3;DHeKa9Rb{y3;wRv7GXZCG{3;hsw8FEB8nz3;HAn1NUtNc}3;pvCiuZmXX}B;HAn1NUtNc}3;pvCiuZmXX}B;wRv7GXZCG{3;hsw8FEB8nz3;9ewC{lvrO{3;gE9ToU{syx3;2Vw6LLi0c}3;eoia6GhQX}B;2Vw6LLi0c}3;eoia6GhQX}B;9ewC{lvrO{3;gE9ToU{syx3;gKQHcPBNZ{3;xYj9809t{zB;}ZS7dXyfb}3;5KiWhcSMX}B;}ZS7dXyfb}3;5KiWhcSMX}B;gKQHcPBNZ{3;xYj9809t{zB;qy4Euu3ye{3;GCqBf7YBO{B;dvhAc90Tb}3;WYtlbL}uW}B;dvhAc90Tb}3;WYtlbL}uW}B;qy4Euu3ye{3;GCqBf7YBO{B;6l1ALbyWi{3;Xc6isf2He{B;KgZ5YsSNb}3;9BVoHLtDW}B;KgZ5YsSNb}3;9BVoHLtDW}B;6l1ALbyWi{3;Xc6isf2He{B;YqU5NQycg{3;D5Wx}qTFn{B;xrv0DGamb}3;nYVlGNW6V}B;xrv0DGamb}3;nYVlGNW6V}B;YqU5NQycg{3;D5Wx}qTFn{B;hjms8lhQZ{3;n9}io{u8p{B;obdAwKVMc}3;u0TMEbOXU}B;obdAwKVMc}3;u0TMEbOXU}B;hjms8lhQZ{3;n9}io{u8p{B;vg1BKuXLJ{3;qSLGPf0hp{B;PZMUp2muc}3;2z7oxCgEU}B;PZMUp2muc}3;2z7oxCgEU}B;vg1BKuXLJ{3;qSLGPf0hp{B;LOl5ak8uvz3;2rpkt7y7p{B;C{PBlgFPd}3;uz7tUZezU}B;C{PBlgFPd}3;uz7tUZezU}B;LOl5ak8uvz3;2rpkt7y7p{B;2jLbrWAHmzB;traadErbn{B;KG{669udd}3;aHpV2fnvV}B;KG{669udd}3;aHpV2fnvV}B;2jLbrWAHmzB;traadErbn{B;JcjkFm4ebzB;kBa1IyMUl{B;Kfr0J3aqd}3;gVUXbk77W}B;Kfr0J3aqd}3;gVUXbk77W}B;JcjkFm4ebzB;kBa1IyMUl{B;hVAfyfwcjz3;QxQxt9YZh{B;uya0DOV5e}3;Lrn2F1y7W}B;uya0DOV5e}3;Lrn2F1y7W}B;hVAfyfwcjz3;QxQxt9YZh{B;XiV{dWihvz3;4}IoQaD8a{B;Oxa61Spwd}3;quzdiGecW}B;Oxa61Spwd}3;quzdiGecW}B;XiV{dWihvz3;4}IoQaD8a{B;N{hDoQ8Rxz3;xVYFv4VAS{B;mcDywul1e}3;cJttmSysW}B;mcDywul1e}3;cJttmSysW}B;N{hDoQ8Rxz3;xVYFv4VAS{B;f6cDvxYTzz3;2t46bIghK{B;tS4BO802e}3;10inHo8yW}B;tS4BO802e}3;10inHo8yW}B;f6cDvxYTzz3;2t46bIghK{B;kDS{GrmJ9{3;zbSNzRbjI{B;lL6}Gbaud}3;PqiAlRFHX}B;lL6}Gbaud}3;PqiAlRFHX}B;kDS{GrmJ9{3;zbSNzRbjI{B;YXntSkz5L{3;WwDrjoli9{B;ibgi{Rqpd}3;CJiCL0ZX}B;ibgi{Rqpd}3;CJiCL0ZX}B;YXntSkz5L{3;WwDrjoli9{B;AHo4Zr4SV{3;NxHZDg7ZYzB;7DncbU0xd}3;MJVNaQFWX}B;7DncbU0xd}3;MJVNaQFWX}B;AHo4Zr4SV{3;NxHZDg7ZYzB;y215}NpLX{3;s0aZo56Ycz3;MjZbHqtyd}3;C}V80HytX}B;MjZbHqtyd}3;C}V80HytX}B;y215}NpLX{3;s0aZo56Ycz3;Qd0{SqjOb{3;R{UndAHNyz3;Emz{b5Pnd}3;vs4yVfV{X}B;Emz{b5Pnd}3;vs4yVfV{X}B;Qd0{SqjOb{3;R{UndAHNyz3;qsek3Grrf{3;CmjmgYdRB{3;q22QjR0ed}3;Jk2kGxp4Y}B;q22QjR0ed}3;Jk2kGxp4Y}B;qsek3Grrf{3;CmjmgYdRB{3;8ES63v3jk{3;eZMdt44mG{3;Yt{JYPuld}3;QU1icotaY}B;Yt{JYPuld}3;QU1icotaY}B;8ES63v3jk{3;eZMdt44mG{3;OUMaMCq0m{3;WV2MfFCaL{3;ION8xtled}3;PN48GWOZY}B;ION8xtled}3;PN48GWOZY}B;OUMaMCq0m{3;WV2MfFCaL{3;KpRxDPJDp{3;v{}JmhMmQ{3;rSyroqdCd}3;iLfIGP4ZY}B;rSyroqdCd}3;iLfIGP4ZY}B;KpRxDPJDp{3;v{}JmhMmQ{3;ss1YwwBer{3;7dnzrATOW{3;NHghFq8Md}3;VEKkKZ}oY}B;NHghFq8Md}3;VEKkKZ}oY}B;ss1YwwBer{3;7dnzrATOW{3;ZaZ70heju{3;6n0lqeIra{3;m2T7BKy7d}3;}XZ0h5x6Z}B;m2T7BKy7d}3;}XZ0h5x6Z}B;ZaZ70heju{3;6n0lqeIra{3;fV8Q2NG}v{3;fkzegkH0Z{3;uy9chSB1d}3;Iee62Uu9Z}B;uy9chSB1d}3;Iee62Uu9Z}B;fV8Q2NG}v{3;fkzegkH0Z{3;huctdJkOz{3;Atwkoj{7b{3;8H}o1Oe{c}3;N0NwY1RXZ}B;8H}o1Oe{c}3;N0NwY1RXZ}B;huctdJkOz{3;Atwkoj{7b{3;K2rAm3o}}{3;RVNIlK2af{3;}1I01Sqwc}3;42vkkAuRZ}B;}1I01Sqwc}3;42vkkAuRZ}B;K2rAm3o}}{3;RVNIlK2af{3;S5bOykHx0}3;RlzYJMo6h{3;ErjBW}ePc}3;}bgzRXpaZ}B;ErjBW}ePc}3;}bgzRXpaZ}B;S5bOykHx0}3;RlzYJMo6h{3;vMTzKYI2}3;FRg2HVImk{3;VtW7GaJKc}3;oKRKOyCgZ}B;VtW7GaJKc}3;oKRKOyCgZ}B;vMTzKYI2}3;FRg2HVImk{3;eqSS2nR{3}3;HXrshIGCl{3;lgZGpKOPc}3;YHuayucnZ}B;lgZGpKOPc}3;YHuayucnZ}B;eqSS2nR{3}3;HXrshIGCl{3;ylLNXAWq5}3;72QxgtV0n{3;WXlk2838c}3;xIO3MUOnZ}B;WXlk2838c}3;xIO3MUOnZ}B;ylLNXAWq5}3;72QxgtV0n{3;Ddfl3TGJ7}3;GlDO9Qnsm{3;uMtboIulb}3;sYcJVcRrZ}B;uMtboIulb}3;sYcJVcRrZ}B;Ddfl3TGJ7}3;GlDO9Qnsm{3;Wc1Rbd938}3;1Ll6qn}Ap{3;jdass98mb}3;MOhrce4oZ}B;jdass98mb}3;MOhrce4oZ}B;Wc1Rbd938}3;1Ll6qn}Ap{3;kNVCF6EH9}3;hqEnyERn{3;KSvjrUKYb}3;uKzZD2ZmZ}B;KSvjrUKYb}3;uKzZD2ZmZ}B;kNVCF6EH9}3;hqEnyERn{3;KqcOEXo0B}3;tfmmEXWen{3;QVjm56uYb}3;6eFe33VVZ}B;QVjm56uYb}3;6eFe33VVZ}B;KqcOEXo0B}3;tfmmEXWen{3;v3L0EOOlB}3;LDVT4hV9q{3;{Q}dpvJRb}3;JWG7DF4PZ}B;{Q}dpvJRb}3;JWG7DF4PZ}B;v3L0EOOlB}3;LDVT4hV9q{3;wQOHoWEMA}3;Aiinuyzyp{3;bw2dJFSob}3;Ellb9K0cZ}B;bw2dJFSob}3;Ellb9K0cZ}B;wQOHoWEMA}3;Aiinuyzyp{3;tIndWWESA}3;dsnvfOWTp{3;Cr8FRWlwb}3;U{LL3pNfZ}B;Cr8FRWlwb}3;U{LL3pNfZ}B;tIndWWESA}3;dsnvfOWTp{3;f7mzSq6KB}3;V97K76D3t{3;BtK0zuStb}3;IgGO{L7yZ}B;BtK0zuStb}3;IgGO{L7yZ}B;f7mzSq6KB}3;V97K76D3t{3;OCz6TacHB}3;T1avn{kfx{3;HEJcf}tjb}3;qNi2IwmvZ}B;HEJcf}tjb}3;qNi2IwmvZ}B;OCz6TacHB}3;T1avn{kfx{3;XuCvUrndB}3;mbYECknux{3;zi6J}7pWb}3;ju7eRZOMa}B;zi6J}7pWb}3;ju7eRZOMa}B;XuCvUrndB}3;mbYECknux{3;YNMhrWdwB}3;mgXZqJV1}{3;RueGCCpYb}3;CmlkJN0Fa}B;RueGCCpYb}3;CmlkJN0Fa}B;YNMhrWdwB}3;mgXZqJV1}{3;gkJQ}MkBC}3;sk{LrEUI0}3;TneM1K86b}3;uk6aPS4ea}B;TneM1K86b}3;uk6aPS4ea}B;gkJQ}MkBC}3;sk{LrEUI0}3;wsf0{ZEKC}3;ybfa5srn0}3;kA}rWmCFb}3;eu5Nm}JTa}B;kA}rWmCFb}3;eu5Nm}JTa}B;wsf0{ZEKC}3;ybfa5srn0}3;Z8LfcrfnC}3;efG8O0nK1}3;3wwip9JHb}3;AHS4baWla}B;3wwip9JHb}3;AHS4baWla}B;Z8LfcrfnC}3;efG8O0nK1}3;5Cx9I6FlD}3;tqO{8aEY2}3;GqMkyoFwa}3;Ky{ifbFea}B;GqMkyoFwa}3;Ky{ifbFea}B;5Cx9I6FlD}3;tqO{8aEY2}3;}wgznYtTE}3;UcOAwBld3}3;tmB6m9Coa}3;7bbIRTJya}B;tmB6m9Coa}3;7bbIRTJya}B;}wgznYtTE}3;UcOAwBld3}3;FY597U6iD}3;NlyPoVNM5}3;VL7Q5c4va}3;GRjjB7Rta}B;VL7Q5c4va}3;GRjjB7Rta}B;FY597U6iD}3;NlyPoVNM5}3;Pi0Y0LfPD}3;ZQv0ho1n4}3;33Oe4llaa}3;}zgVMoBda}B;33Oe4llaa}3;}zgVMoBda}B;Pi0Y0LfPD}3;ZQv0ho1n4}3;42MxnucdE}3;SksWU}6O5}3;u{9phNFba}3;sirSwXmra}B;u{9phNFba}3;sirSwXmra}B;42MxnucdE}3;SksWU}6O5}3;So0HzueiE}3;F9{9kUde5}3;qDplawSSa}3;7jH{YrW0b}B;qDplawSSa}3;7jH{YrW0b}B;So0HzueiE}3;F9{9kUde5}3;IhpRGO0AG}3;shHSdrl96}3;te9WY6mKa}3;4lU84PuDb}B;te9WY6mKa}3;4lU84PuDb}B;IhpRGO0AG}3;shHSdrl96}3;1vP3scC8G}3;T6sq1fYY7}3;VVLYU9WJa}3;k8wAzy}xa}B;VVLYU9WJa}3;k8wAzy}xa}B;1vP3scC8G}3;T6sq1fYY7}3;BFmLpsaPG}3;8Djr76IZ7}3;wbLicgG3a}3;P3CSXotBb}B;wbLicgG3a}3;P3CSXotBb}B;BFmLpsaPG}3;8Djr76IZ7}3;20Eh7IJQG}3;nZ{wcXtC8}3;Ma7mnuJyZ}3;KE9c2c4}a}B;Ma7mnuJyZ}3;KE9c2c4}a}B;20Eh7IJQG}3;nZ{wcXtC8}3;86V85w41H}3;J0nSTm1X8}3;9BNG41nmZ}3;pOZvwoSJb}B;9BNG41nmZ}3;pOZvwoSJb}B;86V85w41H}3;J0nSTm1X8}3;xWBcwE3CH}3;ZYbgFftJA}3;3B{o4Z}wZ}3;lI}bLBRFb}B;3B{o4Z}wZ}3;lI}bLBRFb}B;xWBcwE3CH}3;ZYbgFftJA}3;{7EXLmx1H}3;abCo3{5K9}3;IHqHhatmZ}3;2Gz5BhVza}B;IHqHhatmZ}3;2Gz5BhVza}B;{7EXLmx1H}3;abCo3{5K9}3;bylnW6xhH}3;5ubVJUV2A}3;O2lBJbiYZ}3;iWO3TFZ4b}B;O2lBJbiYZ}3;iWO3TFZ4b}B;bylnW6xhH}3;5ubVJUV2A}3;JSGr4pu3I}3;u}niapFEA}3;UWNUzjtCZ}3;rklI9RRCb}B;UWNUzjtCZ}3;rklI9RRCb}B;JSGr4pu3I}3;u}niapFEA}3;w3s4Go}}H}3;URmCFTXDC}3;yWmVfEiDZ}3;xCzt1Al9b}B;yWmVfEiDZ}3;xCzt1Al9b}B;w3s4Go}}H}3;URmCFTXDC}3;52vr8Dl4I}3;izZoph}OA}3;{PdFCsEzY}3;R0YWzCqza}B;{PdFCsEzY}3;R0YWzCqza}B;52vr8Dl4I}3;izZoph}OA}3;TTcD0TmbI}3;sHPnGGIaB}3;}ChCMTR3Z}3;5JXDPxBza}B;}ChCMTR3Z}3;5JXDPxBza}B;TTcD0TmbI}3;sHPnGGIaB}3;7KIznKeGI}3;JoEm8cmDB}3;n84e7hplY}3;eodhWx3la}B;n84e7hplY}3;eodhWx3la}B;7KIznKeGI}3;JoEm8cmDB}3;Gswct}O9J}3;cNyBiEWnC}3;7wO4N4GqY}3;{8CoL48la}B;7wO4N4GqY}3;{8CoL48la}B;Gswct}O9J}3;cNyBiEWnC}3;UZWS0AP1I}3;}Ax4r6HFD}3;RS7spgOhY}3;cY5F{pZqa}B;RS7spgOhY}3;cY5F{pZqa}B;UZWS0AP1I}3;}Ax4r6HFD}3;FYTWhxd9I}3;hORpB5FyC}3;7QpMi0ycY}3;gzyEKxdga}B;7QpMi0ycY}3;gzyEKxdga}B;FYTWhxd9I}3;hORpB5FyC}3;SypqQH0QI}3;RhSDnDGPE}3;izeQgC4IY}3;q2W2h7qma}B;izeQgC4IY}3;q2W2h7qma}B;SypqQH0QI}3;RhSDnDGPE}3;aGmDg3dAI}3;8MDqW906G}3;IWBV53iGY}3;Z4B5Gamva}B;IWBV53iGY}3;Z4B5Gamva}B;aGmDg3dAI}3;8MDqW906G}3;Bi3V3lmcH}3;Js90FbVBG}3;}VBem8iDY}3;BPuVKhOva}B;}VBem8iDY}3;BPuVKhOva}B;Bi3V3lmcH}3;Js90FbVBG}3;nrDV94mpH}3;SQ9qEjF3G}3;CP8v{0LsX}3;BZ1jPt}ya}B;CP8v{0LsX}3;BZ1jPt}ya}B;nrDV94mpH}3;SQ9qEjF3G}3;z6GzOityH}3;JQRvWnE5G}3;pVGallm{X}3;gPUaxtVwa}B;pVGallm{X}3;gPUaxtVwa}B;z6GzOityH}3;JQRvWnE5G}3;fYVOydd{I}3;gguB{CzDF}3;IISpQZCDX}3;AoklIcxfa}B;IISpQZCDX}3;AoklIcxfa}B;fYVOydd{I}3;gguB{CzDF}3;7NSSz}UCJ}3;3vdVAVV6G}3;RDL62bCuW}3;gYpO9MOZa}B;RDL62bCuW}3;gYpO9MOZa}B;7NSSz}UCJ}3;3vdVAVV6G}3;Wpt}i7FzI}3;fUw6TgVRE}3;WAfQU6GaW}3;Uo360e79a}B;WAfQU6GaW}3;Uo360e79a}B;Wpt}i7FzI}3;fUw6TgVRE}3;djwcowGZJ}3;DgLdSW}MC}3;GnEyPVhKW}3;kjkbduBsZ}B;GnEyPVhKW}3;kjkbduBsZ}B;djwcowGZJ}3;DgLdSW}MC}3;EDawYyFkJ}3;SHhJsqW{8}3;DxymSIR7W}3;2nfbYZV6Z}B;DxymSIR7W}3;2nfbYZV6Z}B;EDawYyFkJ}3;SHhJsqW{8}3;KfWEytuUJ}3;5Pr{ebXo5}3;ZMM9Tq7LW}3;I99SM78Y}B;ZMM9Tq7LW}3;I99SM78Y}B;KfWEytuUJ}3;5Pr{ebXo5}3;wxhGLnZHI}3;9T0Nv}}E1}3;ceqNGeepW}3;{rfrS4yMX}B;ceqNGeepW}3;{rfrS4yMX}B;wxhGLnZHI}3;9T0Nv}}E1}3;6vu99G0XG}3;E}jk1u}Yy{3;BNj6j{NsX}3;sxD8ROGqW}B;BNj6j{NsX}3;sxD8ROGqW}B;6vu99G0XG}3;E}jk1u}Yy{3;Cj9rmv6DC}3;X3ciYc{}u{3;m4QtCnOzY}3;2{O3mixpW}B;m4QtCnOzY}3;2{O3mixpW}B;Cj9rmv6DC}3;X3ciYc{}u{3;RCCJ2cry7}3;z}oLSO{Bw{3;ok9{cQ4rZ}3;yzk}1i3EX}B;ok9{cQ4rZ}3;yzk}1i3EX}B;RCCJ2cry7}3;z}oLSO{Bw{3;uFYVsHMO4}3;wx26lNTIy{3;ht{wF78Ma}3;eftQ1gCmX}B;ht{wF78Ma}3;eftQ1gCmX}B;uFYVsHMO4}3;wx26lNTIy{3;XLV8EHVg1}3;nKCoRKkl}{3;TVUa}vGoa}3;OWiibbSWY}B;TVUa}vGoa}3;OWiibbSWY}B;XLV8EHVg1}3;nKCoRKkl}{3;x6AAqteR0}3;SMtZNSYH}{3;ERXlSlisa}3;Tw5HDWdGZ}B;ERXlSlisa}3;Tw5HDWdGZ}B;x6AAqteR0}3;SMtZNSYH}{3;aK5MqCVR0}3;Yxe1w1lC0}3;KlJSTrSoa}3;PTXHkPKnZ}B;KlJSTrSoa}3;PTXHkPKnZ}B;aK5MqCVR0}3;Yxe1w1lC0}3;ImB9k0vO0}3;H7x6GkXS2}3;wNLGrA8ma}3;7yHmnQi}Z}B;wNLGrA8ma}3;7yHmnQi}Z}B;ImB9k0vO0}3;H7x6GkXS2}3;S}kRWVs}{3;Sj3gkbWo3}3;WOhMMOFia}3;vHnTKwNKa}B;WOhMMOFia}3;vHnTKwNKa}B;S}kRWVs}{3;Sj3gkbWo3}3;J0ZdKvZMy{3;OQm6TpXE4}3;NKhtsq3ha}3;OsA4ZbZja}B;NKhtsq3ha}3;OsA4ZbZja}B;J0ZdKvZMy{3;OQm6TpXE4}3;mL2j8IF}y{3;2OgNeoeO2}3;J9vVxnJSa}3;rEO32g7Db}B;J9vVxnJSa}3;rEO32g7Db}B;mL2j8IF}y{3;2OgNeoeO2}3;ufrnfO1v{{3;57c1Byu63}3;rS7D{28Ma}3;18SsOOt9b}B;rS7D{28Ma}3;18SsOOt9b}B;ufrnfO1v{{3;57c1Byu63}3;3hGlKvju{{3;tdxMgEkl3}3;J1tANO5a}3;rO6mrqxAb}B;J1tANO5a}3;rO6mrqxAb}B;3hGlKvju{{3;tdxMgEkl3}3;}r8HWGEB{{3;jOFoqnLU3}3;fiItALp4a}3;GgrTQF4wb}B;fiItALp4a}3;GgrTQF4wb}B;}r8HWGEB{{3;jOFoqnLU3}3;Kxa{1mxW{{3;T0TPzNMX2}3;egykQ8a}Z}3;9Zfd7pJsb}B;egykQ8a}Z}3;9Zfd7pJsb}B;Kxa{1mxW{{3;T0TPzNMX2}3;}zHmrppk}{3;FBS2NfE3}3;KpkB7tGlZ}3;24}YM{76c}B;KpkB7tGlZ}3;24}YM{76c}B;}zHmrppk}{3;FBS2NfE3}3;F{nxo{ke{{3;5uYkkxln2}3;A{U8egZkZ}3;r4bo2{O}b}B;A{U8egZkZ}3;r4bo2{O}b}B;F{nxo{ke{{3;5uYkkxln2}3;M9q}XOml}{3;jOXWHLvm2}3;Oxc}XihUZ}3;P8J79I4Rc}B;Oxc}XihUZ}3;P8J79I4Rc}B;M9q}XOml}{3;jOXWHLvm2}3;Wcxw9wXtz{3;EeCHx3u44}3;sa5gjf3UZ}3;TjbjMUGRc}B;sa5gjf3UZ}3;TjbjMUGRc}B;Wcxw9wXtz{3;EeCHx3u44}3;oVv1t3k9y{3;QEF9K9V13}3;Y{pVo40CZ}3;jlBXsCmdc}B;Y{pVo40CZ}3;jlBXsCmdc}B;oVv1t3k9y{3;QEF9K9V13}3;Q7qpG2HAy{3;C{coh5Od1}3;{Gc1}TtvY}3;p6tP2oV0d}B;{Gc1}TtvY}3;p6tP2oV0d}B;Q7qpG2HAy{3;C{coh5Od1}3;jVM2jrzpy{3;GSV}oW{71}3;DqCFfMxoY}3;ixYte6y0d}B;DqCFfMxoY}3;ixYte6y0d}B;jVM2jrzpy{3;GSV}oW{71}3;gOq{Rbn0y{3;mfchk{Nw1}3;VkZKqE}{Y}3;PX33EVeBd}B;VkZKqE}{Y}3;PX33EVeBd}B;gOq{Rbn0y{3;mfchk{Nw1}3;dk8Cw77Fx{3;fG{PkMa}0}3;Sp6U92yeY}3;cy5kfh79d}B;Sp6U92yeY}3;cy5kfh79d}B;dk8Cw77Fx{3;fG{PkMa}0}3;8BfZFpdHy{3;tgUsINK30}3;rdB}VSpNY}3;MHFVGOGUd}B;rdB}VSpNY}3;MHFVGOGUd}B;8BfZFpdHy{3;tgUsINK30}3;GlPzFKZLy{3;SsSPcDf40}3;t8WMoSVRY}3;YoA}HxNXd}B;t8WMoSVRY}3;YoA}HxNXd}B;GlPzFKZLy{3;SsSPcDf40}3;N5nJtVnby{3;2gr9r750}3;KwEE868HY}3;wEkTS5Gkd}B;KwEE868HY}3;wEkTS5Gkd}B;N5nJtVnby{3;2gr9r750}3;dDoXeToRw{3;eSKinADE1}3;QtrYjjCxX}3;28Y4Yj3nd}B;QtrYjjCxX}3;28Y4Yj3nd}B;dDoXeToRw{3;eSKinADE1}3;2ASz0217v{3;impiMw0I}{3;kdCebqkeX}3;WgKr168De}B;kdCebqkeX}3;WgKr168De}B;2ASz0217v{3;impiMw0I}{3;eHq01O{}v{3;ypoqzDmt{{3;7Lb7XNe1Y}3;CWRmG{7De}B;7Lb7XNe1Y}3;CWRmG{7De}B;eHq01O{}v{3;ypoqzDmt{{3;lGKpyJkOv{3;{7UP7gdi0}3;lNo76OFPX}3;bFSj1N80e}B;lNo76OFPX}3;bFSj1N80e}B;lGKpyJkOv{3;{7UP7gdi0}3;xgFmdRzWs{3;VMwfIOVE0}3;Kg8kuh0EX}3;D{QK7ZNKe}B;Kg8kuh0EX}3;D{QK7ZNKe}B;xgFmdRzWs{3;VMwfIOVE0}3;18VRXZbVs{3;BZJQylKgy{3;Aq4SQdGxW}3;D3kk3OVMe}B;Aq4SQdGxW}3;D3kk3OVMe}B;18VRXZbVs{3;BZJQylKgy{3;kTNNvVopu{3;T9WTzLSd{{3;be41jAaqW}3;dwYPjz3Ie}B;be41jAaqW}3;dwYPjz3Ie}B;kTNNvVopu{3;T9WTzLSd{{3;FYbO1dVrt{3;1BdljfWd0}3;{wUEvW}jW}3;uIPc}LmOe}B;{wUEvW}jW}3;uIPc}LmOe}B;FYbO1dVrt{3;1BdljfWd0}3;HcdjD4FIq{3;Ktm2wPG2}{3;FQAv0hSSW}3;38K2lI4de}B;FQAv0hSSW}3;38K2lI4de}B;HcdjD4FIq{3;Ktm2wPG2}{3;xLAj{6aHu{3;nzFe6dRVx{3;F6xJIxpJW}3;qBC1Oj}ce}B;F6xJIxpJW}3;qBC1Oj}ce}B;xLAj{6aHu{3;nzFe6dRVx{3;iityRs}iv{3;iL2UEbkS}{3;o9E9MEG9W}3;eYVoNcuqe}B;o9E9MEG9W}3;eYVoNcuqe}B;iityRs}iv{3;iL2UEbkS}{3;bUyauHbpc{3;hwi{qQCQu{B;VzQQrvNsZ}3;lTYNWjpZm}3;VzQQrvNsZ}3;lTYNWjpZm}3;bUyauHbpc{3;hwi{qQCQu{B;FzpX2ZHiX{B;gWGCcuewZ{3;ksr5VellZ}3;6SUPNX3oj}3;ksr5VellZ}3;6SUPNX3oj}3;FzpX2ZHiX{B;gWGCcuewZ{3;T2VCSH5hq{3;IVfvQcDFu{3;eapUILElU}3;7}lTCY0be}B;eapUILElU}3;7}lTCY0be}B;T2VCSH5hq{3;IVfvQcDFu{3;XHrfQvT5B}B;}3j0mTt83}B;DFuyDNC7d}3;TQss0Jquj}3;DFuyDNC7d}3;TQss0Jquj}3;XHrfQvT5B}B;}3j0mTt83}B;81T0biQG6}B;hvNeh26uu{B;OgzEzneWd}3;28FwDZh3h}3;OgzEzneWd}3;28FwDZh3h}3;81T0biQG6}B;hvNeh26uu{B;1GlFTWlPR{3;91p3Lolpsz3;2QstvWK{Y}3;gC4nwEmni}3;2QstvWK{Y}3;gC4nwEmni}3;1GlFTWlPR{3;91p3Lolpsz3;4xqKCw1Sv{3;thBKq9kL0}3;wJT8}2ezR}3;yl}LsFmCf}B;wJT8}2ezR}3;yl}LsFmCf}B;4xqKCw1Sv{3;thBKq9kL0}3;dqkY3n8Zw{3;apjqbqdG1}3;iIUAtW0uS}3;DrM}{GZhf}B;iIUAtW0uS}3;DrM}{GZhf}B;dqkY3n8Zw{3;apjqbqdG1}3;bf91UCJ6{{3;Rz{cJgR}{3;or614p7zS}3;AWSDMQiYf}B;or614p7zS}3;AWSDMQiYf}B;bf91UCJ6{{3;Rz{cJgR}{3;7MF96ClV1}3;wYQb3Nef1}3;jxxpcbMuS}3;D7vELx}Tf}B;jxxpcbMuS}3;D7vELx}Tf}B;7MF96ClV1}3;wYQb3Nef1}3;iT6kUEN11}3;GsvmVB7X3}3;y2rGJJOxQ}3;CiJspqBPf}B;y2rGJJOxQ}3;CiJspqBPf}B;iT6kUEN11}3;GsvmVB7X3}3;ozx{YLsx0}3;un2g8Mld3}3;W9t74nHTQ}3;ywDH8Hmef}B;W9t74nHTQ}3;ywDH8Hmef}B;ozx{YLsx0}3;un2g8Mld3}3;yKjHGodw3}3;TnCAn3dS2}3;yFCh1wWGQ}3;wovHEPVXf}B;yFCh1wWGQ}3;wovHEPVXf}B;yKjHGodw3}3;TnCAn3dS2}3;wq30ybcD5}3;RDiKm1tm4}3;lqycB7smP}3;7smk4IWWf}B;lqycB7smP}3;7smk4IWWf}B;wq30ybcD5}3;RDiKm1tm4}3;xmthc}TC4}3;CZUHL{Uw4}3;Ft8FeweUO}3;16CwQmDf}B;Ft8FeweUO}3;16CwQmDf}B;xmthc}TC4}3;CZUHL{Uw4}3;DvtwLEuK8}3;OhjXRJfi3}3;BN2pXs{6O}3;EwVtT}NKf}B;BN2pXs{6O}3;EwVtT}NKf}B;DvtwLEuK8}3;OhjXRJfi3}3;wo9t711cA}3;ExptBCHy4}3;NAURAbUAO}3;vplkVyB9f}B;NAURAbUAO}3;vplkVyB9f}B;wo9t711cA}3;ExptBCHy4}3;MVYIGtLKC}3;}}qm8}Uu5}3;ShDp5nsIN}3;KiBrFwBue}B;ShDp5nsIN}3;KiBrFwBue}B;MVYIGtLKC}3;}}qm8}Uu5}3;QgiHLheFD}3;Z5iLH30R6}3;RLL8Ss6rM}3;FGkBI2GXe}B;RLL8Ss6rM}3;FGkBI2GXe}B;QgiHLheFD}3;Z5iLH30R6}3;OGMCBxcaF}3;ks3A9xL45}3;XetwTy9kM}3;hm68V3WVe}B;XetwTy9kM}3;hm68V3WVe}B;OGMCBxcaF}3;ks3A9xL45}3;qEZ1yseF}3;UakggHe94}3;yq}89rWlM}3;n2MmDn72e}B;yq}89rWlM}3;n2MmDn72e}B;qEZ1yseF}3;UakggHe94}3</D></Data>
+<IndepValue >R15S470_SER.s2p\Eqns\VarBlock\F</IndepValue></Item>
+<Item XName="YP" Type="Variable" >
+<ByAnalysis ><T>Bool</T><D>1</D></ByAnalysis>
+<Data ><T>Array_Cplx64</T><D>3;4;2;400;iSGwSkFdnyB;x4zfeWE}E{3;NNGV10DlYy3;4cqxQC5}E{B;3NGV10DlYy3;7cqxQC5}E{B;iSGwSkFdnyB;w4zfeWE}E{3;AqB3yJGk{yB;xoFjPsamU{3;NVyggXZity3;vtQhUwqpU{B;XVyggXZity3;vtQhUwqpU{B;qB3yJGk{yB;xoFjPsamU{3;{uhAEZgPuyB;Q}rnlUlUd{3;8b0c8xjTsy3;lhZSY07Td{B;8b0c8xjTsy3;lhZSY07Td{B;IvhAEZgPuyB;Q}rnlUlUd{3;DhigPBVSXyB;Pc6FQ0xhl{3;85MHDpwKZy3;{NEb}j3fl{B;8MHDpwKZy3;}NEb}j3fl{B;feigPBVSXyB;Nc6FQ0xhl{3;sbW0Xw64NzB;yfSFLCNHq{3;3P8tNX23Nz3;tKzbIDPFq{B;DP8tNX23Nz3;tKzbIDPFq{B;ibW0Xw64NzB;yfSFLCNHq{3;syl{bgltWzB;xlEhzM2bu{3;wMNmPZ2sWz3;N4reW1CYu{B;rMNmPZ2sWz3;N4reW1CYu{B;xyl{bgltWzB;xlEhzM2bu{3;L7pPdOIvmzB;ujS}mVRPz{3;YceifD{nmz3;lf98qBLz{B;ZceifD{nmz3;1lf98qBLz{B;I7pPdOIvmzB;sjS}mVRPz{3;fCBr2B4Uuy3;gj4xoFKJ1}3;3V0oWOAbxyB;NNYRSumG1}B;3V0oWOAbxyB;NNYRSumG1}B;LCBr2B4Uuy3;hj4xoFKJ1}3;A2QiDnmhqz3;Rtmy{Ib65}3;NWyqmhJ1rzB;pxqRm2J45}B;NWyqmhJ1rzB;pxqRm2J45}B;A2QiDnmhqz3;Rtmy{Ib65}3;uSrDlr}nD{3;aQvFUxIB8}3;8v6b1yfzD{B;Img}Jj598}B;5v6b1yfzD{B;Img}Jj598}B;uSrDlr}nD{3;bQvFUxIB8}3;b{fCn862J{B;JOHO1rrZC}3;XrthvYt{I{3;9EFHtqSXC}B;YrthvYt{I{3;8EFHtqSXC}B;b{fCn862J{B;LOHO1rrZC}3;Chx5PpyPO{B;a3r1g8{UC}3;V9c2sWHQO{3;DWLW{NxSC}B;V9c2sWHQO{3;DWLW{NxSC}B;Dhx5PpyPO{B;a3r1g8{UC}3;ugmdxYOzyz3;VdQ8dEqaF}3;bnsC1wR5zzB;eBnYwyMXF}B;ZnsC1wR5zzB;fBnYwyMXF}B;ygmdxYOzyz3;VdQ8dEqaF}3;jFdjSoXfO{3;CTIBS6ZsI}3;QmCLX7tiO{B;QNIoSlzqI}B;QmCLX7tiO{B;QNIoSlzqI}B;jFdjSoXfO{3;CTIBS6ZsI}3;8}xW0WA6mzB;kUIIz5bWS}3;eiTtzAd3mz3;MDW}rhiUS}B;biTtzAd3mz3;MDW}rhiUS}B;A}xW0WA6mzB;kUIIz5bWS}3;rkv49Y5Zo{B;s8cjJZN9T}3;VyrsUEEZo{3;8cPstUH7T}B;UyrsUEEZo{3;8cPstUH7T}B;skv49Y5Zo{B;s8cjJZN9T}3;kOJlfcGU9{B;9Ua6mN0xR}3;miGcghVQ9{3;i6NnBFruR}B;kiGcghVQ9{3;i6NnBFruR}B;nOJlfcGU9{B;8Ua6mN0xR}3;xIUx8}3ef{3;r7Jokaud}3;p}SVaXqff{B;Hy39A8Ntd}B;p}SVaXqff{B;Hy39A8Ntd}B;uIUx8}3ef{3;r7Jokaud}3;SB}i1ZBY5}3;X1pc3AqTk}3;sYJc2oMY5}B;4R6Li}eRk}B;sYJc2oMY5}B;4R6Li}eRk}B;QB}i1ZBY5}3;X1pc3AqTk}3;H0uMR0x67}B;ON3j65{Qr}3;lbsMgVa67}3;VcQtC4NQr}B;lbsMgVa67}3;VcQtC4NQr}B;F0uMR0x67}B;ON3j65{Qr}3;R52bZ7nHo}3;BmgvliRa304;{vAtAZqHo}B;r8fEkW7a30C;{vAtAZqHo}B;r8fEkW7a30C;U52bZ7nHo}3;BmgvliRa304;NtQj6r8dz}3;JhXmUAsw70C;Vf9jSrBdz}B;bEwUXtBx704;Vf9jSrBdz}B;dEwUXtBx704;MtQj6r8dz}3;IhXmUAsw70C;feXkNMkDD}B;Gop3BdJY}}B;7E63ZLjDD}3;IvHjOD2Z}}3;7E63ZLjDD}3;JvHjOD2Z}}3;feXkNMkDD}B;Eop3BdJY}}B;1g{S21DI0}3;NytrWyHl{}B;nl{wf0GI0}B;fVNvuj2m{}3;nl{wf0GI0}B;fVNvuj2m{}3;1g{S21DI0}3;NytrWyHl{}B;xpE2PMK9Q}3;C4d1P}bQn}B;ARkED}U9Q}B;LLG{y{PSn}3;ARkED}U9Q}B;LLG{y{PSn}3;xpE2PMK9Q}3;D4d1P}bQn}B;fRYzCss0B}3;ayAxnPMzb}B;iASpFHG1B}B;J0xc55}{b}3;iASpFHG1B}B;I0xc55}{b}3;fRYzCss0B}3;byAxnPMzb}B;{qGfyPO}K{3;V3LURmrXZ}B;NbFdTYa1L{B;rIAG3zVZZ}3;LbFdTYa1L{B;qIAG3zVZZ}3;{qGfyPO}K{3;W3LURmrXZ}B;GY0Y0Ge0h{3;NjrL8AZyR}B;R3GWq540h{B;xDhnVEO0T}3;R3GWq540h{B;wDhnVEO0T}3;GY0Y0Ge0h{3;NjrL8AZyR}B;Vtz8S8SSb{3;DKjp7j3HV}B;kKFsDpGRb{B;5PRg{lnKV}3;lKFsDpGRb{B;5PRg{lnKV}3;Utz8S8SSb{3;DKjp7j3HV}B;HhmGIdDWi{3;snZUZFV7T}B;Qn}E3JXXi{B;HvQIZt7BT}3;Qn}E3JXXi{B;GvQIZt7BT}3;GhmGIdDWi{3;snZUZFV7T}B;5jrrPpGk5{3;XIVSvvV}N}B;iao3DsZo5{B;mr5kISJ3O}3;aao3DsZo5{B;kr5kISJ3O}3;8jrrPpGk5{3;XIVSvvV}N}B;{6qxE7ISM{3;rGo14yOdL}B;xkKfevRM{B;j3XRgqPhL}3;}wkKfevRM{B;i3XRgqPhL}3;{6qxE7ISM{3;sGo14yOdL}B;VC7BK4AWU{3;3r5HytdbJ}B;atlWcIDZU{B;eQJrWahfJ}3;ZtlWcIDZU{B;eQJrWahfJ}3;VC7BK4AWU{3;3r5HytdbJ}B;sl}BRI0CM{3;n88oLTt4H}B;g9upcL{EM{B;lA6jJr19H}3;i9upcL{EM{B;lA6jJr19H}3;sl}BRI0CM{3;n88oLTt4H}B;TN3cwi1v3{3;Dkd7glQhF}B;72efmfRw3{B;eFZPXHepF}3;92efmfRw3{B;fFZPXHepF}3;RN3cwi1v3{3;Ckd7glQhF}B;IUnzrzOKwz3;3wuqhIjyD}B;ykLzYkBKwzB;mxN{YcH5E}3;{kLzYkBKwzB;nxN{YcH5E}3;LUnzrzOKwz3;1wuqhIjyD}B;p2HZ80oAB{3;yfqml{zKB}B;VCO3FikBB{B;a00mTVtTB}3;RCO3FikBB{B;a00mTVtTB}3;s2HZ80oAB{3;{fqml{zKB}B;lwIFi5vO0{3;udTB36tV9}B;FpiRYE{P0{B;uMPIj20f9}3;JpiRYE{P0{B;xMPIj20f9}3;jwIFi5vO0{3;sdTB36tV9}B;5k77AlH9ty3;4ul3rUy38}B;HcZ2czdvyB;Na6j4c9D8}3;eHcZ2czdvyB;Ma6j4c9D8}3;pi77AlH9ty3;5ul3rUy38}B;n{EJx{B9{z3;f1Gw3pUK6}B;kxVlpv4D{zB;n}P}Xe4U6}3;fxVlpv4D{zB;n}P}Xe4U6}3;s{EJx{B9{z3;f1Gw3pUK6}B;fqcUOnO43{3;leJMFnwH4}B;ognQpXz83{B;oKyOABkS4}3;lgnQpXz83{B;nKyOABkS4}3;gqcUOnO43{3;leJMFnwH4}B;1Jn1z7UVD{3;ICe1CTuf2}B;uk9QLKAQD{B;O0{lJfjp2}3;uk9QLKAQD{B;P0{lJfjp2}3;3Jn1z7UVD{3;HCe1CTuf2}B;FQU2XJWI7{3;6BkS2KWf0}B;{H231EhJ7{B;il8axyZp0}3;I231EhJ7{B;jl8axyZp0}3;DQU2XJWI7{3;6BkS2KWf0}B;ocW96u7LJ{3;uWPmTx{Nx{B;aueJkY2IJ{B;dsciaFOix{3;bueJkY2IJ{B;dsciaFOix{3;ncW96u7LJ{3;uWPmTx{Nx{B;55PGIc4pS{3;q}p2NWgLp{B;C7IkbdroS{B;DhtvsIDgp{3;A7IkbdroS{B;DhtvsIDgp{3;55PGIc4pS{3;r}p2NWgLp{B;hLT6yQfq{3;kP3e2zwDO{B;AOYz}KJfq{B;sNEQounVP{3;AOYz}KJfq{B;sNEQounVP{3;hLT6yQfq{3;kP3e2zwDO{B;m{EY7}G7F}3;cBBBxXMr0}B;nY2DGwN7F}B;vKTdMPW01}3;nY2DGwN7F}B;wKTdMPW01}3;k{EY7}G7F}3;bBBBxXMr0}B;iPt8PpQNv{3;D1j1egkQD}B;{4PW8YZNv{B;DOESQyvbD}3;{4PW8YZNv{B;DOESQyvbD}3;iPt8PpQNv{3;D1j1egkQD}B;xovPYUxa{3;a}LaFyBW9}B;nLuTAbDya{B;pzzwVffh9}3;nLuTAbDya{B;pzzwVffh9}3;xovPYUxa{3;a}LaFyBW9}B;fwTuybrRM{3;35L9d0Vd7}B;NeB{JQyUM{B;f1eSfDgo7}3;LeB{JQyUM{B;f1eSfDgo7}3;fwTuybrRM{3;35L9d0Vd7}B;fY1CSSRWM{3;dK0YTx2B6}B;pzUudmSVM{B;Aytx}}2M6}3;pzUudmSVM{B;Aytx}}2M6}3;fY1CSSRWM{3;bK0YTx2B6}B;gpcwtZASA{3;Uge8VdbI3}B;awezGkhSA{B;NwMR6fBU3}3;dwezGkhSA{B;NwMR6fBU3}3;fpcwtZASA{3;Rge8VdbI3}B;VisSVYD66{3;ROE8HSFR2}B;ukvna{T46{B;N2zh}4wd2}3;{kvna{T46{B;O2zh}4wd2}3;VisSVYD66{3;SOE8HSFR2}B;fTO{iJRhqz3;X2NKBmh51}B;fhWS}XJhqzB;Qh1OpcsH1}3;jhWS}XJhqzB;Qh1OpcsH1}3;eTO{iJRhqz3;W2NKBmh51}B;IL5PyIYHuz3;gr6QRWiY0}B;p8GyeVhAuzB;nuJm7D0l0}3;p8GyeVhAuzB;nuJm7D0l0}3;IL5PyIYHuz3;gr6QRWiY0}B;P2VP{lX34{3;Xn3huQkq}{B;JalaYhMz3{B;aJ9M4uu60}3;HalaYhMz3{B;aJ9M4uu60}3;S2VP{lX34{3;Xn3huQkq}{B;l5uHxzXhnz3;}}rlbUoc{{B;1jBmuF8qnzB;NM9NE3H0}{3;}iBmuF8qnzB;NM9NE3H0}{3;p5uHxzXhnz3;}}rlbUoc{{B;}CfeBIXEqz3;nI6O2Hmbz{B;nDCI4mpCqzB;d2gwN52}z{3;lDCI4mpCqzB;d2gwN52}z{3;}CfeBIXEqz3;oI6O2Hmbz{B;3vD0cYUNpz3;xAfptRxx{B;lfrYNn49pzB;wOmOCOvLy{3;kfrYNn49pzB;xOmOCOvLy{3;5vD0cYUNpz3;}wAfptRxx{B;}sl8K2DNoz3;igzcorHTy{B;EC5tDgZKozB;kZ}GDYRty{3;HC5tDgZKozB;kZ}GDYRty{3;ysl8K2DNoz3;igzcorHTy{B;TvWTnp5yz3;7NR2GtlZw{B;SSXKD1uxzB;U6NUYm4}w{3;uQSXKD1uxzB;R6NUYm4}w{3;7TvWTnp5yz3;8NR2GtlZw{B;3Zoj}Aicjz3;iBH}vgZru{B;peLZfeURjzB;sZHJCKVIv{3;eeLZfeURjzB;sZHJCKVIv{3;DZoj}Aicjz3;jBH}vgZru{B;tTZ77q7vvz3;nfoOhE4Cv{B;RB}NMFHdvzB;L{ynC{Jev{3;QB}NMFHdvzB;L{ynC{Jev{3;uTZ77q7vvz3;pfoOhE4Cv{B;1PwocIb92{3;IqG3y2H4u{B;}7g4ob432{B;4SE2UVYXu{3;}7g4ob432{B;5SE2UVYXu{3;1PwocIb92{3;IqG3y2H4u{B;frWmPciJ1{3;XEX7hFg1t{B;{vNcmMwC1{B;bx06LobUt{3;yvNcmMwC1{B;ax06LobUt{3;grWmPciJ1{3;ZEX7hFg1t{B;k1Ql{gAVwz3;5WMCwspAs{B;gjhJy{zDwzB;aZJY5f2es{3;ajhJy{zDwzB;aZJY5f2es{3;p1Ql{gAVwz3;7WMCwspAs{B;QVivSH}Zuz3;C{BysE07r{B;19BPF3WMuzB;ox4NRNObr{3;39BPF3WMuzB;px4NRNObr{3;QVivSH}Zuz3;A{BysE07r{B;NbxrNP{L}z3;3c3aLcYGq{B;dtuAWXB8}zB;QRZOOIokq{3;atuAWXB8}zB;QRZOOIokq{3;QbxrNP{L}z3;3c3aLcYGq{B;RX7}wXgW0{3;naRPOmXFp{B;e8ANLXBL0{B;iHfUZXCjp{3;a8ANLXBL0{B;hHfUZXCjp{3;VX7}wXgW0{3;oaRPOmXFp{B;SsJnyqBxz3;Zn3}ruSBo{B;OYAaw4zrwzB;pSDPKJQgo{3;OYAaw4zrwzB;pSDPKJQgo{3;SsJnyqBxz3;Zn3}ruSBo{B;RYa1FCMK3{3;Ce9irexam{B;f2DJe}Z83{B;CSVOnt35n{3;i2DJe}Z83{B;BSVOnt35n{3;OYa1FCMK3{3;Ce9irexam{B;XXUODPhd3{3;QRQ2woawj{B;aPHTrRjd3{B;xYqb5iTwk{3;dPHTrRjd3{B;xYqb5iTwk{3;UXUODPhd3{3;QRQ2woawj{B;ue6f6Wpr9{3;sjQQx2gAg{B;a9bX1RSf9{B;1hlxz9N9h{3;X9bX1RSf9{B;3hlxz9N9h{3;xe6f6Wpr9{3;sjQQx2gAg{B;fOiWy9JH{3;nFhgNKLb{B;lB9OOeRDH{B;pxn121aMc{3;nB9OOeRDH{B;pxn121aMc{3;}eOiWy9JH{3;nFhgNKLb{B;GQzePTyjS{3;Ve8T}7GHR{B;n3}lIGMfS{B;uvrhiBNLU{3;n3}lIGMfS{B;uvrhiBNLU{3;GQzePTyjS{3;Ve8T}7GHR{B;uebnylsIf{3;WMv1aCNT5{B;H0iKF50Hf{B;wPyFOCWc9{3;G0iKF50Hf{B;uPyFOCWc9{3;uebnylsIf{3;WMv1aCNT5{B;5CRYJzkDw{3;}}6Iz9gmpzB;t6luGX6Cw{B;L}xeK8uFyz3;t6luGX6Cw{B;L}xeK8uFyz3;5CRYJzkDw{3;}}6Iz9gmpzB;w4CiDEZP4}3;a248}SNjr{B;nRXAwIcO4}B;b7piCvMGs{3;nRXAwIcO4}B;d7piCvMGs{3;w4CiDEZP4}3;Z248}SNjr{B;mI5hR75Ww{3;V8gze4Zp3}B;dmUxYIPUw{B;53wXYwR54}3;dmUxYIPUw{B;53wXYwR54}3;mI5hR75Ww{3;V8gze4Zp3}B;I4r1afsCh{3;{b3x09s43}B;DOkQ56X9h{B;CzkGqDzM3}3;DOkQ56X9h{B;CzkGqDzM3}3;I4r1afsCh{3;{b3x09s43}B;L{yyjqqnS{3;SR8xQAB21}B;a9JCb}IgS{B;LKQfiDlK1}3;b9JCb}IgS{B;MKQfiDlK1}3;L{yyjqqnS{3;QR8xQAB21}B;8}mDyW6cK{3;QyFm0UlW0}B;s32ZmrgQK{B;QYtHyalo0}3;s32ZmrgQK{B;OYtHyalo0}3;7}mDyW6cK{3;SyFm0UlW0}B;UP63OvV3C{3;{afazgDA}{B;bTsqFpwgB{B;vFu18{Pl}{3;dTsqFpwgB{B;vFu18{Pl}{3;RP63OvV3C{3;{afazgDA}{B;xY}SkbTE6{3;oh0HzcAz{B;3CZvPBjy5{B;{bfbYAnmz{3;3CZvPBjy5{B;{bfbYAnmz{3;yY}SkbTE6{3;oh0HzcAz{B;5{S}Hu5b3{3;pOc7NGK7y{B;kqSb8zZH3{B;{mZipd6jy{3;jqSb8zZH3{B;{mZipd6jy{3;7{S}Hu5b3{3;pOc7NGK7y{B;SIJ}Se7Iuz3;sd}mOsOhv{B;FUikpdWYtzB;bMQx1pqIw{3;DUikpdWYtzB;dMQx1pqIw{3;XIJ}Se7Iuz3;sd}mOsOhv{B;HuDBVWzK{z3;{zhIQD6vv{B;4a2jbt5KzzB;mMxU{FjWw{3;4a2jbt5KzzB;mMxU{FjWw{3;HuDBVWzK{z3;{zhIQD6vv{B;GvDbeeOiuz3;WXVgz4BAv{B;3KtD716ztzB;fhwm10{ov{3;5KtD716ztzB;fhwm10{ov{3;CvDbeeOiuz3;WXVgz4BAv{B;D4z2njYHsz3;V3jkISP7u{B;iDeQpAuVrzB;Win50ugmu{3;iDeQpAuVrzB;Vin50ugmu{3;84z2njYHsz3;V3jkISP7u{B;kHhZjoItiz3;xiJDndeOt{B;1Qx1Sx5MhzB;fl}Rm}s2u{3;1Qx1Sx5MhzB;fl}Rm}s2u{3;kHhZjoItiz3;xiJDndeOt{B;FL9iueVcmz3;LtVBspE3t{B;zZ3noUVlzB;3jcEzIdkt{3;zZ3noUVlzB;3jcEzIdkt{3;EL9iueVcmz3;LtVBspE3t{B;GW{JEMY6uz3;U78kEs0js{B;3r4RJb0GtzB;xg5f7U3Pt{3;{q4RJb0GtzB;xg5f7U3Pt{3;LW{JEMY6uz3;U78kEs0js{B;k73eUTatnz3;w2}fFhF5s{B;P2sMw3h5nzB;XGn2J{Ins{3;O2sMw3h5nzB;ZGn2J{Ins{3;n73eUTatnz3;u2}fFhF5s{B;axSeFV{GYz3;d2P50DKXr{B;epW8nPFjWzB;ulTyj7gEs{3;kpW8nPFjWzB;ulTyj7gEs{3;VxSeFV{GYz3;d2P50DKXr{B;RWlXkT{Nez3;HLPrkkwbr{B;DTHedx0jczB;VMHq6ysJs{3;ATHedx0jczB;VMHq6ysJs{3;aWlXkT{Nez3;FLPrkkwbr{B;fiROS6xClz3;kBqd5LZBr{B;f6myfefojzB;Ey4DkRUwr{3;X6myfefojzB;Dy4DkRUwr{3;fiROS6xClz3;kBqd5LZBr{B;smZbYbQlz3;LzAJywIkq{B;DBPb1StzjzB;OTMOvgoRr{3;CBPb1StzjzB;NTMOvgoRr{3;xrmZbYbQlz3;LzAJywIkq{B;aIzTR1Ksiz3;URcFpN{{p{B;I2ZtQf44hzB;{jjbNidkq{3;H2ZtQf44hzB;yjjbNidkq{3;VIzTR1Ksiz3;URcFpN{{p{B;8TvP1RDg2zB;8y1AUweip{B;sx9YrfZG6z3;pvm6mj0Tq{3;8y9YrfZG6z3;pvm6mj0Tq{3;8TvP1RDg2zB;8y1AUweip{B;sxNvS9L{fz3;p81Wev2Cp{B;kj8Zi7g7ezB;z7eKa}Yzp{3;Xj8Zi7g7ezB;y7eKa}Yzp{3;3yNvS9L{fz3;p81Wev2Cp{B;EGsLzMDkmz3;D3qcFgdno{B;oZiur{CSlzB;1qbxge5Zp{3;xZiur{CSlzB;1qbxge5Zp{3;6GsLzMDkmz3;D3qcFgdno{B;aksN7EYvez3;ROemDBzIo{B;IbZy5fgsczB;FHE{TZG5p{3;IbZy5fgsczB;EHE{TZG5p{3;VksN7EYvez3;TOemDBzIo{B;5QB1jvshiz3;Z8R57Dlun{B;xBnqmXXlgzB;QtDEJVHio{3;sBnqmXXlgzB;QtDEJVHio{3;AQB1jvshiz3;Z8R57Dlun{B;EE{J72fbnz3;WLMcQkiin{B;VIzWigGhmzB;1CjAk08Wo{3;YIzWigGhmzB;1CjAk08Wo{3;9E{J72fbnz3;WLMcQkiin{B;yfkTPkpMsz3;xF8qQ5Szm{B;3MZkI4VrzB;pM75eRInn{3;13MZkI4VrzB;pM75eRInn{3;xfkTPkpMsz3;wF8qQ5Szm{B;IwhcBzLZ1{3;Z{cJ999dm{B;OrokXXK01{B;yTz9FjrQn{3;ProkXXK01{B;zTz9FjrQn{3;IwhcBzLZ1{3;Z{cJ999dm{B;aM99MPYDC{3;gFfYbPWCm{B;dfyfSv4fB{B;aWwDP7r1n{3;XfyfSv4fB{B;ZWwDP7r1n{3;aM99MPYDC{3;hFfYbPWCm{B;57b{XJjIJ{3;Oi9ynrram{B;bDFJz3v3J{B;j8RsRDORn{3;bDFJz3v3J{B;j8RsRDORn{3;47b{XJjIJ{3;Oi9ynrram{B;39{Uq7ACL{3;yvH1Et9no{B;IctKMktzK{B;80bvD8vep{3;IctKMktzK{B;90bvD8vep{3;39{Uq7ACL{3;yvH1Et9no{B;nmUTuU6dF{3;5Lfiy6Nmp{B;faLNsNXHF{B;s263maQeq{3;iaLNsNXHF{B;s263maQeq{3;kmUTuU6dF{3;5Lfiy6Nmp{B;d4lSYeMZ9{3;uTFhpeqep{B;5BgiEk699{B;ODWwDq6Xq{3;7BgiEk699{B;QDWwDq6Xq{3;d4lSYeMZ9{3;tTFhpeqep{B;B0AnDuHD4{3;{YUxd8Qro{B;eNbkU0qj3{B;QVQyxbykp{3;fNbkU0qj3{B;QVQyxbykp{3;A0AnDuHD4{3;zYUxd8Qro{B;pxrU{J42zz3;iZMMp4QGo{B;eMM8VH}8yzB;4gt}nRbBp{3;dMM8VH}8yzB;5gt}nRbBp{3;xxrU{J42zz3;hZMMp4QGo{B;VLeFnXqr{z3;AYjXIR7Eo{B;wx6XKdixzzB;ow7oyBW9p{3;rx6XKdixzzB;ow7oyBW9p{3;aLeFnXqr{z3;AYjXIR7Eo{B;IGlKvFZh0{3;7EHohtS0o{B;gN12Lu9D0{B;XHEMCyLyo{3;bN12Lu9D0{B;XHEMCyLyo{3;MGlKvFZh0{3;7EHohtS0o{B;ju57u9k4{z3;Oa9060uQn{B;QzazAU3NzzB;ahPr03rNo{3;QzazAU3NzzB;ahPr03rNo{3;ju57u9k4{z3;Oa9060uQn{B;lxQx3Hg52{3;jzP8cLinm{B;vP4yCryj1{B;2mfsyoHln{3;wP4yCryj1{B;2mfsyoHln{3;jxQx3Hg52{3;jzP8cLinm{B;x6etgCem0{3;ei{jAQMEm{B;ePDrQwNU0{B;uJhPaM5Bn{3;cPDrQwNU0{B;wJhPaM5Bn{3;{6etgCem0{3;ei{jAQMEm{B;d}XKLCJ2tz3;dOycff9al{B;uzqbT{FNszB;4HGosivkm{3;xzqbT{FNszB;3HGosivkm{3;X}XKLCJ2tz3;dOycff9al{B;{3Ot6clkpz3;nOCFvhd3m{B;LjvepEQOozB;Y3URjV62n{3;EjvepEQOozB;X3URjV62n{3;14Ot6clkpz3;oOCFvhd3m{B;yVTbtRIwz3;IOsakm{9l{B;GC8ISoPouzB;30h2aV0bm{3;EC8ISoPouzB;20h2aV0bm{3;}xVTbtRIwz3;IOsakm{9l{B;ippeInd7rz3;mTIhKk5Gk{B;dVSQr6z1qzB;Rg83kNT8m{3;gVSQr6z1qzB;Sg83kNT8m{3;fppeInd7rz3;mTIhKk5Gk{B;Zb7otRvOsz3;5ZoaCeLbj{B;NBgV9Hb9rzB;w3dIF}Scl{3;NBgV9Hb9rzB;w3dIF}Scl{3;Zb7otRvOsz3;5ZoaCeLbj{B;ttgBobDCxz3;fy0sf9sGj{B;ppIeBOzgvzB;}rapodfIl{3;rpIeBOzgvzB;{rapodfIl{3;ptgBobDCxz3;fy0sf9sGj{B;RIDwO5hKuz3;fbkzhQSEi{B;{t1ezcL2tzB;XXcqQtZIk{3;yt1ezcL2tzB;XXcqQtZIk{3;UIDwO5hKuz3;fbkzhQSEi{B;tclbzcSKvz3;XAiiVEmkh{B;uixbWSU}tzB;kgv{MLvoj{3;sixbWSU}tzB;jgv{MLvoj{3;sclbzcSKvz3;XAiiVEmkh{B;XrOq97Iuz3;I30mGmoRh{B;3Qa1vqQxszB;VGUIOYRXj{3;7Qa1vqQxszB;UGUIOYRXj{3;uWrOq97Iuz3;J30mGmoRh{B;Ab1yoGByxz3;pa8xLikYg{B;n{pKpaBVwzB;anbUHq}gi{3;n{pKpaBVwzB;anbUHq}gi{3;Ab1yoGByxz3;pa8xLikYg{B;RHzYhUu7{z3;UbjeUSypf{B;VxDKzk1vyzB;8}AJeUHyh{3;UxDKzk1vyzB;8}AJeUHyh{3;UHzYhUu7{z3;UbjeUSypf{B;vydyGzdJ1{3;89wYjYlie{B;QOi2mAkc0{B;iX00bvEsg{3;UOi2mAkc0{B;iX00bvEsg{3;rydyGzdJ1{3;89wYjYlie{B;FQoUa4d71{3;GLVhFTtzd{B;zezhtllW0{B;R2gF5Z47g{3;{ezhtllW0{B;R2gF5Z47g{3;FQoUa4d71{3;GLVhFTtzd{B;44Zo3fW02{3;iTsjIRi7d{B;VX2sgFjP1{B;{JPty5vGf{3;RX2sgFjP1{B;{JPty5vGf{3;64Zo3fW02{3;iTsjIRi7d{B;7SyNujF14{3;En4Y7Tppb{B;PNb}wTIS3{B;NMNI9qU}d{3;NNb}wTIS3{B;NMNI9qU}d{3;8SyNujF14{3;Fn4Y7Tppb{B;aaZasvSy6{3;nK0s3Z5na{B;uF1df3JS6{B;8VpafCWxc{3;uF1df3JS6{B;9VpafCWxc{3;aaZasvSy6{3;nK0s3Z5na{B;AgAhs}Mr9{3;EJYQXqZ0Z{B;OYarkSsK9{B;VoOsvd9Bb{3;OYarkSsK9{B;UoOsvd9Bb{3;AgAhs}Mr9{3;EJYQXqZ0Z{B;LpUmH8xKD{3;Xk2eRfJ9X{B;aiyitSXqC{B;lzxgVcYLZ{3;ZiyitSXqC{B;lzxgVcYLZ{3;MpUmH8xKD{3;Xk2eRfJ9X{B;W6ZdXF2TI{3;QkVkS5KoU{B;Xhkml6VHI{B;xEmnhrXaX{3;Whkml6VHI{B;xEmnhrXaX{3;X6ZdXF2TI{3;QkVkS5KoU{B;wU}05Sk6O{3;ZpQ}4SuES{B;LG{ngtuxN{B;xsRKlT1XV{3;LG{ngtuxN{B;xsRKlT1XV{3;uU}05Sk6O{3;XpQ}4SuES{B;pacz3iXVV{3;usaOULbxQ{B;dZkfR8IIV{B;I5sV}yyHV{3;dZkfR8IIV{B;I5sV}yyHV{3;pacz3iXVV{3;usaOULbxQ{B;hQ6wI}yEa{3;eyyV6l0OW{B;3ZeC8I69a{B;2oqcnedYY{3;3ZeC8I69a{B;2oqcnedYY{3;hQ6wI}yEa{3;eyyV6l0OW{B;IUyVyx6ab{3;pQJtX1F{a{B;uoVvbxCVb{B;Ip}7LNCBd{3;uoVvbxCVb{B;Ip}7LNCBd{3;IUyVyx6ab{3;pQJtX1F{a{B;LetbKPGXZ{3;NzRlsoTud{B;y4t5yWPTZ{B;3z3rkhT5g{3;y4t5yWPTZ{B;3z3rkhT5g{3;JetbKPGXZ{3;NzRlsoTud{B;zF0jjxdzW{3;7S5gjTQMf{B;SXOg{kNtW{B;pXVGK0UYh{3;QXOg{kNtW{B;pXVGK0UYh{3;{F0jjxdzW{3;7S5gjTQMf{B;{n{0Ro9mR{3;s4eXEBxTf{B;VFh9QJfcR{B;xkaHf8Aih{3;VFh9QJfcR{B;xkaHf8Aih{3;{n{0Ro9mR{3;s4eXEBxTf{B;mpwaUf2DS{3;lSvfWVOf{B;uj4ce672S{B;EcRX963Zh{3;xj4ce672S{B;GcRX963Zh{3;jpwaUf2DS{3;lSvfWVOf{B;9oAoizzEN{3;32lbXkJBe{B;UcUmob54N{B;L6}QribPg{3;UcUmob54N{B;J6}QribPg{3;8oAoizzEN{3;32lbXkJBe{B;Fc1J9JnJM{3;dN3KuFw0e{B;NcvXBqj7M{B;KFPT}oDg{3;NcvXBqj7M{B;1KFPT}oDg{3;Fc1J9JnJM{3;dN3KuFw0e{B;t9kRA0gTL{3;{7eUWGlvc{B;barGSr7GL{B;V9TA0UO7f{3;earGSr7GL{B;V9TA0UO7f{3;r9kRA0gTL{3;{7eUWGlvc{B;VKhnvSNVK{3;{tJkcZuic{B;CKlS4G3LK{B;feRk2xcve{3;CKlS4G3LK{B;deRk2xcve{3;UKhnvSNVK{3;uJkcZuic{B;FEWaU8CQK{3;L5mqAri8c{B;Z8oZCknEK{B;QifP9aZMe{3;W8oZCknEK{B;QifP9aZMe{3;IEWaU8CQK{3;L5mqAri8c{B;J0ActVVoK{3;5ZZTqQflb{B;s{r9xWedK{B;rCnTuZxd{3;r{r9xWedK{B;1rCnTuZxd{3;L0ActVVoK{3;5ZZTqQflb{B;}gvrjnONK{3;aFhBxPK1b{B;Lt6a3uQBK{B;Fv0ckK1Fd{3;Jt6a3uQBK{B;Dv0ckK1Fd{3;{gvrjnONK{3;bFhBxPK1b{B;IEUHlcaIK{3;rveXpGMUa{B;iKTG0Gi5K{B;p2cBFzNic{3;iKTG0Gi5K{B;p2cBFzNic{3;IEUHlcaIK{3;rveXpGMUa{B;rJTeL3aiK{3;2cHhHRFa{B;I2Q{5zPYK{B;VC9XVGqRc{3;J2Q{5zPYK{B;VC9XVGqRc{3;pJTeL3aiK{3;2cHhHRFa{B;5S{gR6GaK{3;a}3e7tSbZ{B;ZlSdIjTSK{B;flIuMN}ob{3;ZlSdIjTSK{B;flIuMN}ob{3;4S{gR6GaK{3;a}3e7tSbZ{B;xAw5tqgJK{3;HJo2SsW6Z{B;{41GDQk9K{B;iAbSV51Lb{3;y41GDQk9K{B;iAbSV51Lb{3;xAw5tqgJK{3;HJo2SsW6Z{B;IJnoeWRSK{3;Zkwv8p5wY{B;}pw62uqFK{B;DA2IQhc8b{3;ypw62uqFK{B;DA2IQhc8b{3;LJnoeWRSK{3;Zkwv8p5wY{B;LY7uO4MiM{3;RXG3RI1iY{B;LWc8XXTRM{B;3RG1Sgisa{3;LWc8XXTRM{B;3RG1Sgisa{3;LY7uO4MiM{3;RXG3RI1iY{B;u2T23hEtK{3;7J5TJ8{NY{B;uy5cUjNlK{B;VWuzh{Iba{3;ty5cUjNlK{B;WWuzh{Iba{3;w2T23hEtK{3;7J5TJ8{NY{B;a1thqY}9L{3;3nu7IhLKY{B;U8ckHd21L{B;R98PILvXa{3;R8ckHd21L{B;R98PILvXa{3;b1thqY}9L{3;3nu7IhLKY{B;gPujAXocL{3;Ifnfa0{EY{B;ssF}dWOaL{B;eHjseDnSa{3;ssF}dWOaL{B;eHjseDnSa{3;iPujAXocL{3;Ifnfa0{EY{B;V7tTuASRL{3;zkv4302hX{B;Aewf{STOL{B;kAMC86srZ{3;9ewf{STOL{B;kAMC86srZ{3;V7tTuASRL{3;{kv4302hX{B;L9REBDB}K{3;UPMPL9{NX{B;pHaH1dQuK{B;{upDOb3ZZ{3;pHaH1dQuK{B;{upDOb3ZZ{3;M9REBDB}K{3;UPMPL9{NX{B;ikSCwhemK{3;ltwKDhPbX{B;FrUBelTgK{B;p3II0WLmZ{3;DrUBelTgK{B;p3II0WLmZ{3;jkSCwhemK{3;ltwKDhPbX{B;wEEVH6mjL{3;AAi4CJaCX{B;M}3gpbdL{B;JWmOfthMZ{3;M}3gpbdL{B;LWmOfthMZ{3;xEEVH6mjL{3;9Ai4CJaCX{B;AjLjF3qnK{3;Mga7R6OxW{B;kl2g6P{kK{B;Opg6hq45Z{3;kl2g6P{kK{B;Opg6hq45Z{3;CjLjF3qnK{3;Mga7R6OxW{B;7xvrsqAtJ{3;MGH0nDpgW{B;9EKfHtzmJ{B;KErZsCTqY{3;7EKfHtzmJ{B;JErZsCTqY{3;8xvrsqAtJ{3;MGH0nDpgW{B;G7oa8XYGK{3;H9Fgld0fW{B;nu8at6F8K{B;bHDWrMFnY{3;pu8at6F8K{B;bHDWrMFnY{3;E7oa8XYGK{3;I9Fgld0fW{B;xiJ7e7AZK{3;ZCJJT8mUW{B;CNYp5GVTK{B;W3orNpccY{3;CNYp5GVTK{B;X3orNpccY{3;yiJ7e7AZK{3;YCJJT8mUW{B;s5immqPtL{3;ohacc4AtV{B;EXKuTvokL{B;Vfw2HmA0Y{3;FXKuTvokL{B;Wfw2HmA0Y{3;s5immqPtL{3;nhacc4AtV{B;W5ZdMLcmM{3;w3}nt{ihV{B;8T5qFGeeM{B;QvQL474yX{3;7T5qFGeeM{B;QvQL474yX{3;X5ZdMLcmM{3;w3}nt{ihV{B;9Bao0SBKO{3;Wgt{UpqFW{B;D{Q0GykFO{B;9wC2kl}LY{3;C{Q0GykFO{B;9wC2kl}LY{3;ABao0SBKO{3;Xgt{UpqFW{B;aorLXC3QP{3;kcTmC6hEX{B;fUV6QxcLP{B;JTpNlk5LZ{3;gUV6QxcLP{B;KTpNlk5LZ{3;ZorLXC3QP{3;jcTmC6hEX{B;Oj05IjlJO{3;EXJm1CpFY{B;AyPc54IIO{B;d6pTy6RNa{3;CyPc54IIO{B;d6pTy6RNa{3;Nj05IjlJO{3;CXJm1CpFY{B;{iRbz}VlN{3;d6tv1b23Z{B;FoEuP9{gN{B;agF0Or79b{3;HoEuP9{gN{B;agF0Or79b{3;{iRbz}VlN{3;d6tv1b23Z{B;HrIjeMGN{3;Oxi1BoUGZ{B;bJm9Nme8N{B;AcSpLE3Mb{3;ZJm9Nme8N{B;AcSpLE3Mb{3;3HrIjeMGN{3;Oxi1BoUGZ{B;d4GMDsANL{3;pVT8zYcjZ{B;5aECcBNHL{B;N2NDCnVqb{3;5aECcBNHL{B;N2NDCnVqb{3;e4GMDsANL{3;pVT8zYcjZ{B;JsYdxzP7K{3;kU4JSyerZ{B;4ZtT{Wb3K{B;ILjn}kIzb{3;2ZtT{Wb3K{B;HLjn}kIzb{3;JsYdxzP7K{3;lU4JSyerZ{B;LxtYcMmtI{3;W40ScLVrZ{B;dBwOcXrrI{B;D86a3}Azb{3;bBwOcXrrI{B;C86a3}Azb{3;KxtYcMmtI{3;X40ScLVrZ{B;}Ep9jBMnH{3;ddwLj23TZ{B;IA{NBsOmH{B;MaKfIb8cb{3;FA{NBsOmH{B;LaKfIb8cb{3;1Fp9jBMnH{3;edwLj23TZ{B;AZJnLWU6H{3;Lc{fwa1WZ{B;e9PMf8J5H{B;uuABB19cb{3;g9PMf8J5H{B;uuABB19cb{3;8ZJnLWU6H{3;Lc{fwa1WZ{B;fPvGN{THF{3;HnDMKVlFZ{B;p6rbFklHF{B;u1ytk8gMb{3;s6rbFklHF{B;u1ytk8gMb{3;dPvGN{THF{3;FnDMKVlFZ{B;Xxg5wP4mE{3;RtkMOMbHZ{B;tWXrWjdeE{B;ewNPn80Mb{3;pWXrWjdeE{B;dwNPn80Mb{3;axg5wP4mE{3;UtkMOMbHZ{B;xCQ}OYQfC{3;VyfHN7huY{B;wta4tBwYC{B;uQP8XcA}a{3;tta4tBwYC{B;uQP8XcA}a{3;{CQ}OYQfC{3;VyfHN7huY{B;VCIyRPQG9{3;y0SxjwRZY{B;5b{IWrnA9{B;CqoLM9tga{3;3b{IWrnA9{B;CqoLM9tga{3;WCIyRPQG9{3;x0SxjwRZY{B;9cfGE0AM8{3;DJMYl{AtY{B;p05Gmi}48{B;LQ9PcC}za{3;n05Gmi}48{B;LQ9PcC}za{3;AcfGE0AM8{3;DJMYl{AtY{B;{O9Foc2m8{3;POhrgs}xY{B;an5Ud3Na8{B;ikBkVrA4b{3;an5Ud3Na8{B;ikBkVrA4b{3;yO9Foc2m8{3;POhrgs}xY{B;OCufSASw7{3;1haUedE7Y{B;HEtqmvx{7{B;gkcZ1GUGa{3;IEtqmvx{7{B;gkcZ1GUGa{3;NCufSASw7{3;haUedE7Y{B;RvN5JUHQ5{3;IyPxvfdKX{B;dqNHGYrU5{B;xOncjZlQZ{3;dqNHGYrU5{B;xOncjZlQZ{3;VvN5JUHQ5{3;HyPxvfdKX{B;UemL5d5m3{3;7cT7LiBMX{B;13RtICUb3{B;9Ns0DoJPZ{3;13RtICUb3{B;9Ns0DoJPZ{3;UemL5d5m3{3;7cT7LiBMX{B;EeiU9jSZ2{3;Vp1WHTU5X{B;KZqTHLtI2{B;dHz8B8FBZ{3;IZqTHLtI2{B;dHz8B8FBZ{3;FeiU9jSZ2{3;Vp1WHTU5X{B;6MjWHmzy0{3;bG69TA{fW{B;XIlMfBvg0{B;SKQEBIfnY{3;VIlMfBvg0{B;QKQEBIfnY{3;7MjWHmzy0{3;cG69TA{fW{B;NUlG3pCY0{3;x7eK}vGoW{B;cMe28DK90{B;Aa2hMTGuY{3;cMe28DK90{B;Aa2hMTGuY{3;OUlG3pCY0{3;x7eK}vGoW{B;fvWC8KXJ1{3;r54Df7zUW{B;6jAnUOcl0{B;pDPW7ceeY{3;4jAnUOcl0{B;pDPW7ceeY{3;ivWC8KXJ1{3;r54Df7zUW{B;btGdjfy01{3;dDujVqmjV{B;FyL}CHqp0{B;abPmKz4Y{3;DyL}CHqp0{B;1abPmKz4Y{3;dtGdjfy01{3;dDujVqmjV{B;1dW}loTz1{3;sPA7KkpGV{B;EWZOEDMl1{B;n2m0nnlmX{3;DWZOEDMl1{B;n2m0nnlmX{3;1dW}loTz1{3;sPA7KkpGV{B;SIHQ8Xgr1{3;VOV0}pPiT{B;dycs7rec1{B;ziXBPi}1X{3;dycs7rec1{B;yiXBPi}1X{3;OIHQ8Xgr1{3;WOV0}pPiT{B;eYRlfLMj2{3;{DSCRixkR{B;n}mY7jJb2{B;knlwLewZW{3;m}mY7jJb2{B;knlwLewZW{3;fYRlfLMj2{3;}DSCRixkR{B;82WdlGfv4{3;LlF3FEWhS{B;DOqP7ssh4{B;9ks8wyH2W{3;COqP7ssh4{B;8ks8wyH2W{3;82WdlGfv4{3;LlF3FEWhS{B;GeabvQCA9{3;WINlWk80S{B;VFcnEB0q8{B;LFusrWqPV{3;VFcnEB0q8{B;JFusrWqPV{3;EeabvQCA9{3;WINlWk80S{B;n24sg4xFE{3;ee99v}1OS{B;8GhuSh94E{B;AI271DKrV{3;8GhuSh94E{B;CI271DKrV{3;p24sg4xFE{3;de99v}1OS{B;fWPQIIhvH{3;aplUoPkPR{B;IloXWkNpH{B;R7YNjUmRW{3;JloXWkNpH{B;S7YNjUmRW{3;eWPQIIhvH{3;aplUoPkPR{B;XMsdoH3XJ{3;6sR18gi8W{B;RmEOFtVMJ{B;Mu7{YQXNY{3;SmEOFtVMJ{B;Nu7{YQXNY{3;ZMsdoH3XJ{3;6sR18gi8W{B;WPODDUeGJ{3;uNBmZaswX{B;pw}ml5d2J{B;lT8{KipBa{3;pw}ml5d2J{B;lT8{KipBa{3;XPODDUeGJ{3;uNBmZaswX{B;lq}UuEmJH{3;pxM7{2W2Z{B;}2RR{HwDH{B;{kEEeOMLb{3;}2RR{HwDH{B;ykEEeOMLb{3;kq}UuEmJH{3;rxM7{2W2Z{B;NHdB4b3ZC{3;szhWgjrwY{B;Il8pHYjMC{B;pAhl28{Eb{3;Jl8pHYjMC{B;rAhl28{Eb{3;NHdB4b3ZC{3;rzhWgjrwY{B;aMPmJBfP7{3;OnKU2IVCZ{B;dvrJsRo87{B;LGb2l{hWb{3;fvrJsRo87{B;LGb2l{hWb{3;XMPmJBfP7{3;OnKU2IVCZ{B;MA5}goSi6{3;CRFVbgF1Z{B;IeySzy8L6{B;ilVpDT3Pb{3;HeySzy8L6{B;ilVpDT3Pb{3;LA5}goSi6{3;CRFVbgF1Z{B;ZExpF2CQ4{3;SHypOC6jY{B;ieWTKEND4{B;xbfXmXY3b{3;heWTKEND4{B;xbfXmXY3b{3;ZExpF2CQ4{3;SHypOC6jY{B;KyTOAb{q0{3;OrIyWGJY{B;YRieF9Cg0{B;i3yNur0ga{3;WRieF9Cg0{B;i3yNur0ga{3;LyTOAb{q0{3;OrIyWGJY{B;pmwLSCCV{z3;kdYPgL1FY{B;QMmsJftuzzB;7S}8DMNea{3;LMmsJftuzzB;7S}8DMNea{3;xmwLSCCV{z3;kdYPgL1FY{B;}kxBntvS0{3;tM4{66dpX{B;QWxko6K90{B;k50JEZoFa{3;SWxko6K90{B;k50JEZoFa{3;}kxBntvS0{3;tM4{66dpX{B;u7FB2nj1xz3;XttbWFORX{B;jhMEScc9wzB;fSlkqzYtZ{3;khMEScc9wzB;fSlkqzYtZ{3;w7FB2nj1xz3;XttbWFORX{B;bz2U3In4vz3;ydNgJHKbX{B;RCAjyYrmtzB;e{AVwDn1a{3;RCAjyYrmtzB;e{AVwDn1a{3;bz2U3In4vz3;ydNgJHKbX{B;DfDNMAeluz3;{P{SDEpoX{B;QhCObDqatzB;li5U8{}Ia{3;RhCObDqatzB;li5U8{}Ia{3;AfDNMAeluz3;{P{SDEpoX{B;dDxBjfHsuz3;VyzSka8IX{B;UxNYSl1ntzB;UtyyowNpZ{3;SxNYSl1ntzB;VtyyowNpZ{3;fDxBjfHsuz3;VyzSka8IX{B;I9x0dtvQsz3;ojGRX91BX{B;8m6vsjmsqzB;UuwqlbeiZ{3;9m6vsjmsqzB;UuwqlbeiZ{3;H9x0dtvQsz3;njGRX91BX{B;Dh0ZT2cooz3;g9bqPbLTX{B;{fTQ1UTSnzB;XTuRRrd3a{3;{fTQ1UTSnzB;XTuRRrd3a{3;Dh0ZT2cooz3;g9bqPbLTX{B;HKB0lw}urz3;CbI4H9gCX{B;{qL7sQzYqzB;aC0}5zqtZ{3;yqL7sQzYqzB;aC0}5zqtZ{3;IKB0lw}urz3;CbI4H9gCX{B;4ikKMrGyrz3;Nx6ULq4rW{B;dV2mz95bqzB;dfebGOnVZ{3;ZV2mz95bqzB;dfebGOnVZ{3;7ikKMrGyrz3;Nx6ULq4rW{B;43uObqZArz3;Vuo{zJGqW{B;{irgmNFNpzB;kjME6hPXZ{3;1jrgmNFNpzB;kjME6hPXZ{3;3uObqZArz3;Vuo{zJGqW{B;M9PRmhNApz3;2BY5mWYfW{B;ouNniO0AnzB;wT6h2NsSZ{3;luNniO0AnzB;wT6h2NsSZ{3;Q9PRmhNApz3;1BY5mWYfW{B;sKDsvabmpz3;SHbuw3y5X{B;7NurhZO2ozB;VfMT7GquZ{3;5NurhZO2ozB;VfMT7GquZ{3;sKDsvabmpz3;SHbuw3y5X{B;FymdQhqjsz3;yKBCdwhmW{B;jDpPuZ32rzB;Md9qfM6dZ{3;iDpPuZ32rzB;Nd9qfM6dZ{3;IymdQhqjsz3;yKBCdwhmW{B;adOt}RAMsz3;eWkKi1MPW{B;g8NSl1CjqzB;tTYor6DHZ{3;f8NSl1CjqzB;uTYor6DHZ{3;ddOt}RAMsz3;eWkKi1MPW{B;rlsV8417rz3;oUUfx9jBW{B;hzLy{dJNpzB;ovGfDM4Z{3;ZzLy{dJNpzB;1ovGfDM4Z{3;msV8417rz3;oUUfx9jBW{B;1XXVPlK0qz3;3}DHASrsV{B;RDREoAgxnzB;o2QXXLusY{3;RDREoAgxnzB;o2QXXLusY{3;XXVPlK0qz3;4}DHASrsV{B;{9hQ6zASqz3;SaFYDoT3W{B;LXoKzq4PozB;WE6IRyZ0Z{3;VXoKzq4PozB;VE6IRyZ0Z{3;p9hQ6zASqz3;SaFYDoT3W{B;LNz9Yn8Xtz3;oFeLDe2NV{B;by9{5b{2rzB;VgvYFGehY{3;Wy9{5b{2rzB;VgvYFGehY{3;QNz9Yn8Xtz3;oFeLDe2NV{B;WteGbt26sz3;ad2UIkCHV{B;58lDvdnppzB;H4f4CMgeY{3;C8lDvdnppzB;G4f4CMgeY{3;OteGbt26sz3;ad2UIkCHV{B;EBwna}Uwqz3;RTYFnzKAV{B;6OrCcFjmozB;{DVu3a8eY{3;8OrCcFjmozB;{DVu3a8eY{3;EBwna}Uwqz3;RTYFnzKAV{B;MeuXSxJ4vz3;42W40KLYU{B;Zjx2SZEiszB;50x4Z0rLY{3;fjx2SZEiszB;50x4Z0rLY{3;GeuXSxJ4vz3;32W40KLYU{B;VyWMVkdqvz3;iHUGj4sKU{B;s3wSRmSZtzB;IH0bsUiCY{3;s3wSRmSZtzB;JH0bsUiCY{3;XyWMVkdqvz3;iHUGj4sKU{B;SjW2DL06yz3;DXDliPELU{B;am0o1mw3vzB;SXp1yQ6EY{3;Xm0o1mw3vzB;SXp1yQ6EY{3;RjW2DL06yz3;DXDliPELU{B;V{TRvFfLzz3;dN14PpwWV{B;k54tXcUxvzB;3mPTW5LuY{3;s54tXcUxvzB;3mPTW5LuY{3;Q{TRvFfLzz3;dN14PpwWV{B;Dw4abcVXzz3;nItmQIAJW{B;kT3asRUNwzB;yNMwkp7WZ{3;fT3asRUNwzB;yNMwkp7WZ{3;Iw4abcVXzz3;nItmQIAJW{B;k{evs6gkxz3;RJ3tqTlVW{B;OSF5A4sWuzB;MvJRRn{jZ{3;LSF5A4sWuzB;MvJRRn{jZ{3;n{evs6gkxz3;TJ3tqTlVW{B;DHfYKC16uz3;cliPjGTYW{B;LxEwp7TnqzB;R}h7gr4rZ{3;SxEwp7TnqzB;R}h7gr4rZ{3;8HfYKC16uz3;cliPjGTYW{B;IbvQ7Gb4tz3;kuC6IXooW{B;rb8YAStZpzB;bOXRxr65a{3;tb8YAStZpzB;bOXRxr65a{3;EbvQ7Gb4tz3;kuC6IXooW{B;aNN7m4K{pz3;tYkM}f1jW{B;jHLnzLxOmzB;gT1shv{0a{3;gHLnzLxOmzB;gT1shv{0a{3;dNN7m4K{pz3;tYkM}f1jW{B;9z{B1LGsoz3;iwDS34YRW{B;npSBHF{jzB;FVGx{FMpZ{3;5npSBHF{jzB;FVGx{FMpZ{3;5z{B1LGsoz3;iwDS34YRW{B;5HjMECFJqz3;LgbT7JDKW{B;Z4m3}i{klzB;BnVcUCLmZ{3;e4m3}i{klzB;AnVcUCLmZ{3;1HjMECFJqz3;LgbT7JDKW{B;EZ2VoJBuoz3;z4ckYQdGW{B;L0d2cRqyizB;AqW6BgeiZ{3;I0d2cRqyizB;AqW6BgeiZ{3;IZ2VoJBuoz3;y4ckYQdGW{B;{NLQ6fAqmz3;yQHnuH{9W{B;p42aRebXezB;WgKCFXdZ{3;i42aRebXezB;WgKCFXdZ{3;OLQ6fAqmz3;zQHnuH{9W{B;iFMYuEoxnz3;Ug}akISEW{B;4xbs5tbFgzB;yo25b}fjZ{3;4xbs5tbFgzB;yo25b}fjZ{3;iFMYuEoxnz3;Ug}akISEW{B;uE6JXHmQnz3;I3aDyu1mV{B;DalEfz7OfzB;J6RW7pVPZ{3;HalEfz7OfzB;J6RW7pVPZ{3;uE6JXHmQnz3;I3aDyu1mV{B;CVYW2J8Koz3;R3s{Ys45W{B;36izpAMKgzB;NcFsB47ZZ{3;6izpAMKgzB;NcFsB47ZZ{3;DVYW2J8Koz3;R3s{Ys45W{B;ZrKkjBymz3;Rl6TaVAQV{B;7Y4USl38dzB;hk90gcdGZ{3;1Y4USl38dzB;ik90gcdGZ{3;4ZrKkjBymz3;Rl6TaVAQV{B;5nsMaiTRoz3;R{vw2y8eV{B;X}5n0vN3gzB;sWrD0QxPZ{3;b}5n0vN3gzB;sWrD0QxPZ{3;4nsMaiTRoz3;R{vw2y8eV{B;kLBb6ynWpz3;pIdYu5X4V{B;aPlOayvjizB;bH4hMq19Z{3;kPlOayvjizB;bH4hMq19Z{3;iLBb6ynWpz3;oIdYu5X4V{B;jYP8lpBrz3;f2RwfkCOU{B;Z6RzwrL}lzB;wbGZ{mgoY{3;k6RzwrL}lzB;wbGZ{mgoY{3;xiYP8lpBrz3;e2RwfkCOU{B;MWkgMr8kpz3;z47z5goT{B;Rv3mPFzSjzB;kk}gHC7TY{3;Rv3mPFzSjzB;kk}gHC7TY{3;LWkgMr8kpz3;1z47z5goT{B;4zHisGn2oz3;pOoYYKVLT{B;Mr9vC6XbfzB;Jdx}91HDY{3;Rr9vC6XbfzB;Idx}91HDY{3;zHisGn2oz3;pOoYYKVLT{B;w8XJpR1Doz3;ujSYAmSGT{B;IqfgudnZfzB;FZzNvMkAY{3;IqfgudnZfzB;GZzNvMkAY{3;x8XJpR1Doz3;ujSYAmSGT{B;acwKdTHtpz3;LomfZcuwR{B;mW3iFfWxizB;33c4sdK2Y{3;kW3iFfWxizB;13c4sdK2Y{3;XcwKdTHtpz3;LomfZcuwR{B;eR}3eq7qqz3;Js6TYlhAR{B;VAZnvtt}kzB;uuqUUOmeX{3;fAZnvtt}kzB;tuqUUOmeX{3;XR}3eq7qqz3;Js6TYlhAR{B;gHWyMlKPqz3;R9Y5xtukS{B;3GJwyYvAkzB;dT8}U9hOX{3;AGJwyYvAkzB;cT8}U9hOX{3;dHWyMlKPqz3;R9Y5xtukS{B;8eLGVKKFsz3;xPxBG6sGS{B;yGN96AD2nzB;Hs}NoV9CX{3;{GN96AD2nzB;Hs}NoV9CX{3;7eLGVKKFsz3;xPxBG6sGS{B;RMWokQwxtz3;uClLl9qCQ{B;3Gmqpuk2pzB;L3USea2fW{3;8Gmqpuk2pzB;K3USea2fW{3;OMWokQwxtz3;uClLl9qCQ{B;dCZs}sDYuz3;fCXzV2a7P{B;g8UOucGnpzB;d24tMtV1W{3;i8UOucGnpzB;d24tMtV1W{3;dCZs}sDYuz3;fCXzV2a7P{B;Lsce5vfZvz3;Jz4v4QaUO{B;XO}nBsQgqzB;w9N5hBqMV{3;ZO}nBsQgqzB;x9N5hBqMV{3;Lsce5vfZvz3;Iz4v4QaUO{B;RMF5iEAsyz3;8tDQwlPnN{B;p9iBFJdstzB;9cWMA0ThU{3;t9iBFJdstzB;8cWMA0ThU{3;QMF5iEAsyz3;8tDQwlPnN{B;poAIFt{E0{3;5ftai7LrM{B;3W9ryzClxzB;{D{3HpsnT{3;5W9ryzClxzB;yD{3HpsnT{3;noAIFt{E0{3;5ftai7LrM{B;ggHK5Z{e3{3;NfgJtFXXM{B;ko03YGCP1{B;ndslEE1TT{3;ko03YGCP1{B;ndslEE1TT{3;ggHK5Z{e3{3;NfgJtFXXM{B;HFqGtxBY8{3;7CvDJTeZM{B;urmY0fWQ6{B;{zL}YcwUT{3;wrmY0fWQ6{B;{zL}YcwUT{3;HFqGtxBY8{3;5CvDJTeZM{B;ufNg5pO5D{3;IQtLfi6wN{B;DG5Zh608B{B;yPdmxFumU{3;IG5Zh608B{B;{PdmxFumU{3;sfNg5pO5D{3;IQtLfi6wN{B;9ROeymygE{3;k5QNyRTLQ{B;E9G0gjqnC{B;F1WZnuZaW{3;E9G0gjqnC{B;F1WZnuZaW{3;9ROeymygE{3;k5QNyRTLQ{B;pBdwg7KYE{3;noWR1wOBT{B;iYFEqaxZC{B;{J0QksF}X{3;fYFEqaxZC{B;{J0QksF}X{3;sBdwg7KYE{3;ooWR1wOBT{B;9KH4VxwnA{3;na6ub3n1V{B;MizxOTK09{B;XI9idnhyY{3;NizxOTK09{B;XI9idnhyY{3;7KH4VxwnA{3;oa6ub3n1V{B;3w1QJzsQ6{3;fJsaAjUZV{B;FmBDb3Ij4{B;gBpzzR2HZ{3;FmBDb3Ij4{B;gBpzzR2HZ{3;3w1QJzsQ6{3;fJsaAjUZV{B;CSP4j}2H4{3;iuZTmk}RV{B;S9fER9yg2{B;d6TwW7MBZ{3;S9fER9yg2{B;d6TwW7MBZ{3;CSP4j}2H4{3;iuZTmk}RV{B;uhp4}Gux2{3;gB4cVAQMV{B;GidQpjZX1{B;E4kKEbU2Z{3;FidQpjZX1{B;F4kKEbU2Z{3;whp4}Gux2{3;gB4cVAQMV{B;dbXlo5Av}z3;alLv7njiT{B;5bEXmxv{yzB;v0z3ahMEY{3;8bEXmxv{yzB;w0z3ahMEY{3;dbXlo5Av}z3;alLv7njiT{B;1s8zifEtwz3;gLXmpv87T{B;3x29lu3{tzB;CFI9nNCvX{3;{w29lu3{tzB;CFI9nNCvX{3;7s8zifEtwz3;iLXmpv87T{B;EOdjuLH8vz3;LRd4y0rnR{B;VYRR{J{9szB;Fg0}UlCjX{3;VYRR{J{9szB;Fg0}UlCjX{3;EOdjuLH8vz3;LRd4y0rnR{B;i29ohX00uz3;bV6a3BypS{B;fDRpCNyHrzB;WMVYAxnGX{3;dDRpCNyHrzB;WMVYAxnGX{3;n29ohX00uz3;bV6a3BypS{B;80yRpeiZsz3;3JgUGoHrQ{B;puOkKXi9qzB;4HEMg}3nW{3;juOkKXi9qzB;5HEMg}3nW{3;D0yRpeiZsz3;3JgUGoHrQ{B;FWDZCDhrz3;k0UvjTbMQ{B;ARxMJb{UpzB;{OQUYP8SW{3;9RxMJb{UpzB;{OQUYP8SW{3;1FWDZCDhrz3;k0UvjTbMQ{B;g1mI5XVxoz3;QBSmoVSkP{B;eIP75Vf4nzB;JrSUQ{D8W{3;gIP75Vf4nzB;JrSUQ{D8W{3;f1mI5XVxoz3;OBSmoVSkP{B;qZt1IkGpz3;RFCko{izO{B;J8l6CNvTnzB;j{VEGC8UV{3;J8l6CNvTnzB;i{VEGC8UV{3;{pZt1IkGpz3;RFCko{izO{B;VH8KCI}7pz3;XIEinYrCO{B;CainwUcPnzB;{5olNvQfU{3;CainwUcPnzB;{5olNvQfU{3;XH8KCI}7pz3;VIEinYrCO{B;f9odyg1Smz3;aLmxZVVN{B;Ve3vqZC5lzB;RWQtTgE{T{3;Se3vqZC5lzB;RWQtTgE{T{3;f9odyg1Smz3;aLmxZVVN{B;8WS7FGEXmz3;xByDF4NCN{B;8ZxPuc3xkzB;kjcLLrBeT{3;3ZxPuc3xkzB;kjcLLrBeT{3;AWS7FGEXmz3;xByDF4NCN{B;IFFRpH9Goz3;5naACMN9M{B;KCaUNyi0nzB;R07v}lXYR{3;GCaUNyi0nzB;Q07v}lXYR{3;FFFRpH9Goz3;8naACMN9M{B;uSX7YxzQmz3;tNtZTgokL{B;D7bVkbsXlzB;XYOBatJ3R{3;C7bVkbsXlzB;XYOBatJ3R{3;uSX7YxzQmz3;tNtZTgokL{B;kF5HOGnbkz3;3O8mOotlK{B;mLx{KEkjjzB;AKUhjqx2S{3;jLx{KEkjjzB;AKUhjqx2S{3;iF5HOGnbkz3;3O8mOotlK{B;tyLwaKa4mz3;jkGnzhmVK{B;kjQ4vbQflzB;QPTLIF9rQ{3;kjQ4vbQflzB;QPTLIF9rQ{3;ryLwaKa4mz3;kkGnzhmVK{B;xPY{zhjRjz3;VNC7GsPnJ{B;MPuP75nDkzB;QERxOUH6Q{3;NPuP75nDkzB;QERxOUH6Q{3;QY{zhjRjz3;VNC7GsPnJ{B;R1yTgRuKjz3;FmV1ItxNJ{B;J4gGtSRAkzB;RKRlXB5ZP{3;H4gGtSRAkzB;RKRlXB5ZP{3;X1yTgRuKjz3;FmV1ItxNJ{B;DjVrO59ekz3;G1XcW8MYI{B;GQ0xdO6skzB;GiPGcgYnO{3;AQ0xdO6skzB;EiPGcgYnO{3;DjVrO59ekz3;H1XcW8MYI{B;aA0fBSIWjz3;Jz7dLxS4I{B;7IJgwrA6kzB;nMOVahoDO{3;5IJgwrA6kzB;nMOVahoDO{3;aA0fBSIWjz3;Kz7dLxS4I{B;xHAxvdAtiz3;eh}yyahlH{B;EQMpZ79lkzB;aZQGvKbqN{3;4QMpZ79lkzB;aZQGvKbqN{3;3IAxvdAtiz3;fh}yyahlH{B;5auK4vvYjz3;o}IM58o5H{B;spWMYnRblzB;aKm8Pm85N{3;rpWMYnRblzB;aKm8Pm85N{3;8auK4vvYjz3;n}IM58o5H{B;aeLPOTAxkz3;yUY6PYKSG{B;nPMvS}DYmzB;dKcm1{GRM{3;kPMvS}DYmzB;dKcm1{GRM{3;feLPOTAxkz3;zUY6PYKSG{B;nwiy66omjz3;glV5mBnHG{B;yYKh{0mrlzB;Q{6YesEAM{3;}YKh{0mrlzB;Q{6YesEAM{3;kwiy66omjz3;flV5mBnHG{B;VDcrH0x3mz3;DL}7pXMnF{B;7bExtBtLnzB;LoaG8ncpL{3;5bExtBtLnzB;MoaG8ncpL{3;XDcrH0x3mz3;DL}7pXMnF{B;y{9WJb15nz3;vYIVCmpKF{B;HuPnwfqfozB;dOyfyA{QL{3;JuPnwfqfozB;dOyfyA{QL{3;x{9WJb15nz3;vYIVCmpKF{B;XcqeQW8imz3;QKTlCd4wE{B;1N9vyo94ozB;5jLXgbB5L{3;1N9vyo94ozB;5jLXgbB5L{3;XcqeQW8imz3;QKTlCd4wE{B;aAlqWXzwkz3;4Z3T3bnvF{B;tlIq8VO}mzB;39bchxBfL{3;slIq8VO}mzB;39bchxBfL{3;aAlqWXzwkz3;4Z3T3bnvF{B;pe}{GUmXkz3;XNekA8e2G{B;Rf7KVch2nzB;tupiYTKlL{3;Uf7KVch2nzB;supiYTKlL{3;ie}{GUmXkz3;XNekA8e2G{B;ND6nEhgDgz3;HBGZ7KmNF{B;W5UExD3yjzB;MVcU24uJL{3;X5UExD3yjzB;MVcU24uJL{3;GD6nEhgDgz3;HBGZ7KmNF{B;{UkIVk{odz3;mMjtHbN3F{B;nUU0GItKgzB;atgA2oH0L{3;tUU0GItKgzB;dtgA2oH0L{3;sUkIVk{odz3;kMjtHbN3F{B;pFI9YViPbz3;LzSJ4G0HE{B;E78bMIqEezB;3}8tc}1mK{3;J78bMIqEezB;4}8tc}1mK{3;kFI9YViPbz3;LzSJ4G0HE{B;kzom6RY8az3;w}m}SPSFE{B;fbtRQZqWczB;axQRb4paK{3;fbtRQZqWczB;axQRb4paK{3;kzom6RY8az3;w}m}SPSFE{B;QjynaPc9Yz3;iAYKBFe9D{B;T2}cFrkwZzB;XPySIbi9K{3;V2}cFrkwZzB;XPySIbi9K{3;NjynaPc9Yz3;gAYKBFe9D{B;N1zprTnCYz3;az3q}9XSD{B;Xfr9coU{ZzB;akwl}lLBK{3;Xfr9coU{ZzB;akwl}lLBK{3;N1zprTnCYz3;az3q}9XSD{B;LIyUhmAiVz3;{wkxqMR7D{B;Cr3EHETAYzB;JYrHgNR2K{3;Cr3EHETAYzB;JYrHgNR2K{3;AIyUhmAiVz3;ywkxqMR7D{B;A}bf{RbJWz3;k{CrGzANC{B;NdvSp7ToXzB;bBlcqNtZJ{3;NdvSp7ToXzB;bBlcqNtZJ{3;A}bf{RbJWz3;k{CrGzANC{B;RnbAFCUaSz3;3SsMynYlB{B;RToKI1BwUzB;xtUoU0FGJ{3;VToKI1BwUzB;xtUoU0FGJ{3;RnbAFCUaSz3;4SsMynYlB{B;8JgHlaf0Oz3;nALqXoF6C{B;Xvr1zqRcPzB;5O}KfyyIJ{3;avr1zqRcPzB;6O}KfyyIJ{3;3JgHlaf0Oz3;nALqXoF6C{B;I5erNPvmTz3;DyPqGgxB{B;R5QR}RgDTzB;vxXU2OiFJ{3;R5QR}RgDTzB;uxXU2OiFJ{3;R5erNPvmTz3;1DyPqGgxB{B;dpb8xI5BQz3;CP{s037TB{B;IodZ81tJSzB;lyI68Fa{I{3;AodZ81tJSzB;kyI68Fa{I{3;ipb8xI5BQz3;DP{s037TB{B;3l2vwyzhOz3;kiKUAT37B{B;RMB0HKbTPzB;YBFsPJwsI{3;iMB0HKbTPzB;YBFsPJwsI{3;uk2vwyzhOz3;kiKUAT37B{B;sFSwIF3FMz3;8zeD3fRSA{B;eisQEdfeOzB;oHzTxNTVI{3;gisQEdfeOzB;nHzTxNTVI{3;sFSwIF3FMz3;8zeD3fRSA{B;XPkVIDrXMz3;pht2aZ5bA{B;jl0VQKl9NzB;hvKVNSlOI{3;ol0VQKl9NzB;ivKVNSlOI{3;NPkVIDrXMz3;pht2aZ5bA{B;QmNMrfLKLz3;bhE05Xxz9{B;}a3QnQS0MzB;vmw6Vg3BI{3;ya3QnQS0MzB;vmw6Vg3BI{3;QmNMrfLKLz3;bhE05Xxz9{B;ACbkg2GgMz3;u5rKZIZy9{B;A{i4ZP5xLzB;oFMzt8U4I{3;A{i4ZP5xLzB;oFMzt8U4I{3;LCbkg2GgMz3;u5rKZIZy9{B;3zFazZgqJz3;akEg0OmF9{B;gKjdM8RIKzB;{qFs8kQnH{3;gKjdM8RIKzB;yqFs8kQnH{3;8zFazZgqJz3;bkEg0OmF9{B;aGfjUtSGz3;9ydccpQP9{B;l9pyJHUoGzB;YXQT0{zfH{3;o9pyJHUoGzB;YXQT0{zfH{3;aGfjUtSGz3;9ydccpQP9{B;AwEt0KjkLz3;VH2N0ehR9{B;8jZzrc3tKzB;Xhb4cpMjH{3;5jZzrc3tKzB;Xhb4cpMjH{3;FwEt0KjkLz3;WH2N0ehR9{B;{Wfjyc}LKz3;XT}pGiYq8{B;}jsbEI4qJzB;Og}taRsMH{3;yjsbEI4qJzB;Og}taRsMH{3;8Xfjyc}LKz3;ZT}pGiYq8{B;fCyPffUKKz3;dGxHn5nB8{B;X3K2OlDFJzB;npujPlV5H{3;X3K2OlDFJzB;npujPlV5H{3;fCyPffUKKz3;dGxHn5nB8{B;NBZvK4}GHz3;{B5uHIXH8{B;uxBeYSvXDzB;l5qb5o0{G{3;DyBeYSvXDzB;l5qb5o0{G{3;8BZvK4}GHz3;yB5uHIXH8{B;n5y6QJjFNz3;kT491m418{B;3fcWTUuKKzB;n2j2qhFzG{3;3fcWTUuKKzB;n2j2qhFzG{3;n5y6QJjFNz3;kT491m418{B;X9xyJHrkKz3;5mdkrnvx7{B;lSqgp9kpIzB;fMKWPKDnG{3;1Rqgp9kpIzB;gMKWPKDnG{3;I9xyJHrkKz3;5mdkrnvx7{B;iI6H7OopOz3;7E4XzW6r7{B;eaaeyFtEKzB;LfzoyhnlG{3;gaaeyFtEKzB;LfzoyhnlG{3;iI6H7OopOz3;7E4XzW6r7{B;j5VgJCVLz3;FE1XGhVa7{B;kG4QgRjXIzB;OQgPq2sQG{3;sG4QgRjXIzB;OQgPq2sQG{3;xi5VgJCVLz3;FE1XGhVa7{B;8XIqSGlyKz3;nlF5CoWs7{B;fMLaObAqCzB;LECdzZufG{3;QMLaObAqCzB;JECdzZufG{3;IXIqSGlyKz3;nlF5CoWs7{B;n6vNaS{7Nz3;3xwaPZuo7{B;QYi9rbBNGzB;i3bdBuUcG{3;RYi9rbBNGzB;h3bdBuUcG{3;n6vNaS{7Nz3;3xwaPZuo7{B;ig6YNa17Lz3;bkkmqjgJ7{B;ApsBHEfP9zB;3fR0WiLJG{3;LpsBHEfP9zB;3fR0WiLJG{3;ig6YNa17Lz3;bkkmqjgJ7{B;kYpYzccCHz3;VJAEFXZM7{B;3verNmaJzyB;gdzgdMnFG{3;kuerNmaJzyB;gdzgdMnFG{3;kYpYzccCHz3;VJAEFXZM7{B;nfCx1tKPHz3;36fCcdyX7{B;fW3pN3GrsyB;lLoUmCZNG{3;{W3pN3GrsyB;lLoUmCZNG{3;ifCx1tKPHz3;36fCcdyX7{B;fRX0n{2sIz3;Nlak8A217{B;{QH1CQiGuyB;hiIe2nACG{3;RSH1CQiGuyB;iiIe2nACG{3;VRX0n{2sIz3;Nlak8A217{B;RzTOLkkRIz3;8270H5587{B;8ZHJAwNQwyB;uhBXpLbCG{3;nZHJAwNQwyB;uhBXpLbCG{3;IzTOLkkRIz3;8270H5587{B;{FVjBm7kOz3;N7Odc19}5{B;sbQgIdZv6zB;1kRcYNKKF{3;AcQgIdZv6zB;3kRcYNKKF{3;pFVjBm7kOz3;N7Odc19}5{B;D6DPVwFAPz3;8yzVuJZf5{B;igqaOeem3zB;n3v2oi9qE{3;sgqaOeem3zB;o3v2oi9qE{3;36DPVwFAPz3;8yzVuJZf5{B;Ca8VnMWNWz3;dNtlb8nV5{B;V2}fnsHQEzB;faRg0j{pE{3;Q2}fnsHQEzB;daRg0j{pE{3;Ha8VnMWNWz3;eNtlb8nV5{B;omXfDnUQZz3;g0GORtp{4{B;pw{pepK9MzB;rI2qwLjSE{3;iw{pepK9MzB;pI2qwLjSE{3;tmXfDnUQZz3;g0GORtp{4{B;56wrL70nfz3;82fpQX9h4{B;IsjozrMEXzB;LYoHpjoEE{3;FsjozrMEXzB;LYoHpjoEE{3;86wrL70nfz3;72fpQX9h4{B;V12wTk7dmz3;e1eEpKu05{B;5ZOTCDbjezB;G9o{mr{QE{3;3ZOTCDbjezB;E9o{mr{QE{3;Y12wTk7dmz3;e1eEpKu05{B;xAmNkzVErz3;QdM}YO4w5{B;XP1MN952nzB;kOIE}ZhcF{3;VP1MN952nzB;iOIE}ZhcF{3;{AmNkzVErz3;SdM}YO4w5{B;dtulw3V{uz3;l}DueYE8{B;oIPssk98rzB;3N5qnS90H{3;rIPssk98rzB;3N5qnS90H{3;btulw3V{uz3;l}DueYE8{B;nW5sCEIewz3;V27XDNJaB{B;D2CxWbyxszB;rCrmmELrI{3;D2CxWbyxszB;tCrmmELrI{3;nW5sCEIewz3;V27XDNJaB{B;x1Tq07}Quz3;RZ93HwJgE{B;DlvqVpPfqzB;fgdlTtuVK{3;DlvqVpPfqzB;fgdlTtuVK{3;x1Tq07}Quz3;RZ93HwJgE{B;kc1Pr}ywqz3;9uhIzHdMG{B;CaAEqtTrmzB;RvkOiEDhL{3;9aAEqtTrmzB;RvkOiEDhL{3;nc1Pr}ywqz3;9uhIzHdMG{B;LY2xmwZclz3;fV337XnwG{B;NyIju5BGdzB;763{mwuOM{3;NyIju5BGdzB;563{mwuOM{3;QY2xmwZclz3;gV337XnwG{B;rvEfG}vfz3;63ReHymrG{B;{H0Fikq8YzB;WIHwZvidM{3;2I0Fikq8YzB;WIHwZvidM{3;{qvEfG}vfz3;63ReHymrG{B;XUL9N7Uwbz3;szODbKDWG{B;VqxyIDq4TzB;WPV{qrfQM{3;IqxyIDq4TzB;XPV{qrfQM{3;iUL9N7Uwbz3;rzODbKDWG{B;aI}mXjqnXz3;UOVeKOHHG{B;dWgcseQXJzB;RWRUwOQ5M{3;bWgcseQXJzB;RWRUwOQ5M{3;aI}mXjqnXz3;UOVeKOHHG{B;dzmuihwVRz3;F1g0pG64G{B;k1gisnZ{6zB;bC5dfJ3wL{3;n1gisnZ{6zB;bC5dfJ3wL{3;XzmuihwVRz3;G1g0pG64G{B;n5KLmEQbLz3;Z3TxItC4G{B;56zYZGPXeyB;fVURTOr5M{3;37zYZGPXeyB;fVURTOr5M{3;i5KLmEQbLz3;Z3TxItC4G{B;xnb38c{0Mz3;5xnxfKAMF{B;3NmTu}XzsyB;t10}som2M{3;INmTu}XzsyB;s10}som2M{3;nnb38c{0Mz3;7xnxfKAMF{B;ir1NnONRMz3;sbTdVGJzE{B;3tlmQ6aruyB;ILc2OiUlL{3;5ulmQ6aruyB;HLc2OiUlL{3;Nr1NnONRMz3;sbTdVGJzE{B;8xWslMo{Mz3;VIfSCWJWE{B;L8bXAkGgpyB;iqYtARUXL{3;i7bXAkGgpyB;iqYtARUXL{3;IxWslMo{Mz3;UIfSCWJWE{B;Q64goMLvDz3;Aa{huTMuD{B;QsV4UCyADy3;8wZEOSVL{3;GwV4UCyADy3;8wZEOSVL{3;a64goMLvDz3;Aa{huTMuD{B;RJXOLhfFIz3;3Gdgc68tD{B;fmzZEiPScyB;uyGLf21ZL{3;3lzZEiPScyB;uyGLf21ZL{3;dJXOLhfFIz3;4Gdgc68tD{B;QKmwbfoPGz3;ZTiyP1y3D{B;s3zLDDGw5yB;XcylRcHCL{3;d9zLDDGw5yB;XcylRcHCL{3;LKmwbfoPGz3;XTiyP1y3D{B;Xvzbqu2DIz3;3{GvgKzJD{B;pihonti9RyB;yY1l7tWML{3;aghonti9RyB;yY1l7tWML{3;dvzbqu2DIz3;4{GvgKzJD{B;peCxP7KpEz3;iEsunOkQC{B;3NFfqDwQRwB;QGe{Ncc4L{3;Rz8fqDwQRwB;QGe{Ncc4L{3;{eCxP7KpEz3;jEsunOkQC{B;8TJQvAQ{8z3;o2KksyMXC{B;kgwE2EAHry3;NCJlb1r4L{3;8hwE2EAHry3;NCJlb1r4L{3;ITJQvAQ{8z3;p2KksyMXC{B;G2{bU1n4Cz3;D8Beb2QFC{B;x5SxMZhloy3;a9v2nlCCL{3;i5SxMZhloy3;b9v2nlCCL{3;Q2{bU1n4Cz3;A8Beb2QFC{B;feB9fi9pCz3;Xd53mHCcB{B;dv0F0r1Xdy3;eSegASsAL{3;8v0F0r1Xdy3;eSegASsAL{3;VeB9fi9pCz3;Xd53mHCcB{B;fcnzG3e9Gz3;J7RJJniPB{B;xXkvrFTEAy3;{ZwoqUd7L{3;xXkvrFTEAy3;}ZwoqUd7L{3;kcnzG3e9Gz3;I7RJJniPB{B;kgMOzZgj6z3;RR{NSrnYB{B;{ElP7Of9ry3;lDmdJsBAL{3;3FlP7Of9ry3;nDmdJsBAL{3;ugMOzZgj6z3;RR{NSrnYB{B;fmoQeB5LFz3;ACRkQkOGB{B;sVYjVARVZy3;V75oUWlBL{3;fWYjVARVZy3;V75oUWlBL{3;fmoQeB5LFz3;ACRkQkOGB{B;5Ey6XdbcFz3;3g1DuXsYA{B;DJYFjz8U6y3;1dkqghQ2L{3;3NYFjz8U6y3;3dkqghQ2L{3;aEy6XdbcFz3;3g1DuXsYA{B;QYVPJQ4VDz3;INaIVQ7cA{B;FoYzQgI}Iy3;oLT4FQb3L{3;FoYzQgI}Iy3;oLT4FQb3L{3;kYVPJQ4VDz3;INaIVQ7cA{B;fOnFdencBz3;{1GL{1u9A{B;fyyp}wwBWy3;Eh15fqlxK{3;5{yp}wwBWy3;Fh15fqlxK{3;IPnFdencBz3;{1GL{1u9A{B;VG45Z5xXAz3;dAcrrkwp9{B;Qu5aEDRJwy3;l}OjkdAsK{3;Gu5aEDRJwy3;k}OjkdAsK{3;AG45Z5xXAz3;dAcrrkwp9{B;IPr}IyTU9z3;ia8RF6rH9{B;NZPrRjK3ty3;gYenxgQzK{3;kYPrRjK3ty3;fYenxgQzK{3;pOr}IyTU9z3;ia8RF6rH9{B;QcUdqoxK5z3;MIIlrbQk9{B;VsVyt8knqy3;LX9GZE04L{3;FsVyt8knqy3;LX9GZE04L{3;FcUdqoxK5z3;MIIlrbQk9{B;sl1ThJ5pDz3;j}UoURR29{B;k0Kn2F6jwy3;V5JGZ6AmK{3;a0Kn2F6jwy3;V5JGZ6AmK{3;sl1ThJ5pDz3;i}UoURR29{B;DluxHEre9z3;kq1XKv9s8{B;{ks}Slmy2z3;VKv2FNCyK{3;Vks}Slmy2z3;UKv2FNCyK{3;ukuxHEre9z3;jq1XKv9s8{B;aCdFtc1LHz3;3Lw3yjJX8{B;31q0S92Lmy3;tWnsb2C1L{3;Q0q0S92Lmy3;sWnsb2C1L{3;ACdFtc1LHz3;5Lw3yjJX8{B;D}QWRJAeHz3;yh1PWTMA8{B;AU5hncBKny3;jJM5759iK{3;dT5hncBKny3;iJM5759iK{3;{{QWRJAeHz3;{h1PWTMA8{B;ip09o17}Dz3;Xgg{fsm{7{B;LfnZzC5D2z3;uWAf7z3cK{3;denZzC5D2z3;wWAf7z3cK{3;Np09o17}Dz3;Vgg{fsm{7{B;nns0k4cyEz3;wJli4hno7{B;eskzTjr3z3;SeYdQyttK{3;5eskzTjr3z3;SeYdQyttK{3;nns0k4cyEz3;wJli4hno7{B;uASlPmRXJz3;pTiMQT1L7{B;A8KSmnYBUy3;s38RyHLgK{3;D7KSmnYBUy3;s38RyHLgK{3;uASlPmRXJz3;pTiMQT1L7{B;pqwyuDtuEz3;DCaN0Z1m6{B;fweXlrHtyy3;58eN67EIK{3;AweXlrHtyy3;58eN67EIK{3;fqwyuDtuEz3;CCaN0Z1m6{B;yd33{HXmqzB;4C2UH}rE5{3;sgwGzDrygz3;yR8ftPQ9L{B;sgwGzDrygz3;yR8ftPQ9L{B;yd33{HXmqzB;4C2UH}rE5{3;AdO3eW1JgzB;bnTMA5PKC{3;WMa19do0Qz3;pxQzsT7iP{B;QMa19do0Qz3;pxQzsT7iP{B;GdO3eW1JgzB;bnTMA5PKC{3;VI1ZF}NOSz3;puTsix9R6{B;pa2J26GfHyB;anMWiKrmK{3;uc2J26GfHyB;anMWiKrmK{3;GI1ZF}NOSz3;puTsix9R6{B;u7UukGbJ1{B;N9MrhBhaA{3;i26WTSd33{3;upUgri4OO{B;i26WTSd33{3;upUgri4OO{B;u7UukGbJ1{B;N9MrhBhaA{3;P3HXeIKv{zB;Q7Zl5{0QG{3;mdJvcoPA1{3;3bhYSOoeQ{B;ndJvcoPA1{3;3bhYSOoeQ{B;M3HXeIKv{zB;Q7Zl5{0QG{3;NVPKVOUJTzB;G7dudBJJA{3;68A1YoRp3z3;9}S{uG8wN{B;{7A1YoRp3z3;A}S{uG8wN{B;NVPKVOUJTzB;G7dudBJJA{3;VePm5aOwJz3;k96Cfc5M4{B;5Oemt8Y74z3;{ibHGJKhJ{3;XOemt8Y74z3;}ibHGJKhJ{3;pePm5aOwJz3;k96Cfc5M4{B;AOuF5b9kGz3;nsWfIVgG3{B;Laeft2QuBz3;RuiADo4MJ{3;Aaeft2QuBz3;RuiADo4MJ{3;OuF5b9kGz3;nsWfIVgG3{B;{MnIMSljJz3;b{DDTsD83{B;50Sw9im6zy3;7oNXABWCJ{3;G0Sw9im6zy3;8oNXABWCJ{3;uMnIMSljJz3;a{DDTsD83{B;ddUeL1k9Iz3;pAoKZrdn2{B;IL6pRx3k1z3;F6baTTZgI{3;DL6pRx3k1z3;H6baTTZgI{3;RdUeL1k9Iz3;pAoKZrdn2{B;f82ioYR{Iz3;8SK3ZYiL2{B;ALyHN9BaBz3;A4qUvpjTI{3;ALyHN9BaBz3;A4qUvpjTI{3;p82ioYR{Iz3;8SK3ZYiL2{B;D3G4rsDeHz3;Ng8mEAmx1{B;VINM7YefEz3;A0O0fiVQI{3;VINM7YefEz3;90O0fiVQI{3;N3G4rsDeHz3;Ng8mEAmx1{B;XbUvoDluJz3;lAuIqFYR1{B;ubNlOe5k1z3;X0IGBXN1I{3;kbNlOe5k1z3;Y0IGBXN1I{3;NbUvoDluJz3;lAuIqFYR1{B;DpPV947GIz3;sjZU2}341{B;dmuzc7tDAz3;88WFi{RdH{3;dmuzc7tDAz3;98WFi{RdH{3;3pPV947GIz3;rjZU2}341{B;xN}faMUiNz3;UvasJH8d0{B;DlgroWl3Cz3;7tqHJMGaH{3;DlgroWl3Cz3;5tqHJMGaH{3;O}faMUiNz3;VvasJH8d0{B;QUFtkFfCNz3;NUU2RR7Z}zB;xn3YBde30z3;VKcVW2m0H{3;nn3YBde30z3;WKcVW2m0H{3;FUFtkFfCNz3;NUU2RR7Z}zB;OstXBPUMz3;Qz2wwDnK}zB;sZVQcny80z3;UP9aTKWdG{3;iZVQcny80z3;UP9aTKWdG{3;OstXBPUMz3;Rz2wwDnK}zB;{uBq}DzWOz3;ITB3YldI{zB;3Q6c4Ju0z3;L8yuw4ZCG{3;3Q6c4Ju0z3;L8yuw4ZCG{3;{uBq}DzWOz3;ITB3YldI{zB;{C}YZ5zJSz3;RcPtP4gxzzB;vIBsrNkz}y3;vGWcr7NuF{3;DJBsrNkz}y3;sGWcr7NuF{3;8D}YZ5zJSz3;RcPtP4gxzzB;u{3D7yIiSz3;f8W2qw15zzB;ucluy91fgy3;QXvAcDwMF{3;Ddluy91fgy3;PXvAcDwMF{3;3}3D7yIiSz3;f8W2qw15zzB;ndB0v}CEWz3;Zv}z3eFHzzB;cvdKoOLP0yB;3i2E1JIIF{3;cvdKoOLP0yB;3i2E1JIIF{3;ndB0v}CEWz3;Zv}z3eFHzzB</D></Data>
+<IndepValue >R15S470_SER.s2p\Eqns\VarBlock\F</IndepValue></Item></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size></Item>
+<Filename >C:\Users\omar\Downloads\R15S470_SER.s2p</Filename>
+<Hotlink ><T>Bool</T><D>1</D></Hotlink>
+<Selected ><T>Bool</T><D>0</D></Selected>
+<FullPath >R15S470_SER.s2p</FullPath></Item>
+<Item XName="GlobalEqns" Attrib="14" Type="Equation" >
+<Item XName="EqnBlock" Type="EqnBlock" >
+<Lang ><T>Int</T><D>0</D></Lang></Item>
+<Item XName="VarBlock" Type="VarBlock" >
+<Item XName="FREQ" Type="Variable" >
+<Data ><T>Double</T><D>10000000</D></Data></Item>
+<Item XName="TIME" Type="Variable" >
+<Data ><T>Double</T><D>0</D></Data></Item>
+<Item XName="TEMPERATURE" Type="Variable" >
+<Data ><T>Double</T><D>27</D></Data></Item>
+<Item XName="_EPS0" Type="Variable" >
+<Data ><T>Double</T><D>8.8541878170000005e-012</D></Data></Item>
+<Item XName="_ETA0" Type="Variable" >
+<Data ><T>Double</T><D>376.730313461</D></Data></Item>
+<Item XName="_MU0" Type="Variable" >
+<Data ><T>Double</T><D>1.2566370614359173e-006</D></Data></Item>
+<Item XName="_VAIR" Type="Variable" >
+<Data ><T>Double</T><D>299792458</D></Data></Item>
+<Item XName="_LN2" Type="Variable" >
+<Data ><T>Double</T><D>0.69314718055994529</D></Data></Item>
+<Item XName="_EXP1" Type="Variable" >
+<Data ><T>Double</T><D>2.7182818284590451</D></Data></Item>
+<Item XName="_DTOR" Type="Variable" >
+<Data ><T>Double</T><D>0.017453292519943295</D></Data></Item>
+<Item XName="_RTOD" Type="Variable" >
+<Data ><T>Double</T><D>57.295779513082323</D></Data></Item></Item>
+<Item XName="FunctionBlock" Type="FunctionBlock" />
+<Item XName="BPMgr" Type="BPMgr" >
+<BPLines ><T>Empty</T></BPLines>
+<BPStates ><T>Empty</T></BPStates></Item>
+<Item XName="Font" Type="Font" >
+<Size ><T>Double</T><D>125</D></Size>
+<Name >Courier New</Name></Item>
+<Text >FREQ=1e7&#x000D;&#x000A;TIME=0.0&#x000D;&#x000A;TEMPERATURE=27.0&#x000D;&#x000A;_EPS0=8.854187817e-12&#x000D;&#x000A;_ETA0=376.730313461&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;_MU0=1.2566370614359173e-6&#x000D;&#x000A;_VAIR=2.99792458e8&#x000D;&#x000A;_LN2=0.69314718055994530941723212145818&#x000D;&#x000A;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;&#x0009;_EXP1=2.7182818284590452353602874713527&#x000D;&#x000A;_DTOR=0.0174532925199432957692369076848861&#x000D;&#x000A;_RTOD=1/_DTOR&#x000D;&#x000A;</Text></Item></Item> 
